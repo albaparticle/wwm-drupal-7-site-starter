@@ -151,7 +151,6 @@ projects[] = nodequeue
 projects[] = notifications
 projects[] = page_title
 projects[] = panels
-projects[] = path_redirect
 projects[] = pathauto
 projects[] = pathologic
 projects[] = persistent_login
@@ -160,6 +159,7 @@ projects[] = print
 projects[] = profiler
 projects[] = quicktabs
 projects[] = recaptcha
+projects[] = redirect
 projects[] = remote_stream_wrapper
 projects[] = relation
 projects[] = responder
@@ -195,7 +195,8 @@ projects[] = workbench_moderation
 projects[] = wysiwyg
 projects[] = wysiwyg_imagefield
 projects[] = xmlsitemap
-  
+
+
 
 ; Themes
 ; --------
