@@ -105,7 +105,6 @@ projects[] = imce
 projects[] = imce_crop
 projects[] = imce_mkdir
 projects[] = imce_rename
-projects[] = imce_swfupload
 projects[] = imce_tools
 projects[] = imce_wysiwyg
 projects[] = insert
