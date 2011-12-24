@@ -200,6 +200,7 @@ projects[] = xmlsitemap
 ; Themes
 ; --------
 ; Themes automatically included by BOA hosting system
+projects[] = tao
 projects[] = rubik
 
 
