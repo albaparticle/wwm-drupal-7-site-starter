@@ -200,8 +200,9 @@ projects[] = xmlsitemap
 ; Themes
 ; --------
 ; Themes automatically included by BOA hosting system
-; rubik-7.x-4.0-beta6
-  
+projects[] = rubik
+
+
 ; Libraries
 ; ---------
 ; No Libraries were included
