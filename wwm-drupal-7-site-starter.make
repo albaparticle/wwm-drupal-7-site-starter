@@ -191,9 +191,11 @@ projects[] = workbench_access
 projects[] = workbench_files
 projects[] = workbench_media
 projects[] = workbench_moderation
+projects[] = wp_blog
 projects[] = wysiwyg
 projects[] = wysiwyg_imagefield
 projects[] = xmlsitemap
+
 
 
 
