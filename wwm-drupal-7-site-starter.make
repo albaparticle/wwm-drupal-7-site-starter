@@ -82,6 +82,7 @@ projects[] = diff
 projects[] = ds
 projects[] = elements
 projects[] = email
+projects[] = entity
 projects[] = entity_autocomplete
 projects[] = exif
 projects[] = extlink
