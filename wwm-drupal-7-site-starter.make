@@ -35,7 +35,7 @@ projects[pressflow][download][url] = "git://github.com/pressflow/7.git"
   
 ; Modules automatically included by BOA hosting system
 ; --------
-projects[] = admin
+; projects[] = admin  ; removed because WWM prefers admin_menu
 projects[] = agrcache
 projects[] = backup_migrate
 projects[] = blockcache_alter
