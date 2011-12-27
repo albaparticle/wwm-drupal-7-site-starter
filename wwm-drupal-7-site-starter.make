@@ -43,6 +43,7 @@ projects[] = boost
 projects[] = config_perms
 projects[] = core_library
 projects[] = css_emimage
+projects[] = elysia_cron
 projects[] = filefield_nginx_progress
 projects[] = flood_control
 projects[] = fpa
