@@ -71,9 +71,10 @@ projects[] = boxes
 projects[] = calendar
 projects[] = captcha
 projects[] = cck
-projects[] = ckeditor
-projects[] = ckeditor_link
-projects[] = ckeditor_swf
+; commented out ckeditor modules because they probably won't be used
+; projects[] = ckeditor
+; projects[] = ckeditor_link
+; projects[] = ckeditor_swf
 projects[] = colorbox
 projects[] = comment_notify
 projects[] = computed_field
