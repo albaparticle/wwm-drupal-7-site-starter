@@ -33,9 +33,9 @@ projects[pressflow][download][url] = "git://github.com/pressflow/7.git"
 
 ; Patch Pressflow to run on BOA
 ; and use robotstxt module_builder
-projects[pressflow][patch][type] = "git"
-projects[pressflow][patch][url] = "file:///home/wwmhosting-admin.ftp/git-repos/boa-pressflow7-patches.git"
-projects[pressflow][patch][branch] = "master"
+; projects[pressflow][patch][type] = "git"
+; projects[pressflow][patch][url] = "file:///home/wwmhosting-admin.ftp/git-repos/boa-pressflow7-patches.git"
+; projects[pressflow][patch][branch] = "master"
 
   
 ; Modules automatically included by BOA hosting system
