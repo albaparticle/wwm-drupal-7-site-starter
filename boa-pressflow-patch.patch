@@ -1,0 +1,167 @@
+diff --git a/profiles/minimal/minimal.info b/profiles/minimal/minimal.info
+index 9b0f250..7389425 100644
+--- a/profiles/minimal/minimal.info
++++ b/profiles/minimal/minimal.info
+@@ -1,4 +1,4 @@
+-name = Minimal
++name = Drupal 7 Minimal
+ description = Start with only a few modules enabled.
+ version = VERSION
+ core = 7.x
+diff --git a/profiles/standard/standard.info b/profiles/standard/standard.info
+index 73d5d9b..ca843b3 100644
+--- a/profiles/standard/standard.info
++++ b/profiles/standard/standard.info
+@@ -1,4 +1,4 @@
+-name = Standard
++name = Drupal 7 Standard
+ description = Install with commonly used features pre-configured.
+ version = VERSION
+ core = 7.x
+diff --git a/profiles/testing/modules/drupal_system_listing_compatible_test/drupal_system_listing_compatible_test.info b/profiles/testing/modules/drupal_system_listing_compatible_test/drupal_system_listing_compatible_test.info
+deleted file mode 100644
+index 085c335..0000000
+--- a/profiles/testing/modules/drupal_system_listing_compatible_test/drupal_system_listing_compatible_test.info
++++ /dev/null
+@@ -1,6 +0,0 @@
+-name = "Drupal system listing compatible test"
+-description = "Support module for testing the drupal_system_listing function."
+-package = Testing
+-version = VERSION
+-core = 7.x
+-hidden = TRUE
+diff --git a/profiles/testing/modules/drupal_system_listing_compatible_test/drupal_system_listing_compatible_test.module b/profiles/testing/modules/drupal_system_listing_compatible_test/drupal_system_listing_compatible_test.module
+deleted file mode 100644
+index b3d9bbc..0000000
+--- a/profiles/testing/modules/drupal_system_listing_compatible_test/drupal_system_listing_compatible_test.module
++++ /dev/null
+@@ -1 +0,0 @@
+-<?php
+diff --git a/profiles/testing/modules/drupal_system_listing_incompatible_test/drupal_system_listing_incompatible_test.info b/profiles/testing/modules/drupal_system_listing_incompatible_test/drupal_system_listing_incompatible_test.info
+deleted file mode 100644
+index c067987..0000000
+--- a/profiles/testing/modules/drupal_system_listing_incompatible_test/drupal_system_listing_incompatible_test.info
++++ /dev/null
+@@ -1,9 +0,0 @@
+-name = "Drupal system listing incompatible test"
+-description = "Support module for testing the drupal_system_listing function."
+-package = Testing
+-version = VERSION
+-; This deliberately has the wrong core version, to test that it does not take
+-; precedence over the version of the same module that is in the
+-; modules/simpletest/tests directory.
+-core = 6.x
+-hidden = TRUE
+diff --git a/profiles/testing/modules/drupal_system_listing_incompatible_test/drupal_system_listing_incompatible_test.module b/profiles/testing/modules/drupal_system_listing_incompatible_test/drupal_system_listing_incompatible_test.module
+deleted file mode 100644
+index b3d9bbc..0000000
+--- a/profiles/testing/modules/drupal_system_listing_incompatible_test/drupal_system_listing_incompatible_test.module
++++ /dev/null
+@@ -1 +0,0 @@
+-<?php
+diff --git a/profiles/testing/testing.info b/profiles/testing/testing.info
+deleted file mode 100644
+index 8217201..0000000
+--- a/profiles/testing/testing.info
++++ /dev/null
+@@ -1,5 +0,0 @@
+-name = Testing
+-description = Minimal profile for running tests. Includes absolutely required modules only.
+-version = VERSION
+-core = 7.x
+-hidden = TRUE
+diff --git a/profiles/testing/testing.install b/profiles/testing/testing.install
+deleted file mode 100644
+index 192704d..0000000
+--- a/profiles/testing/testing.install
++++ /dev/null
+@@ -1,15 +0,0 @@
+-<?php
+-
+-/**
+- * Implements hook_install().
+- *
+- * Perform actions to set up the site for this profile.
+- */
+-function testing_install() {
+-  // Allow visitor account creation, but with administrative approval.
+-  variable_set('user_register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL);
+-
+-  // Enable default permissions for system roles.
+-  user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content'));
+-  user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access content'));
+-}
+diff --git a/profiles/testing/testing.profile b/profiles/testing/testing.profile
+deleted file mode 100644
+index a4abe2d..0000000
+--- a/profiles/testing/testing.profile
++++ /dev/null
+@@ -1,2 +0,0 @@
+-<?php
+-
+diff --git a/robots.txt b/robots.txt
+deleted file mode 100644
+index 7de8435..0000000
+--- a/robots.txt
++++ /dev/null
+@@ -1,60 +0,0 @@
+-#
+-# robots.txt
+-#
+-# This file is to prevent the crawling and indexing of certain parts
+-# of your site by web crawlers and spiders run by sites like Yahoo!
+-# and Google. By telling these "robots" where not to go on your site,
+-# you save bandwidth and server resources.
+-#
+-# This file will be ignored unless it is at the root of your host:
+-# Used:    http://example.com/robots.txt
+-# Ignored: http://example.com/site/robots.txt
+-#
+-# For more information about the robots.txt standard, see:
+-# http://www.robotstxt.org/wc/robots.html
+-#
+-# For syntax checking, see:
+-# http://www.sxw.org.uk/computing/robots/check.html
+-
+-User-agent: *
+-Crawl-delay: 10
+-# Directories
+-Disallow: /includes/
+-Disallow: /misc/
+-Disallow: /modules/
+-Disallow: /profiles/
+-Disallow: /scripts/
+-Disallow: /themes/
+-# Files
+-Disallow: /CHANGELOG.txt
+-Disallow: /cron.php
+-Disallow: /INSTALL.mysql.txt
+-Disallow: /INSTALL.pgsql.txt
+-Disallow: /INSTALL.sqlite.txt
+-Disallow: /install.php
+-Disallow: /INSTALL.txt
+-Disallow: /LICENSE.txt
+-Disallow: /MAINTAINERS.txt
+-Disallow: /update.php
+-Disallow: /UPGRADE.txt
+-Disallow: /xmlrpc.php
+-# Paths (clean URLs)
+-Disallow: /admin/
+-Disallow: /comment/reply/
+-Disallow: /filter/tips/
+-Disallow: /node/add/
+-Disallow: /search/
+-Disallow: /user/register/
+-Disallow: /user/password/
+-Disallow: /user/login/
+-Disallow: /user/logout/
+-# Paths (no clean URLs)
+-Disallow: /?q=admin/
+-Disallow: /?q=comment/reply/
+-Disallow: /?q=filter/tips/
+-Disallow: /?q=node/add/
+-Disallow: /?q=search/
+-Disallow: /?q=user/password/
+-Disallow: /?q=user/register/
+-Disallow: /?q=user/login/
+-Disallow: /?q=user/logout/
