@@ -35,7 +35,8 @@ projects[pressflow][download][url] = "git://github.com/pressflow/7.git"
   
 ; Modules automatically included by BOA hosting system
 ; --------
-; projects[] = admin  									; removed because WWM prefers admin_menu
+; commented out admin because WWM prefers admin_menu
+; projects[] = admin							
 projects[] = agrcache
 projects[] = backup_migrate
 projects[] = blockcache_alter
@@ -149,7 +150,8 @@ projects[] = module_builder
 projects[] = mollom
 projects[] = node_clone
 projects[] = nodequeue
-; projects[] = notifications							; requires PHP 5.3 which is not currently supported by BOA
+; commented out notifications because it requires PHP 5.3 which is not currently supported by BOA
+; projects[] = notifications							
 projects[] = page_title
 projects[] = panels
 projects[] = pathauto
@@ -167,7 +169,8 @@ projects[] = responder
 projects[] = responsive_images
 projects[] = rules
 projects[] = scheduler
-; projects[] = search404									; can cause performance issues with BOA
+; commented out search404 because itcan cause performance issues with BOA
+; projects[] = search404									
 projects[] = securepages
 projects[] = service_links
 projects[] = shadowbox
