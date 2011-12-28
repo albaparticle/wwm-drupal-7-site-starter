@@ -37,29 +37,29 @@ projects[pressflow][download][url] = "git://github.com/pressflow/7.git"
 ; --------
 ; projects[] = admin  									; removed because WWM prefers admin_menu
 projects[] = agrcache
-projects[] = backup_migrate							;*
+projects[] = backup_migrate
 projects[] = blockcache_alter
 projects[] = boost
-projects[] = config_perms								;*
+projects[] = config_perms
 projects[] = core_library
 projects[] = css_emimage
 projects[] = elysia_cron
-projects[] = filefield_nginx_progress		;*
+projects[] = filefield_nginx_progress
 projects[] = flood_control
 projects[] = fpa
 projects[] = httprl
 projects[] = readonlymode
-projects[] = robotstxt									;*
+projects[] = robotstxt
 projects[] = seckit
-projects[] = site_verify								;*
+projects[] = site_verify
 projects[] = textile
-projects[] = variable_clean							;installed and configured
-projects[] = vars												;installed and configured
+projects[] = variable_clean
+projects[] = vars
 
 ; Modules for Wickwood Marketing Drupal 7 Site Starter
 ; --------
 projects[] = addtoany
-projects[] = admin_menu									;installed and configured
+projects[] = admin_menu
 projects[] = advanced_help
 projects[] = auto_nodetitle
 projects[] = better_formats
