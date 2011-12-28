@@ -216,5 +216,19 @@ projects[] = rubik
 
 ; Libraries
 ; ---------
-; No Libraries were included
+libraries[html5bp][type] = "libraries"
+libraries[html5bp][download][type] = "file"
+libraries[html5bp][download][url] = "http://github.com/paulirish/html5-boilerplate/zipball/v1.0stripped"
+libraries[jquery][type] = "libraries"
+libraries[jquery][download][type] = "file"
+libraries[jquery][download][url] = "https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"
+libraries[jqueryui][type] = "libraries"
+libraries[jqueryui][download][type] = "file"
+libraries[jqueryui][download][url] = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"
+libraries[simplepie][type] = "libraries"
+libraries[simplepie][download][type] = "git"
+libraries[simplepie][download][url] = "https://github.com/simplepie/simplepie.git"
+libraries[textile][type] = "libraries"
+libraries[textile][download][type] = "file"
+libraries[textile][download][url] = "http://code.google.com/p/textpattern/source/browse/releases/4.4.1/source/textpattern/lib/classTextile.php"
 
