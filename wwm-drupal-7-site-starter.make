@@ -228,7 +228,9 @@ libraries[jqueryui][download][url] = "https://ajax.googleapis.com/ajax/libs/jque
 libraries[simplepie][type] = "libraries"
 libraries[simplepie][download][type] = "git"
 libraries[simplepie][download][url] = "https://github.com/simplepie/simplepie.git"
-libraries[textile][type] = "libraries"
-libraries[textile][download][type] = "file"
-libraries[textile][download][url] = "http://code.google.com/p/textpattern/source/browse/releases/4.4.1/source/textpattern/lib/classTextile.php"
+; Commented out textile library because it caused problems with admin/reports/status
+; presumably because of a link on the page to it from an error being generated.
+; libraries[textile][type] = "libraries"
+; libraries[textile][download][type] = "file"
+; libraries[textile][download][url] = "http://code.google.com/p/textpattern/source/browse/releases/4.4.1/source/textpattern/lib/classTextile.php"
 
