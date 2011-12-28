@@ -33,7 +33,7 @@ projects[pressflow][download][url] = "git://github.com/pressflow/7.git"
 
 ; Patch Pressflow to run on BOA
 ; and use robotstxt module_builder
-projects[pressflow][patch][] = "file:///data/disk/wwmhosting-admin/static/custom/platform-make-files/wwm-drupal-7-site-starte/boa-pressflow-patch.patch"
+projects[pressflow][patch][] = "file:///data/disk/wwmhosting-admin/static/custom/platform-make-files/wwm-drupal-7-site-starter/boa-pressflow-patch.patch"
 
   
 ; Modules automatically included by BOA hosting system
