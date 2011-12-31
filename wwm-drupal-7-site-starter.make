@@ -228,27 +228,20 @@ projects[] = rubik
 
 ; Libraries
 ; ---------
-; libraries[html5bp][type] = "libraries"
 libraries[html5bp][download][type] = "file"
 libraries[html5bp][download][url] = "http://github.com/paulirish/html5-boilerplate/zipball/v1.0stripped"
-; libraries[jquery][type] = "libraries"
 libraries[jquery][download][type] = "file"
 libraries[jquery][download][url] = "https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"
-; libraries[jquery.ui][type] = "libraries"
 libraries[jquery.ui][download][type] = "file"
 libraries[jquery.ui][download][url] = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"
-; libraries[simplepie][type] = "libraries"
 libraries[simplepie][download][type] = "git"
 libraries[simplepie][download][url] = "https://github.com/simplepie/simplepie.git"
 ; Commented out textile library because it caused problems with admin/reports/status
 ; presumably because of a link on the page to it from an error being generated.
-; libraries[textile][type] = "libraries"
 ; libraries[textile][download][type] = "file"
 ; libraries[textile][download][url] = "http://code.google.com/p/textpattern/source/browse/releases/4.4.1/source/textpattern/lib/classTextile.php"
-; libraries[getid3][type] = "libraries"
 libraries[getid3][download][type] = "file"
 libraries[getid3][download][url] = "http://sourceforge.net/projects/getid3/files/latest/download?source=files"
-; libraries[dompdf][type] = "libraries"
 libraries[dompdf][download][type] = "file"
 libraries[dompdf][download][url] = "http://code.google.com/p/dompdf/downloads/detail?name=dompdf_0-6-0_beta2.zip&can=2&q="
 
