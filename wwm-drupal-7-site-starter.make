@@ -244,4 +244,6 @@ libraries[getid3][download][type] = "file"
 libraries[getid3][download][url] = "http://sourceforge.net/projects/getid3/files/latest/download?source=files"
 libraries[dompdf][download][type] = "file"
 libraries[dompdf][download][url] = "http://code.google.com/p/dompdf/downloads/detail?name=dompdf_0-6-0_beta2.zip&can=2&q="
+libraries[ckeditor][download][type] = "file"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.2/ckeditor_3.6.2.tar.gz"
 
