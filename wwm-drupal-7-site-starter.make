@@ -233,17 +233,17 @@ libraries[html5bp][download][url] = "http://github.com/paulirish/html5-boilerpla
 libraries[jquery][download][type] = "file"
 libraries[jquery][download][url] = "https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"
 libraries[jquery.ui][download][type] = "file"
-libraries[jquery.ui][download][url] = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"
+libraries[jquery.ui][download][url] = "http://jquery-ui.googlecode.com/files/jquery-ui-1.8.17.zip"
+libraries[jquery.ui][download][sha1] = "a3d1119d7b5a4a0b4eb50929ffd05cc7e7cd3eb2"
 libraries[simplepie][download][type] = "git"
 libraries[simplepie][download][url] = "https://github.com/simplepie/simplepie.git"
-; Commented out textile library because it caused problems with admin/reports/status
-; presumably because of a link on the page to it from an error being generated.
-; libraries[textile][download][type] = "file"
-; libraries[textile][download][url] = "http://code.google.com/p/textpattern/source/browse/releases/4.4.1/source/textpattern/lib/classTextile.php"
+libraries[textile][download][type] = "svn"
+libraries[textile][download][url] = "http://textpattern.googlecode.com/svn/releases/4.4.1/source"
+libraries[textile][download][branch] = stable
 libraries[getid3][download][type] = "file"
-libraries[getid3][download][url] = "http://sourceforge.net/projects/getid3/files/latest/download?source=files"
+libraries[getid3][download][url] = "http://downloads.sourceforge.net/project/getid3/getID3%28%29%201.x/1.9.3/getid3-1.9.3-20111213.zip"
 libraries[dompdf][download][type] = "file"
-libraries[dompdf][download][url] = "http://code.google.com/p/dompdf/downloads/detail?name=dompdf_0-6-0_beta2.zip&can=2&q="
+libraries[dompdf][download][url] = "http://dompdf.googlecode.com/files/dompdf-0.5.2.zip"
 libraries[ckeditor][download][type] = "file"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.2/ckeditor_3.6.2.tar.gz"
 
