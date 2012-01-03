@@ -23,7 +23,7 @@ rm -r /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/librarie
 
 # Copy jquery.ui to jquery_ui module because for some reason it is not being recognized in the 
 # sites/all/libraries directory
-cp /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/libraries/jquery.ui /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/modules/jquery_ui
+cp -r /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/libraries/jquery.ui /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/modules/jquery_ui
 
 # Change ownership of the platform
 chown -R wwmhosting-admin.ftp /data/disk/wwmhosting-admin/static/custom/$platform_dir
