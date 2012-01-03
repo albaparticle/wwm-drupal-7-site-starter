@@ -20,3 +20,6 @@ rm -r /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/librarie
 mkdir /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/libraries/textile
 cp /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/libraries/textpattern/textpattern/lib/classTextile.php /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/libraries/textile
 rm -r /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/libraries/textpattern
+
+# Change ownership of the platform
+chown -R wwmhosting-admin.ftp /data/disk/wwmhosting-admin/static/custom/$platform_dir
