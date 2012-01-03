@@ -21,5 +21,9 @@ mkdir /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/librarie
 cp /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/libraries/textpattern/textpattern/lib/classTextile.php /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/libraries/textile
 rm -r /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/libraries/textpattern
 
+# Copy jquery.ui to jquery_ui module because for some reason it is not being recognized in the 
+# sites/all/libraries directory
+cp /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/libraries/jquery.ui /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/modules/jquery_ui
+
 # Change ownership of the platform
 chown -R wwmhosting-admin.ftp /data/disk/wwmhosting-admin/static/custom/$platform_dir
