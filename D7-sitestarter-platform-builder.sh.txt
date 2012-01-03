@@ -1,0 +1,22 @@
+#!/bin/bash
+# Wickwood Maketing Drupal 7 Site Starter Platform Builder Script
+
+# Define the Platform Name from input variable
+platform_dir=$1
+
+# Call the Drush Make to create the platform
+drush make wwm-drupal-7-site-starter.make /data/disk/wwmhosting-admin/static/custom/$platform_dir
+ 
+# Set permissions on sites directory
+chmod g+w /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites
+
+# Set permissions on DOMPDF font cache directory
+chmod go+w /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/libraries/dompdf/lib/fonts
+
+# Remove getid3 libraries demo directory for security
+rm -r /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/libraries/getid3/demos
+
+# Setup textile libraries
+mkdir /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/libraries/textile
+cp /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/libraries/textpattern/textpattern/lib/classTextile.php /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/libraries/textile
+rm -r /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/libraries/textpattern
