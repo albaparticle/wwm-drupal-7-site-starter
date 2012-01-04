@@ -141,7 +141,10 @@ projects[] = mailsystem
 projects[] = media
 projects[] = media_archive
 projects[] = media_bliptv
-projects[] = media_browser_plus
+; The following line pulled the dev version of the module and this caused a fatal error
+; projects[] = media_browser_plus
+projects[media_browser_plus][version] = 1.0-beta3
+projects[media_browser_plus][type] = "module"
 projects[] = media_embedded
 projects[] = media_derivatives
 projects[] = media_derivatives_html5
@@ -213,7 +216,7 @@ projects[] = workbench_access
 projects[] = workbench_files
 projects[] = workbench_media
 projects[] = workbench_moderation
-projects[] = wp_blog
+; projects[] = wp_blog
 projects[] = wysiwyg
 projects[] = wysiwyg_imagefield
 projects[] = xmlsitemap
@@ -249,4 +252,6 @@ libraries[dompdf][download][type] = "file"
 libraries[dompdf][download][url] = "http://dompdf.googlecode.com/files/dompdf-0.5.2.zip"
 libraries[ckeditor][download][type] = "file"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.2/ckeditor_3.6.2.tar.gz"
+libraries[colorbox][download][type] = "git"
+libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox.git"
 
