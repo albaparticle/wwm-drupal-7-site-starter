@@ -137,6 +137,7 @@ projects[] = linkit
 projects[] = linkit_panel_pages
 projects[] = linkit_views
 projects[] = linkit_picker
+projects[] = mailchimp
 projects[] = mailsystem
 projects[] = media
 projects[] = media_archive
