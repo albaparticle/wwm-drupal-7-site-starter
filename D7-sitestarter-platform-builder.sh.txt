@@ -30,6 +30,8 @@ cd /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/libraries/w
 tar xjf wkhtmltopdf-0.11.0_rc1-static-amd64.tar.bz2
 cp -r wkhtmltopdf-amd64 /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/modules/print/lib/wkhtmltopdf
 chmod 775 /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/modules/print/lib/wkhtmltopdf*
+cd /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/libraries
+rm -r wkhtmltopdf
 
 # Change ownership of the platform
 chown -R wwmhosting-admin.ftp /data/disk/wwmhosting-admin/static/custom/$platform_dir
