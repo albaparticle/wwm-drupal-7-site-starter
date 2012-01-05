@@ -26,7 +26,9 @@ rm -r /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/librarie
 cp -r /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/libraries/jquery.ui /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/modules/jquery_ui
 
 # Setup wkhtmltopdf Library
-cp -r /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/libraries/wkhtmltopdf /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/modules/print/lib
+cd /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/libraries/wkhtmltopdf
+tar xjf wkhtmltopdf-0.11.0_rc1-static-amd64.tar.bz2
+cp -r wkhtmltopdf-amd64 /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/modules/print/lib/wkhtmltopdf
 chmod 775 /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/modules/print/lib/wkhtmltopdf*
 
 # Change ownership of the platform
