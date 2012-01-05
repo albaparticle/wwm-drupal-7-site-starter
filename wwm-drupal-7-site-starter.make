@@ -263,8 +263,12 @@ libraries[textpattern][download][url] = "http://textpattern.googlecode.com/svn/r
 libraries[textpattern][download][branch] = stable
 libraries[getid3][download][type] = "file"
 libraries[getid3][download][url] = "http://downloads.sourceforge.net/project/getid3/getID3%28%29%201.x/1.9.3/getid3-1.9.3-20111213.zip"
-libraries[dompdf][download][type] = "file"
-libraries[dompdf][download][url] = "http://dompdf.googlecode.com/files/dompdf-0.5.2.zip"
+; BOA server is preconfigured to use wkhtmltopdf library instead of dompdf.
+; libraries[dompdf][download][type] = "file"
+; libraries[dompdf][download][url] = "http://dompdf.googlecode.com/files/dompdf-0.5.2.zip"
+libraries[wkhtmltopdf][download][type] = "file"
+libraries[wkhtmltopdf][download][url] = "http://wkhtmltopdf.googlecode.com/files/wkhtmltopdf-0.11.0_rc1-static-amd64.tar.bz2"
+libraries[wkhtmltopdf][destination] = "sites/all/modules/print/lib"
 libraries[ckeditor][download][type] = "file"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.2/ckeditor_3.6.2.tar.gz"
 libraries[colorbox][download][type] = "git"
