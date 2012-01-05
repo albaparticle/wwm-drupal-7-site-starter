@@ -11,7 +11,7 @@ drush make wwm-drupal-7-site-starter.make /data/disk/wwmhosting-admin/static/cus
 chmod g+w /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites
 
 # Set permissions on DOMPDF font cache directory
-chmod go+w /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/libraries/dompdf/lib/fonts
+# chmod go+w /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/libraries/dompdf/lib/fonts
 
 # Remove getid3 libraries demo directory for security
 rm -r /data/disk/wwmhosting-admin/static/custom/$platform_dir/sites/all/libraries/getid3/demos
