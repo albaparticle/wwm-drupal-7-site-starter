@@ -159,8 +159,9 @@ projects[] = media_bliptv
 projects[media_browser_plus][version] = 1.0-beta3
 projects[media_browser_plus][type] = "module"
 projects[] = media_embedded
-projects[] = media_derivatives
-projects[] = media_derivatives_html5
+; The media_derivatives modules are not ready for production environments
+; projects[] = media_derivatives
+; projects[] = media_derivatives_html5
 projects[] = media_feeds
 projects[] = media_ffmpeg_simple
 projects[] = media_flickr
