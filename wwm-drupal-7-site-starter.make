@@ -169,6 +169,7 @@ projects[] = media_node
 projects[] = media_update
 projects[] = media_vimeo
 projects[] = media_youtube
+projects[] = mediafront
 projects[] = menu_block
 projects[] = menu_breadcrumb
 projects[] = messaging
