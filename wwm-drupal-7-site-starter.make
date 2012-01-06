@@ -180,6 +180,7 @@ projects[] = module_builder
 projects[] = mollom
 projects[] = mturk
 projects[] = multiform
+projects[] = myhook
 projects[] = node_clone
 projects[] = nodequeue
 ; commented out notifications because it requires PHP 5.3 which is not currently supported by BOA
