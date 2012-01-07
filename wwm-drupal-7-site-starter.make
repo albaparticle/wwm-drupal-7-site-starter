@@ -124,6 +124,9 @@ projects[] = html5_tools
 projects[] = i18n
 projects[] = imagecache_actions
 projects[] = imagecache_profiles
+projects[] = imagecache_scale9actions
+projects[] = imagecache_proportions
+projects[] = imagecrop
 ; commented out imce modules because they probably won't be used
 ; projects[] = imce
 ; projects[] = imce_crop
@@ -213,6 +216,7 @@ projects[] = service_links
 projects[] = shadowbox
 projects[] = site_map
 projects[] = skinr
+projects[] = smartcrop
 projects[] = smtp
 projects[] = spaces
 projects[] = stringoverrides
