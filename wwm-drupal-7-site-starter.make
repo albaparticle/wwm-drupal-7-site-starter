@@ -122,6 +122,7 @@ projects[] = googleanalytics_perpage
 projects[] = html5_base
 projects[] = html5_tools
 projects[] = i18n
+projects[] = image_resize_filter
 projects[] = imagecache_actions
 projects[] = imagecache_profiles
 ; projects[] = imagecache_scale9actions
