@@ -152,7 +152,7 @@ projects[] = linkit_picker
 projects[] = mailchimp
 projects[] = mailsystem
 projects[] = media
-projects[] = media_archive
+; projects[] = media_archive
 projects[] = media_bliptv
 ; The following line pulled the dev version of the module and this caused a fatal error
 ; projects[] = media_browser_plus
