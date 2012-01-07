@@ -124,7 +124,7 @@ projects[] = html5_tools
 projects[] = i18n
 projects[] = imagecache_actions
 projects[] = imagecache_profiles
-projects[] = imagecache_scale9actions
+; projects[] = imagecache_scale9actions
 projects[] = imagecache_proportions
 projects[] = imagecrop
 ; commented out imce modules because they probably won't be used
