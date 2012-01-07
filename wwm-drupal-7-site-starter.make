@@ -230,6 +230,7 @@ projects[] = spaces
 projects[] = stringoverrides
 projects[] = strongarm
 ; projects[] = styles
+projects[] = tagcloud
 projects[] = taxonomy_manager
 projects[] = taxonomy_menu
 projects[] = token
