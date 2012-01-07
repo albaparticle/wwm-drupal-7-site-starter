@@ -90,6 +90,7 @@ projects[] = content_taxonomy
 projects[] = context
 projects[] = ctools
 projects[] = custom_breadcrumbs
+projects[] = custom_formatters
 projects[] = date
 projects[] = devel
 projects[] = diff
