@@ -38,8 +38,7 @@ projects[pressflow][patch][] = "file:///data/disk/wwmhosting-admin/static/custom
   
 ; Modules automatically included by BOA hosting system
 ; --------
-; commented out admin because WWM prefers admin_menu
-; projects[] = admin							
+projects[] = admin							
 projects[] = agrcache
 projects[] = backup_migrate
 projects[] = blockcache_alter
