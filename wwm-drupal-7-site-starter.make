@@ -195,7 +195,7 @@ projects[] = node_clone
 projects[] = nodequeue
 ; commented out notifications because it requires PHP 5.3 which is not currently supported by BOA
 ; projects[] = notifications	
-projects[] = oauth_common						
+projects[] = oauth					
 projects[] = page_title
 projects[] = panels
 projects[] = pathauto
