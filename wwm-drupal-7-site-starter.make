@@ -90,6 +90,7 @@ projects[] = context
 projects[] = ctools
 projects[] = custom_breadcrumbs
 projects[] = custom_formatters
+projects[] = customfilter
 projects[] = date
 projects[] = devel
 projects[] = diff
