@@ -259,6 +259,9 @@ projects[] = xmlsitemap
 projects[] = tao
 projects[] = rubik
 projects[] = adaptivetheme
+projects[] = pixture_reloaded
+projects[] = corolla
+projects[] = sky
 
 
 ; Libraries
