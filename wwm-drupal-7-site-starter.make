@@ -193,6 +193,7 @@ projects[] = multiform
 projects[] = myhook
 projects[] = node_clone
 projects[] = nodequeue
+projects[] = noggin
 ; commented out notifications because it requires PHP 5.3 which is not currently supported by BOA
 ; projects[] = notifications	
 projects[] = oauth					
@@ -228,6 +229,7 @@ projects[] = spaces
 projects[] = stringoverrides
 projects[] = strongarm
 ; projects[] = styles
+projects[] = superfish
 projects[] = tagclouds
 projects[] = taxonomy_manager
 projects[] = taxonomy_menu
