@@ -109,6 +109,7 @@ projects[] = feeds
 projects[] = field_group
 projects[] = filefield_paths
 projects[] = filefield_sources
+projects[] = fit_text
 projects[] = fivestar
 projects[] = flag
 projects[] = fontyourface
@@ -212,6 +213,7 @@ projects[] = redirect
 projects[] = remote_stream_wrapper
 projects[] = relation
 projects[] = responder
+projects[] = respondjs
 projects[] = responsive_images
 projects[] = rules
 projects[] = scheduler
@@ -233,6 +235,7 @@ projects[] = superfish
 projects[] = tagclouds
 projects[] = taxonomy_manager
 projects[] = taxonomy_menu
+projects[] = textualizer
 projects[] = token
 projects[] = transliteration
 projects[] = twitter_pull
@@ -253,17 +256,16 @@ projects[] = wysiwyg_imagefield
 projects[] = xmlsitemap
 
 
-
-
 ; Themes
 ; --------
 ; Themes automatically included by BOA hosting system
-projects[] = tao
-projects[] = rubik
 projects[] = adaptivetheme
-projects[] = pixture_reloaded
 projects[] = corolla
+projects[] = fbg
+projects[] = pixture_reloaded
+projects[] = rubik
 projects[] = sky
+projects[] = tao
 
 
 ; Libraries
