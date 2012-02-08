@@ -236,6 +236,7 @@ projects[] = tagclouds
 projects[] = taxonomy_manager
 projects[] = taxonomy_menu
 projects[] = textualizer
+projects[] = text_with_summary
 projects[] = token
 projects[] = transliteration
 projects[] = twitter_pull
