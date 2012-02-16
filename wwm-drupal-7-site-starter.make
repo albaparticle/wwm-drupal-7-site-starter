@@ -238,6 +238,7 @@ projects[] = taxonomy_manager
 projects[] = taxonomy_menu
 projects[] = textualizer
 projects[] = text_with_summary
+projects[] = title_field_ui
 projects[] = token
 projects[] = transliteration
 projects[] = twitter_pull
