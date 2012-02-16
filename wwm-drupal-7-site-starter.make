@@ -99,6 +99,7 @@ projects[] = elements
 projects[] = email
 projects[] = entity
 projects[] = entity_autocomplete
+projects[] = entityreference
 projects[] = encset
 ; projects[] = exif
 projects[] = extlink
