@@ -237,6 +237,7 @@ projects[] = superfish
 projects[] = tagclouds
 projects[] = taxonomy_manager
 projects[] = taxonomy_menu
+projects[] = textimage
 projects[] = textualizer
 projects[] = text_with_summary
 projects[] = title_field_ui
