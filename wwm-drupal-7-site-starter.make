@@ -209,6 +209,7 @@ projects[] = print
 projects[] = profiler
 projects[] = purl
 projects[] = quicktabs
+projects[] = realname
 projects[] = recaptcha
 projects[] = redirect
 projects[] = remote_stream_wrapper
