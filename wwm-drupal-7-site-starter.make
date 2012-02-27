@@ -136,7 +136,9 @@ projects[] = imagecache_actions
 projects[] = imagecache_profiles
 ; projects[] = imagecache_scale9actions
 projects[] = imagecache_proportions
-projects[] = imagecrop
+; projects[] = imagecrop
+projects[imagecrop][version] = 1.x-dev
+projects[imagecrop][type] = "module"
 ; commented out imce modules because they probably won't be used
 ; projects[] = imce
 ; projects[] = imce_crop
