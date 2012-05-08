@@ -200,6 +200,7 @@ projects[] = mimemail
 projects[] = mobile_codes
 projects[] = modernizr
 projects[] = module_builder
+projects[] = module_instructions
 projects[] = mollom
 projects[] = mturk
 projects[] = multiform
