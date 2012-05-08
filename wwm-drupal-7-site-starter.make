@@ -94,6 +94,7 @@ projects[] = custom_breadcrumbs
 projects[] = custom_formatters
 projects[] = customfilter
 projects[] = date
+projects[] = date_ical
 projects[] = devel
 projects[] = diff
 projects[] = ds
