@@ -62,7 +62,7 @@ projects[] = textile
 projects[] = variable_clean
 projects[] = vars
 
-; Modules for Wickwood Marketing Drupal 7 Site Starter
+; Modules Added for Wickwood Marketing Drupal 7 Site Starter
 ; --------
 projects[] = addtoany
 projects[] = admin_menu
@@ -118,6 +118,7 @@ projects[] = flag
 projects[] = fontyourface
 projects[] = forward
 projects[] = front
+projects[] = fullcalendar
 projects[] = ga_jquerymobile
 projects[] = ga_tokenizer
 projects[] = getid3
@@ -275,7 +276,7 @@ projects[] = xmlsitemap
 
 ; Themes
 ; --------
-; Themes automatically included by BOA hosting system
+; Themes Added for Wickwood Marketing Drupal 7 Site Starter
 projects[] = adaptivetheme
 projects[] = corolla
 projects[] = fbg
@@ -285,7 +286,7 @@ projects[] = sky
 projects[] = tao
 
 
-; Libraries
+; Libraries Added for Wickwood Marketing Drupal 7 Site Starter
 ; ---------
 libraries[html5bp][download][type] = "file"
 libraries[html5bp][download][url] = "http://github.com/paulirish/html5-boilerplate/zipball/v1.0stripped"
