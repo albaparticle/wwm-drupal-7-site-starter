@@ -36,7 +36,8 @@ projects[pressflow][download][url] = "git://github.com/pressflow/7.git"
 projects[pressflow][patch][] = "file:///data/disk/wwmhosting-admin/static/custom/platform-make-files/wwm-drupal-7-site-starter/boa-pressflow-patch.patch"
 
   
-; Modules automatically included by BOA hosting system
+; Add Modules that are automatically included by BOA hosting system
+; to override them with the latest versions
 ; --------
 projects[] = admin							
 projects[] = agrcache
