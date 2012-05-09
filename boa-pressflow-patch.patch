@@ -1,5 +1,5 @@
 diff --git a/profiles/minimal/minimal.info b/profiles/minimal/minimal.info
-index 9b0f250..7389425 100644
+index 6ec8f74..11ad8c6 100644
 --- a/profiles/minimal/minimal.info
 +++ b/profiles/minimal/minimal.info
 @@ -1,4 +1,4 @@
@@ -9,7 +9,7 @@ index 9b0f250..7389425 100644
  version = VERSION
  core = 7.x
 diff --git a/profiles/standard/standard.info b/profiles/standard/standard.info
-index 73d5d9b..ca843b3 100644
+index 3a65cfb..c281e6a 100644
 --- a/profiles/standard/standard.info
 +++ b/profiles/standard/standard.info
 @@ -1,4 +1,4 @@
@@ -20,16 +20,17 @@ index 73d5d9b..ca843b3 100644
  core = 7.x
 diff --git a/profiles/testing/modules/drupal_system_listing_compatible_test/drupal_system_listing_compatible_test.info b/profiles/testing/modules/drupal_system_listing_compatible_test/drupal_system_listing_compatible_test.info
 deleted file mode 100644
-index 085c335..0000000
+index 2bf7e10..0000000
 --- a/profiles/testing/modules/drupal_system_listing_compatible_test/drupal_system_listing_compatible_test.info
 +++ /dev/null
-@@ -1,6 +0,0 @@
+@@ -1,7 +0,0 @@
 -name = "Drupal system listing compatible test"
 -description = "Support module for testing the drupal_system_listing function."
 -package = Testing
 -version = VERSION
 -core = 7.x
 -hidden = TRUE
+-files[] = drupal_system_listing_compatible_test.test
 diff --git a/profiles/testing/modules/drupal_system_listing_compatible_test/drupal_system_listing_compatible_test.module b/profiles/testing/modules/drupal_system_listing_compatible_test/drupal_system_listing_compatible_test.module
 deleted file mode 100644
 index b3d9bbc..0000000
@@ -37,6 +38,49 @@ index b3d9bbc..0000000
 +++ /dev/null
 @@ -1 +0,0 @@
 -<?php
+diff --git a/profiles/testing/modules/drupal_system_listing_compatible_test/drupal_system_listing_compatible_test.test b/profiles/testing/modules/drupal_system_listing_compatible_test/drupal_system_listing_compatible_test.test
+deleted file mode 100644
+index 198c1d8..0000000
+--- a/profiles/testing/modules/drupal_system_listing_compatible_test/drupal_system_listing_compatible_test.test
++++ /dev/null
+@@ -1,37 +0,0 @@
+-<?php
+-
+-/**
+- * Helper to verify tests in installation profile modules.
+- */
+-class DrupalSystemListingCompatibleTestCase extends DrupalWebTestCase {
+-  /**
+-   * Use the Minimal profile.
+-   *
+-   * This test needs to use a different installation profile than the test which
+-   * asserts that this test is found.
+-   *
+-   * @see SimpleTestInstallationProfileModuleTestsTestCase
+-   */
+-  protected $profile = 'minimal';
+-
+-  public static function getInfo() {
+-    return array(
+-      'name' => 'Installation profile module tests helper',
+-      'description' => 'Verifies that tests in installation profile modules are found and may use another profile for running tests.',
+-      'group' => 'Installation profile',
+-    );
+-  }
+-
+-  function setUp() {
+-    // Attempt to install a module in Testing profile, while this test runs with
+-    // a different profile.
+-    parent::setUp(array('drupal_system_listing_compatible_test'));
+-  }
+-
+-  /**
+-   * Non-empty test* method required to executed the test case class.
+-   */
+-  function testDrupalSystemListing() {
+-    $this->pass(__CLASS__ . ' test executed.');
+-  }
+-}
 diff --git a/profiles/testing/modules/drupal_system_listing_incompatible_test/drupal_system_listing_incompatible_test.info b/profiles/testing/modules/drupal_system_listing_incompatible_test/drupal_system_listing_incompatible_test.info
 deleted file mode 100644
 index c067987..0000000
@@ -72,16 +116,22 @@ index 8217201..0000000
 -hidden = TRUE
 diff --git a/profiles/testing/testing.install b/profiles/testing/testing.install
 deleted file mode 100644
-index 192704d..0000000
+index f9d8f58..0000000
 --- a/profiles/testing/testing.install
 +++ /dev/null
-@@ -1,15 +0,0 @@
+@@ -1,21 +0,0 @@
 -<?php
+-/**
+- * @file
+- * Install, update and uninstall functions for the testing profile.
+- */
 -
 -/**
 - * Implements hook_install().
 - *
 - * Perform actions to set up the site for this profile.
+- *
+- * @see system_install()
 - */
 -function testing_install() {
 -  // Allow visitor account creation, but with administrative approval.
@@ -93,11 +143,15 @@ index 192704d..0000000
 -}
 diff --git a/profiles/testing/testing.profile b/profiles/testing/testing.profile
 deleted file mode 100644
-index a4abe2d..0000000
+index 6a71a66..0000000
 --- a/profiles/testing/testing.profile
 +++ /dev/null
-@@ -1,2 +0,0 @@
+@@ -1,6 +0,0 @@
 -<?php
+-/**
+- * @file
+- * Installation profile for tests.
+- */
 -
 diff --git a/robots.txt b/robots.txt
 deleted file mode 100644
