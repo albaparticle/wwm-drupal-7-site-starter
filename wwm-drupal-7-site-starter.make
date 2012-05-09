@@ -84,6 +84,7 @@ projects[] = cck
 ; projects[] = ckeditor_swf
 projects[] = chart 
 projects[] = colorbox
+projects[] = colors
 projects[] = comment_notify
 projects[] = computed_field
 projects[] = content_access 
