@@ -207,7 +207,11 @@ projects[] = mturk
 projects[] = multiform
 projects[] = myhook
 projects[] = node_clone
-projects[] = nodequeue
+; The following line pulled the 7.x-2.0-beta1 version of the nodequeue module 
+; and this caused a fatal error because it conflicts with latest version of MariaDB 
+; projects[] = nodequeue
+projects[nodequeue][version] = 2.x-dev
+projects[nodequeue][type] = "module"
 projects[] = noggin
 ; commented out notifications because it requires PHP 5.3 which is not currently supported by BOA
 ; projects[] = notifications	
