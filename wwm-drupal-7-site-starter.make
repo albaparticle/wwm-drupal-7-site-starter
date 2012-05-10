@@ -121,6 +121,7 @@ projects[] = fontyourface
 projects[] = forward
 projects[] = front
 projects[] = fullcalendar
+projects[] = fullcalendar_templates
 projects[] = ga_jquerymobile
 projects[] = ga_tokenizer
 projects[] = getid3
