@@ -329,3 +329,5 @@ libraries[plupload][download][url] = "https://github.com/downloads/moxiecode/plu
 ; libraries[cssSandpaper][download][url] = "http://www.useragentman.com/downloads/cssSandpaper.1.2.zip"
 libraries[superfish][download][type] = "file"
 libraries[superfish][download][url] = "http://dl.dropbox.com/u/22795799/superfish-library-for-drupal-v1.1.zip"
+libraries[fullcalendar][download][type] = "file"
+libraries[fullcalendar][download][url] = "http://arshaw.com/fullcalendar/downloads/fullcalendar-1.5.3.zip"
