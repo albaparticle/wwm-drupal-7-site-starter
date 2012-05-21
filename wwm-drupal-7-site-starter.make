@@ -214,6 +214,7 @@ projects[] = node_clone
 ; projects[] = nodequeue
 projects[nodequeue][version] = 2.x-dev
 projects[nodequeue][type] = "module"
+projects[] = nodesquirrel
 projects[] = noggin
 ; commented out notifications because it requires PHP 5.3 which is not currently supported by BOA
 ; projects[] = notifications	
@@ -224,6 +225,7 @@ projects[] = pathauto
 projects[] = pathologic
 projects[] = persistent_login
 projects[] = plupload
+projects[] = popup
 projects[] = print
 projects[] = profiler
 projects[] = purl
