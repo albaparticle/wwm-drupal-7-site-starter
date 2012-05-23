@@ -22,7 +22,7 @@ cp /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/textpatt
 rm -r /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/textpattern
 
 # Setup fullcalendar Library
-mkdir /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar-org
+mv /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar-org
 mv /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar-org/fullcalendar /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar
 rm -r /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar-org
 
