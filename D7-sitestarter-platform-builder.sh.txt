@@ -16,10 +16,15 @@ chmod g+w /data/disk/wwmhosting-admin/static/$platform_dir/sites
 # Remove getid3 libraries demo directory for security
 rm -r /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/getid3/demos
 
-# Setup textile libraries
+# Setup textile Library
 mkdir /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/textile
 cp /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/textpattern/textpattern/lib/classTextile.php /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/textile
 rm -r /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/textpattern
+
+# Setup fullcalendar Library
+mkdir /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar-org
+mv /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar-org/fullcalendar /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar
+rm -r /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar-org
 
 # Copy jquery.ui to jquery_ui module because for some reason it is not being recognized in the 
 # sites/all/libraries directory
