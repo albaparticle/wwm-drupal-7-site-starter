@@ -293,7 +293,9 @@ projects[] = xmlsitemap
 ; Themes
 ; --------
 ; Themes Added for Wickwood Marketing Drupal 7 Site Starter
-projects[] = adaptivetheme
+; projects[] = adaptivetheme
+projects[adaptivetheme][version] = 3.x-dev
+projects[adaptivetheme][type] = "theme"
 projects[] = corolla
 projects[] = fbg
 projects[] = pixture_reloaded
