@@ -240,7 +240,8 @@ projects[] = remote_stream_wrapper
 projects[] = relation
 projects[] = responder
 projects[] = respondjs
-projects[] = responsive_images
+; projects[] = responsive_images
+projects[] = resp_img
 projects[] = rules
 projects[] = scheduler
 ; commented out search404 because itcan cause performance issues with BOA
