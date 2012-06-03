@@ -82,7 +82,7 @@ projects[] = cck
 ; commented out ckeditor modules because they probably won't be used
 ; projects[] = ckeditor
 ; projects[] = ckeditor_link
-; projects[] = ckeditor_swf
+projects[] = ckeditor_swf
 projects[] = chart 
 projects[] = colorbox
 projects[] = colors
