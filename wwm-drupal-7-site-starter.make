@@ -42,6 +42,7 @@ projects[pressflow][patch][] = "file:///data/disk/wwmhosting-admin/static/custom
 projects[] = admin							
 projects[] = agrcache
 projects[] = backup_migrate
+projects[] = backup_migrate_files
 projects[] = blockcache_alter
 projects[] = boost
 projects[] = config_perms
