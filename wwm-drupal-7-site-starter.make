@@ -50,6 +50,7 @@ projects[] = core_library
 projects[] = css_emimage
 ; elysia_cron has been commented out because it was removed from BOA sometime before 8/20/2012
 ; projects[] = elysia_cron
+
 projects[] = filefield_nginx_progress
 projects[] = flood_control
 projects[] = fpa
@@ -231,6 +232,7 @@ projects[] = mturk
 projects[multiform][version] = 1.0
 projects[] = myhook
 projects[] = node_announce
+projects[] = nocurrent_pass
 projects[] = node_clone
 ; The following line pulled the 7.x-2.0-beta1 version of the nodequeue module 
 ; and this caused a fatal error because it conflicts with latest version of MariaDB 
@@ -279,14 +281,17 @@ projects[] = smartcrop
 projects[] = smtp
 projects[] = socialmedia
 projects[] = spaces
+
 projects[] = stringoverrides
 projects[] = strongarm
 ; projects[] = styles
 projects[] = superfish
 projects[] = switchtheme
 ; projects[] = tagclouds
+
 projects[] = taxonomy_manager
 projects[] = taxonomy_menu
+projects[] = taxonomy_tools
 projects[] = textimage
 projects[] = textualizer
 projects[] = text_with_summary
