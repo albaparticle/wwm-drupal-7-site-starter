@@ -79,6 +79,7 @@ projects[] = author_pane
 projects[] = auto_nodetitle
 projects[] = better_formats
 projects[] = boxes
+projects[] = breadcrumbs_by_path
 projects[] = browscap
 projects[] = calendar
 projects[] = captcha
