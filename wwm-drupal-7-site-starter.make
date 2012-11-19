@@ -261,6 +261,7 @@ projects[] = options_element
 projects[] = page_title
 projects[] = panels
 projects[] = password-reset
+projects[] = path_breadcrumbs
 projects[] = pathauto
 projects[] = pathologic
 projects[] = persistent_login
