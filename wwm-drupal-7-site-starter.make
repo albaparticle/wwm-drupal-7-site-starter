@@ -118,6 +118,7 @@ projects[entityreference][type] = "module"
 projects[] = entityreference_prepopulate
 projects[] = entityreference_view_widget
 projects[] = encset
+projects[] = easy_breadcrumb
 ; projects[] = exif
 projects[] = extlink
 projects[] = facebook_pull
