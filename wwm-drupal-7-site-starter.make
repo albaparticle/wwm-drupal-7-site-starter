@@ -334,7 +334,9 @@ projects[] = webform
 projects[] = widgets
 projects[] = workbench
 projects[] = workbench_access
-projects[] = workbench_files
+; Commented out workbench_files module because it needs to be removed in the future
+; workbench_files module was deprecated in favor of workbench_media
+; projects[] = workbench_files
 projects[] = workbench_media
 projects[] = workbench_moderation
 projects[] = wp_blog
