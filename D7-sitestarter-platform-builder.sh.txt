@@ -16,6 +16,9 @@ chmod g+w /data/disk/wwmhosting-admin/static/$platform_dir/sites
 # Remove getid3 libraries demo directory for security
 rm -r /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/getid3/demos
 
+# Remove plupload libraries examples directory for security
+rm -r /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/plupload/examples
+
 # Setup textile Library
 mkdir /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/textile
 cp /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/textpattern/textpattern/lib/classTextile.php /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/textile
