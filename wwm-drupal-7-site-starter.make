@@ -278,15 +278,16 @@ projects[] = forum_access
 projects[] = gdoc_field
 projects[] = jquerymenu
 projects[] = location_feeds
-projects[] = mailchimp_lists
-projects[] = media_wysiwyg_view_mode
+; The following item needs to have WWM Patch applied
+; projects[] = mailchimp_lists
+projects[media_wysiwyg_view_mode][type] = "module"
+projects[media_wysiwyg_view_mode][download][type] = "git"
+projects[media_wysiwyg_view_mode][download][url] = "http://git.drupal.org/sandbox/DevinCarlson/1823634.git"
 projects[] = node_recur
 projects[phone][version] = 1.x-dev
 projects[phone][type] = "module"
 projects[] = prepopulate
 projects[] = profileplus
-; The following item needs to have WWM Patch applied
-projects[] = publication_date
 projects[] = reroute_email
 ; The following item needs to have WWM Patch applied
 projects[] = role_expire
@@ -296,7 +297,8 @@ projects[] = views_export_xls
 projects[] = views_megarow
 projects[] = views_php
 ; The following item needs to be downloaded from WWM Feature Server
-projects[] = wwm_membership_management
+; projects[] = publication_date
+; projects[] = wwm_membership_management
 
 
 ; Themes
