@@ -109,6 +109,7 @@ projects[] = easy_breadcrumb
 projects[] = exclude_node_title
 projects[] = extlink
 projects[] = features
+; The following item needs to have WWM Patch applied
 projects[] = feeds
 projects[] = feeds_tamper
 projects[] = fences
@@ -216,6 +217,7 @@ projects[] = recaptcha
 projects[] = redirect
 projects[] = rules
 projects[] = scheduler
+; The following item needs to have WWM Patch applied
 projects[] = simpleads
 projects[] = smartcrop
 projects[] = smtp
@@ -270,11 +272,8 @@ projects[] = devel_themer
 projects[] = ed_classified
 projects[] = entity_view_mode
 projects[] = exposed_filter_data
-; The following item needs to have WWM Patch applied
-projects[] = feeds
 projects[] = field_permissions
 projects[] = field_tools
-projects[] = file_entity
 projects[] = forum_access
 projects[] = gdoc_field
 projects[] = jquerymenu
@@ -291,8 +290,6 @@ projects[] = publication_date
 projects[] = reroute_email
 ; The following item needs to have WWM Patch applied
 projects[] = role_expire
-; The following item needs to have WWM Patch applied
-projects[] = simpleads
 projects[] = simplehtmldom
 projects[] = tabtamer
 projects[] = views_export_xls
