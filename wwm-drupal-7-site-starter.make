@@ -259,46 +259,46 @@ projects[] = tao
 
 ; Libraries Added for Wickwood Marketing Drupal 7 Site Starter
 ; ---------
+
+libraries[ckeditor][download][type] = "file"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.2/ckeditor_3.6.2.tar.gz"
+libraries[colorbox][download][type] = "file"
+libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/master.zip"
+libraries[cycle][download][type] = "file"
+libraries[cycle][download][url] = "http://malsup.github.com/jquery.cycle.all.js"
+libraries[fullcalendar][download][type] = "file"
+libraries[fullcalendar][download][url] = "http://arshaw.com/fullcalendar/downloads/fullcalendar-1.5.3.zip"
+libraries[getid3][download][type] = "file"
+libraries[getid3][download][url] = "http://downloads.sourceforge.net/project/getid3/getID3%28%29%201.x/1.9.3/getid3-1.9.3-20111213.zip"
 libraries[html5bp][download][type] = "file"
 libraries[html5bp][download][url] = "http://github.com/paulirish/html5-boilerplate/zipball/v1.0stripped"
+libraries[jcarousel][download][type] = "file"
+libraries[jcarousel][download][url] = "http://sorgalla.com/projects/download.php?jcarousel"
 libraries[jquery][download][type] = "file"
 libraries[jquery][download][url] = "https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"
 libraries[jquery.ui][download][type] = "file"
 libraries[jquery.ui][download][url] = "http://jqueryui.com/resources/download/jquery-ui-1.10.2.zip"
-; libraries[jquery.ui][destination] = "sites/all/modules/jquery_ui"
-libraries[simplepie][download][type] = "git"
-libraries[simplepie][download][url] = "https://github.com/simplepie/simplepie.git"
-; libraries[textpattern][download][type] = "svn"
-; libraries[textpattern][download][url] = "http://textpattern.googlecode.com/svn/releases/4.4.1/source"
-; libraries[textpattern][download][branch] = stable
-libraries[getid3][download][type] = "file"
-libraries[getid3][download][url] = "http://downloads.sourceforge.net/project/getid3/getID3%28%29%201.x/1.9.3/getid3-1.9.3-20111213.zip"
-libraries[wkhtmltopdf][download][type] = "file"
-libraries[wkhtmltopdf][download][url] = "http://wkhtmltopdf.googlecode.com/files/wkhtmltopdf-0.11.0_rc1-static-amd64.tar.bz2"
-libraries[ckeditor][download][type] = "file"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.2/ckeditor_3.6.2.tar.gz"
-; This version of aspell did not work
-; libraries[aspell][download][type] = "file"
-; libraries[aspell][download][url] = "ftp://ftp.gnu.org/gnu/aspell/aspell-0.60.6.1.tar.gz"
-; libraries[aspell][directory_name] = "aspell"
-; libraries[aspell][destination] = "libraries/ckeditor/plugins"
-libraries[colorbox][download][type] = "file"
-libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/master.zip"
 libraries[plupload][download][type] = "file"
 libraries[plupload][download][url] = "https://github.com/downloads/moxiecode/plupload/plupload_1_5_1_1.zip"
-; libraries[cssSandpaper][download][type] = "file"
-; libraries[cssSandpaper][download][url] = "http://www.useragentman.com/downloads/cssSandpaper.1.2.zip"
-libraries[superfish][download][type] = "file"
-libraries[superfish][download][url] = "http://dl.dropbox.com/u/22795799/superfish-library-for-drupal-v1.1.zip"
-libraries[fullcalendar][download][type] = "file"
-libraries[fullcalendar][download][url] = "http://arshaw.com/fullcalendar/downloads/fullcalendar-1.5.3.zip"
-libraries[cycle][download][type] = "file"
-libraries[cycle][download][url] = "http://malsup.github.com/jquery.cycle.all.js"
-libraries[jcarousel][download][type] = "file"
-libraries[jcarousel][download][url] = "http://sorgalla.com/projects/download.php?jcarousel"
-libraries[tinymce][download][type] = "file"
-libraries[tinymce][download][url] = "http://github.com/downloads/tinymce/tinymce/tinymce_3.5.2.zip"
+libraries[simplepie][download][type] = "file"
+libraries[simplepie][download][url] = "http://simplepie.org/downloads/simplepie_1.3.1.mini.php"
 libraries[spellchecker-new][download][type] = "file"
 libraries[spellchecker-new][download][url] = "http://github.com/downloads/tinymce/tinymce/tinymce_spellchecker_php_2_0_6.zip"
 libraries[spellchecker-new][directory_name] = "spellchecker-new"
 libraries[spellchecker-new][destination] = "libraries/tinymce/jscripts/tiny_mce/plugins"
+libraries[superfish][download][type] = "file"
+libraries[superfish][download][url] = "http://dl.dropbox.com/u/22795799/superfish-library-for-drupal-v1.1.zip"
+libraries[tinymce][download][type] = "file"
+libraries[tinymce][download][url] = "http://github.com/downloads/tinymce/tinymce/tinymce_3.5.2.zip"
+libraries[wkhtmltopdf][download][type] = "file"
+libraries[wkhtmltopdf][download][url] = "http://wkhtmltopdf.googlecode.com/files/wkhtmltopdf-0.11.0_rc1-static-amd64.tar.bz2"
+
+
+
+
+
+
+
+
+
+
