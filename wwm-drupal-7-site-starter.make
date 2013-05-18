@@ -265,8 +265,6 @@ projects[] = commerce_pay_in_person
 projects[] = commerce_paypal
 projects[] = commerce_product_display_manager
 projects[] = commerce_vbo_views
-; The following item needs to have WWM Patch applied
-projects[] = date_navigation
 projects[] = dc_co_pages
 projects[] = devel_themer
 projects[] = ed_classified
@@ -297,6 +295,7 @@ projects[] = views_export_xls
 projects[] = views_megarow
 projects[] = views_php
 ; The following item needs to be downloaded from WWM Feature Server
+; projects[] = date_navigation
 ; projects[] = publication_date
 ; projects[] = wwm_membership_management
 
