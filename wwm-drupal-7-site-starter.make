@@ -58,7 +58,7 @@ projects[robotstxt][version] = 1.x-dev
 projects[robotstxt][type] = "module"
 projects[] = seckit
 projects[] = site_verify
-projects[] = textile
+; projects[] = textile
 projects[] = variable_clean
 projects[] = vars
 
