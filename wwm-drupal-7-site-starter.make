@@ -99,6 +99,7 @@ projects[] = email
 projects[] = enabled_modules
 projects[] = entity
 projects[] = entity_autocomplete
+; The following item needs to have WWM Patch applied
 ;projects[] = entityreference
 projects[entityreference][version] = 1.x-dev
 projects[entityreference][type] = "module"
@@ -241,6 +242,64 @@ projects[] = workbench_moderation
 projects[] = wp_blog
 projects[] = wysiwyg
 projects[] = xmlsitemap
+
+; Modules added for creating a Paid Membership site
+projects[] = acl
+projects[] = advanced_forum
+projects[] = advuser
+projects[cer][version] = 2.x-dev
+projects[cer][type] = "module"
+projects[] = chain_menu_access
+projects[] = commerce
+projects[] = commerce_addressbook
+projects[] = commerce_backoffice
+projects[] = commerce_checkout_progress
+projects[] = commerce_checkout_redirect
+projects[] = commerce_cheque
+projects[] = commerce_devel
+projects[] = commerce_extra
+projects[] = commerce_extra_panes
+projects[] = commerce_pay_in_person
+projects[] = commerce_paypal
+projects[] = commerce_product_display_manager
+projects[] = commerce_vbo_views
+; The following item needs to have WWM Patch applied
+projects[] = date_navigation
+projects[] = dc_co_pages
+projects[] = devel_themer
+projects[] = ed_classified
+projects[] = entity_view_mode
+projects[] = exposed_filter_data
+; The following item needs to have WWM Patch applied
+projects[] = feeds
+projects[] = field_permissions
+projects[] = field_tools
+projects[] = file_entity
+projects[] = forum_access
+projects[] = gdoc_field
+projects[] = jquerymenu
+projects[] = location_feeds
+projects[] = mailchimp_lists
+projects[] = media_wysiwyg_view_mode
+projects[] = node_recur
+projects[phone][version] = 1.x-dev
+projects[phone][type] = "module"
+projects[] = prepopulate
+projects[] = profileplus
+; The following item needs to have WWM Patch applied
+projects[] = publication_date
+projects[] = reroute_email
+; The following item needs to have WWM Patch applied
+projects[] = role_expire
+; The following item needs to have WWM Patch applied
+projects[] = simpleads
+projects[] = simplehtmldom
+projects[] = tabtamer
+projects[] = views_export_xls
+projects[] = views_megarow
+projects[] = views_php
+; The following item needs to be downloaded from WWM Feature Server
+projects[] = wwm_membership_management
 
 
 ; Themes
