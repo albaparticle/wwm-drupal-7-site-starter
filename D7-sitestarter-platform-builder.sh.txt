@@ -41,5 +41,8 @@ chmod 775 /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/modules/pri
 cd /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries
 rm -r wkhtmltopdf
 
+# Change name of SimplePie Library
+mv /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/simplepie/simplepie_*.*.*.mini.php /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/simplepie/simplepie.compiled.php
+
 # Change ownership of the platform
-chown -R wwmhosting-admin.ftp /data/disk/wwmhosting-admin/static/$platform_dir
+chown -R wwmhosting-admin /data/disk/wwmhosting-admin/static/$platform_dir
