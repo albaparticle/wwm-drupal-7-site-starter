@@ -58,12 +58,13 @@ projects[robotstxt][version] = 1.x-dev
 projects[robotstxt][type] = "module"
 projects[] = seckit
 projects[] = site_verify
-projects[] = textile
+; projects[] = textile
 projects[] = variable_clean
 projects[] = vars
 
 ; Modules Added for Wickwood Marketing Drupal 7 Site Starter
 ; --------
+; The following item needs to have WWM Patch applied
 projects[] = addressfield
 projects[] = advanced_help
 projects[] = amazon
@@ -99,6 +100,7 @@ projects[] = email
 projects[] = enabled_modules
 projects[] = entity
 projects[] = entity_autocomplete
+; The following item needs to have WWM Patch applied
 ;projects[] = entityreference
 projects[entityreference][version] = 1.x-dev
 projects[entityreference][type] = "module"
@@ -108,6 +110,7 @@ projects[] = easy_breadcrumb
 projects[] = exclude_node_title
 projects[] = extlink
 projects[] = features
+; The following item needs to have WWM Patch applied
 projects[] = feeds
 projects[] = feeds_tamper
 projects[] = fences
@@ -154,7 +157,7 @@ projects[] = link
 projects[] = location
 projects[] = mailchimp
 projects[] = mailsystem
-projects[] = media
+projects[media][version] = 1.2
 ; projects[] = media_archive
 projects[] = media_bliptv
 ; The following line pulled the dev version of the module and this caused a fatal error
@@ -215,6 +218,7 @@ projects[] = recaptcha
 projects[] = redirect
 projects[] = rules
 projects[] = scheduler
+; The following item needs to have WWM Patch applied
 projects[] = simpleads
 projects[] = smartcrop
 projects[] = smtp
@@ -229,6 +233,7 @@ projects[] = token
 projects[] = token_filter
 projects[] = transliteration
 projects[] = unique_field
+; The following item needs to have WWM Patch applied
 projects[] = views
 projects[] = views_bulk_operations
 projects[] = views_slideshow
@@ -284,27 +289,20 @@ libraries[simplepie][download][type] = "file"
 libraries[simplepie][download][url] = "https://github.com/simplepie/simplepie/archive/master.zip"
 libraries[jquery.ui][download][type] = "file"
 libraries[jquery.ui][download][url] = "http://jqueryui.com/resources/download/jquery-ui-1.10.2.zip"
-libraries[textpattern][download][branch] = stable
-libraries[getid3][download][type] = "file"
-libraries[getid3][download][url] = "http://downloads.sourceforge.net/project/getid3/getID3%28%29%201.x/1.9.3/getid3-1.9.3-20111213.zip"
-libraries[wkhtmltopdf][download][type] = "file"
-libraries[wkhtmltopdf][download][url] = "http://wkhtmltopdf.googlecode.com/files/wkhtmltopdf-0.11.0_rc1-static-amd64.tar.bz2"
-libraries[ckeditor][download][type] = "file"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.2/ckeditor_3.6.2.tar.gz"
-libraries[colorbox][download][type] = "file"
-libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/master.zip"
+libraries[mailchimp][download][type] = "file"
+libraries[mailchimp][download][url] = "http://apidocs.mailchimp.com/api/downloads/mailchimp-api-class.zip"
 libraries[plupload][download][type] = "file"
 libraries[plupload][download][url] = "https://github.com/downloads/moxiecode/plupload/plupload_1_5_1_1.zip"
 libraries[simplepie][download][type] = "file"
 libraries[simplepie][download][url] = "http://simplepie.org/downloads/simplepie_1.3.1.mini.php"
+libraries[superfish][download][type] = "file"
+libraries[superfish][download][url] = "http://dl.dropbox.com/u/22795799/superfish-library-for-drupal-v1.1.zip"
+libraries[tinymce][download][type] = "file"
+libraries[tinymce][download][url] = "http://download.moxiecode.com/tinymce/tinymce_4.0b3.zip"
 libraries[spellchecker-new][download][type] = "file"
 libraries[spellchecker-new][download][url] = "http://github.com/downloads/tinymce/tinymce/tinymce_spellchecker_php_2_0_6.zip"
 libraries[spellchecker-new][directory_name] = "spellchecker-new"
 libraries[spellchecker-new][destination] = "libraries/tinymce/jscripts/tiny_mce/plugins"
-libraries[superfish][download][type] = "file"
-libraries[superfish][download][url] = "http://dl.dropbox.com/u/22795799/superfish-library-for-drupal-v1.1.zip"
-libraries[tinymce][download][type] = "file"
-libraries[tinymce][download][url] = "http://github.com/downloads/tinymce/tinymce/tinymce_3.5.2.zip"
 libraries[wkhtmltopdf][download][type] = "file"
 libraries[wkhtmltopdf][download][url] = "http://wkhtmltopdf.googlecode.com/files/wkhtmltopdf-0.11.0_rc1-static-amd64.tar.bz2"
 
