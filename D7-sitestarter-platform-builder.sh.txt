@@ -19,11 +19,6 @@ rm -r /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/getid
 # Remove plupload libraries examples directory for security
 rm -r /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/plupload/examples
 
-# Setup textile Library
-mkdir /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/textile
-cp /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/textpattern/textpattern/lib/classTextile.php /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/textile
-rm -r /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/textpattern
-
 # Setup fullcalendar Library
 mv /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar-org
 mv /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar-org/fullcalendar /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar

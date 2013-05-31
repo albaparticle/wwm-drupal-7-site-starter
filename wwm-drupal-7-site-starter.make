@@ -99,6 +99,7 @@ projects[] = email
 projects[] = enabled_modules
 projects[] = entity
 projects[] = entity_autocomplete
+; The following item needs to have WWM Patch applied
 ;projects[] = entityreference
 projects[entityreference][version] = 1.x-dev
 projects[entityreference][type] = "module"
@@ -108,6 +109,7 @@ projects[] = easy_breadcrumb
 projects[] = exclude_node_title
 projects[] = extlink
 projects[] = features
+; The following item needs to have WWM Patch applied
 projects[] = feeds
 projects[] = feeds_tamper
 projects[] = fences
@@ -215,6 +217,7 @@ projects[] = recaptcha
 projects[] = redirect
 projects[] = rules
 projects[] = scheduler
+; The following item needs to have WWM Patch applied
 projects[] = simpleads
 projects[] = smartcrop
 projects[] = smtp
@@ -241,6 +244,60 @@ projects[] = workbench_moderation
 projects[] = wp_blog
 projects[] = wysiwyg
 projects[] = xmlsitemap
+
+; Modules added for creating a Paid Membership site
+projects[] = acl
+projects[] = advanced_forum
+projects[] = advuser
+projects[cer][version] = 2.x-dev
+projects[cer][type] = "module"
+projects[] = chain_menu_access
+projects[] = commerce
+projects[] = commerce_addressbook
+projects[] = commerce_backoffice
+projects[] = commerce_checkout_progress
+projects[] = commerce_checkout_redirect
+projects[] = commerce_cheque
+projects[] = commerce_devel
+projects[] = commerce_extra
+projects[] = commerce_extra_panes
+projects[] = commerce_pay_in_person
+projects[] = commerce_paypal
+projects[] = commerce_product_display_manager
+projects[] = commerce_vbo_views
+projects[] = dc_co_pages
+projects[] = devel_themer
+projects[] = ed_classified
+projects[] = entity_view_mode
+projects[] = exposed_filter_data
+projects[] = field_permissions
+projects[] = field_tools
+projects[] = forum_access
+projects[] = gdoc_field
+projects[] = jquerymenu
+projects[] = location_feeds
+; The following item needs to have WWM Patch applied
+; projects[] = mailchimp_lists
+projects[media_wysiwyg_view_mode][type] = "module"
+projects[media_wysiwyg_view_mode][download][type] = "git"
+projects[media_wysiwyg_view_mode][download][url] = "http://git.drupal.org/sandbox/DevinCarlson/1823634.git"
+projects[] = node_recur
+projects[phone][version] = 1.x-dev
+projects[phone][type] = "module"
+projects[] = prepopulate
+projects[] = profileplus
+projects[] = reroute_email
+; The following item needs to have WWM Patch applied
+projects[] = role_expire
+projects[] = simplehtmldom
+projects[] = tabtamer
+projects[] = views_export_xls
+projects[] = views_megarow
+projects[] = views_php
+; The following item needs to be downloaded from WWM Feature Server
+; projects[] = date_navigation
+; projects[] = publication_date
+; projects[] = wwm_membership_management
 
 
 ; Themes
@@ -287,8 +344,8 @@ libraries[jquery.ui][download][url] = "http://jqueryui.com/resources/download/jq
 libraries[textpattern][download][branch] = stable
 libraries[getid3][download][type] = "file"
 libraries[getid3][download][url] = "http://downloads.sourceforge.net/project/getid3/getID3%28%29%201.x/1.9.3/getid3-1.9.3-20111213.zip"
-libraries[wkhtmltopdf][download][type] = "file"
-libraries[wkhtmltopdf][download][url] = "http://wkhtmltopdf.googlecode.com/files/wkhtmltopdf-0.11.0_rc1-static-amd64.tar.bz2"
+libraries[mailchimp][download][type] = "file"
+libraries[mailchimp][download][url] = "http://apidocs.mailchimp.com/api/downloads/mailchimp-api-class.zip"
 libraries[ckeditor][download][type] = "file"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.2/ckeditor_3.6.2.tar.gz"
 libraries[colorbox][download][type] = "file"
@@ -297,14 +354,14 @@ libraries[plupload][download][type] = "file"
 libraries[plupload][download][url] = "https://github.com/downloads/moxiecode/plupload/plupload_1_5_1_1.zip"
 libraries[simplepie][download][type] = "file"
 libraries[simplepie][download][url] = "http://simplepie.org/downloads/simplepie_1.3.1.mini.php"
+libraries[superfish][download][type] = "file"
+libraries[superfish][download][url] = "http://dl.dropbox.com/u/22795799/superfish-library-for-drupal-v1.1.zip"
+libraries[tinymce][download][type] = "file"
+libraries[tinymce][download][url] = "http://download.moxiecode.com/tinymce/tinymce_4.0b3.zip"
 libraries[spellchecker-new][download][type] = "file"
 libraries[spellchecker-new][download][url] = "http://github.com/downloads/tinymce/tinymce/tinymce_spellchecker_php_2_0_6.zip"
 libraries[spellchecker-new][directory_name] = "spellchecker-new"
 libraries[spellchecker-new][destination] = "libraries/tinymce/jscripts/tiny_mce/plugins"
-libraries[superfish][download][type] = "file"
-libraries[superfish][download][url] = "http://dl.dropbox.com/u/22795799/superfish-library-for-drupal-v1.1.zip"
-libraries[tinymce][download][type] = "file"
-libraries[tinymce][download][url] = "http://github.com/downloads/tinymce/tinymce/tinymce_3.5.2.zip"
 libraries[wkhtmltopdf][download][type] = "file"
 libraries[wkhtmltopdf][download][url] = "http://wkhtmltopdf.googlecode.com/files/wkhtmltopdf-0.11.0_rc1-static-amd64.tar.bz2"
 
