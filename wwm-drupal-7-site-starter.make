@@ -58,13 +58,12 @@ projects[robotstxt][version] = 1.x-dev
 projects[robotstxt][type] = "module"
 projects[] = seckit
 projects[] = site_verify
-; projects[] = textile
+projects[] = textile
 projects[] = variable_clean
 projects[] = vars
 
 ; Modules Added for Wickwood Marketing Drupal 7 Site Starter
 ; --------
-; The following item needs to have WWM Patch applied
 projects[] = addressfield
 projects[] = advanced_help
 projects[] = amazon
@@ -157,7 +156,7 @@ projects[] = link
 projects[] = location
 projects[] = mailchimp
 projects[] = mailsystem
-projects[media][version] = 1.2
+projects[] = media
 ; projects[] = media_archive
 projects[] = media_bliptv
 ; The following line pulled the dev version of the module and this caused a fatal error
@@ -233,7 +232,6 @@ projects[] = token
 projects[] = token_filter
 projects[] = transliteration
 projects[] = unique_field
-; The following item needs to have WWM Patch applied
 projects[] = views
 projects[] = views_bulk_operations
 projects[] = views_slideshow
@@ -249,10 +247,8 @@ projects[] = xmlsitemap
 
 ; Modules added for creating a Paid Membership site
 projects[] = acl
-; The following item needs to have WWM Patch applied
 projects[] = advanced_forum
 projects[] = advuser
-; The following item needs to have WWM Patch applied
 projects[cer][version] = 2.x-dev
 projects[cer][type] = "module"
 projects[] = chain_menu_access
@@ -288,7 +284,6 @@ projects[media_wysiwyg_view_mode][download][url] = "http://git.drupal.org/sandbo
 projects[] = node_recur
 projects[phone][version] = 1.x-dev
 projects[phone][type] = "module"
-; The following item needs to have WWM Patch applied
 projects[] = prepopulate
 projects[] = profileplus
 projects[] = reroute_email
@@ -303,7 +298,7 @@ projects[] = views_php
 ; projects[] = date_navigation
 ; projects[] = publication_date
 ; projects[] = wwm_membership_management
-; projects[] = wwm_wysiwyg_summary_field
+
 
 ; Themes
 ; --------
