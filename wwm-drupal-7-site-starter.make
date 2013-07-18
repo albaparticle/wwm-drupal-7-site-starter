@@ -48,7 +48,6 @@ projects[] = boost
 projects[] = config_perms
 projects[] = core_library
 projects[] = css_emimage
-projects[] = css_emimage
 projects[] = entitycache
 projects[] = filefield_nginx_progress
 projects[] = flood_control
