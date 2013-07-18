@@ -48,6 +48,8 @@ projects[] = boost
 projects[] = config_perms
 projects[] = core_library
 projects[] = css_emimage
+projects[] = css_emimage
+projects[] = entitycache
 projects[] = filefield_nginx_progress
 projects[] = flood_control
 projects[] = fpa
@@ -83,6 +85,7 @@ projects[] = colors
 projects[] = comment_notify
 projects[] = computed_field
 projects[] = conditional_styles
+; The following item needs to have WWM Patch applied
 projects[] = content_access 
 projects[] = content_taxonomy
 projects[] = context
@@ -215,6 +218,7 @@ projects[] = purl
 projects[] = quicktabs
 projects[] = realname
 projects[] = recaptcha
+; The following item needs to have WWM Patch applied
 projects[] = redirect
 projects[] = rules
 projects[] = scheduler
@@ -242,6 +246,7 @@ projects[] = widgets
 projects[] = workbench
 projects[] = workbench_access
 projects[] = workbench_media
+; The following item needs to have WWM Patch applied
 projects[] = workbench_moderation
 projects[] = wp_blog
 projects[] = wysiwyg
