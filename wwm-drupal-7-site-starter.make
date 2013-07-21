@@ -228,6 +228,7 @@ projects[] = smtp
 projects[] = socialmedia
 projects[] = stringoverrides
 projects[] = strongarm
+projects[] = system_stream_wrapper
 projects[] = taxonomy_manager
 projects[] = taxonomy_menu
 projects[] = taxonomy_tools
