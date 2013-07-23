@@ -100,6 +100,7 @@ projects[] = ds
 projects[] = elements
 projects[] = email
 projects[] = enabled_modules
+; The following item needs to have WWM Patch applied
 projects[] = entity
 projects[] = entity_autocomplete
 ; The following item needs to have WWM Patch applied
@@ -290,6 +291,8 @@ libraries[jquery][download][url] = "https://ajax.googleapis.com/ajax/libs/jquery
 ; libraries[jquery.ui][download][url] = "http://jquery-ui.googlecode.com/files/jquery-ui-1.8.17.zip"
 ; libraries[jquery.ui][download][sha1] = "a3d1119d7b5a4a0b4eb50929ffd05cc7e7cd3eb2"
 ; libraries[jquery.ui][destination] = "sites/all/modules/jquery_ui"
+libraries[iCalcreator][download][type] = "file"
+libraries[iCalcreator][download][url] = "http://kigkonsult.se/downloads/dl.php?f=iCalcreatorusing-2.18"
 libraries[simplepie][download][type] = "file"
 libraries[simplepie][download][url] = "https://github.com/simplepie/simplepie/archive/master.zip"
 libraries[jquery.ui][download][type] = "file"
