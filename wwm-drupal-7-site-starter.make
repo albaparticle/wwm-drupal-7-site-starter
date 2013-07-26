@@ -65,6 +65,7 @@ projects[] = vars
 
 ; Modules Added for Wickwood Marketing Drupal 7 Site Starter
 ; --------
+; The following item needs to have WWM Patch applied
 projects[] = addressfield
 projects[] = advanced_help
 projects[] = amazon
@@ -159,7 +160,7 @@ projects[] = link
 projects[] = location
 projects[] = mailchimp
 projects[] = mailsystem
-projects[] = media
+projects[media][version] = 1.2
 ; projects[] = media_archive
 projects[] = media_bliptv
 ; The following line pulled the dev version of the module and this caused a fatal error
@@ -237,6 +238,7 @@ projects[] = token
 projects[] = token_filter
 projects[] = transliteration
 projects[] = unique_field
+; The following item needs to have WWM Patch applied
 projects[] = views
 projects[] = views_bulk_operations
 projects[] = views_slideshow
@@ -349,15 +351,8 @@ libraries[simplepie][download][type] = "file"
 libraries[simplepie][download][url] = "https://github.com/simplepie/simplepie/archive/master.zip"
 libraries[jquery.ui][download][type] = "file"
 libraries[jquery.ui][download][url] = "http://jqueryui.com/resources/download/jquery-ui-1.10.2.zip"
-libraries[textpattern][download][branch] = stable
-libraries[getid3][download][type] = "file"
-libraries[getid3][download][url] = "http://downloads.sourceforge.net/project/getid3/getID3%28%29%201.x/1.9.3/getid3-1.9.3-20111213.zip"
 libraries[mailchimp][download][type] = "file"
 libraries[mailchimp][download][url] = "http://apidocs.mailchimp.com/api/downloads/mailchimp-api-class.zip"
-libraries[ckeditor][download][type] = "file"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.2/ckeditor_3.6.2.tar.gz"
-libraries[colorbox][download][type] = "file"
-libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/master.zip"
 libraries[plupload][download][type] = "file"
 libraries[plupload][download][url] = "https://github.com/downloads/moxiecode/plupload/plupload_1_5_1_1.zip"
 libraries[simplepie][download][type] = "file"
