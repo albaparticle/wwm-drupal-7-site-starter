@@ -253,6 +253,8 @@ projects[] = wp_blog
 projects[] = wysiwyg
 projects[] = xmlsitemap
 
+; Custom Modules and Features to pull from a Feature Server or Git repo
+; wwm_wysiwyg_summary_field
 
 ; Themes
 ; --------
