@@ -253,6 +253,38 @@ projects[] = wp_blog
 projects[] = wysiwyg
 projects[] = xmlsitemap
 
+; The following modules are added to support multiple affiliated sites
+; created with the Domain Access modules
+projects[] = domain
+projects[] = domain_admin
+projects[] = domain_bonus
+projects[] = domaincontext
+projects[] = domain_content_types
+projects[] = domain_ctools
+projects[] = domain_blocks
+projects[] = domain_block_title
+projects[] = domain_bonus
+projects[] = domain_entity
+projects[] = domain_fields
+projects[] = domain_ip
+projects[] = domain_menu_access
+projects[] = domain_menu_block
+projects[] = domain_path
+projects[] = domain_robotstxt
+projects[] = domain_rules
+projects[] = domain_tac
+projects[] = domain_tax
+projects[] = domain_taxonomy
+projects[] = domain_types
+projects[] = domain_url
+projects[] = domain_views
+projects[] = domain_view_modes
+projects[] = domain_wf_bridge
+projects[] = domain_xmlsitemap
+projects[] = context_domain
+projects[] = menu_position_domain
+projects[] = smartqueue_domain
+
 
 ; Themes
 ; --------
