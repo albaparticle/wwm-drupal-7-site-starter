@@ -253,6 +253,9 @@ projects[] = wp_blog
 projects[] = wysiwyg
 projects[] = xmlsitemap
 
+; Custom Modules and Features to pull from a Feature Server or Git repo
+; wwm_wysiwyg_summary_field
+
 ; The following modules are added to support multiple affiliated sites
 ; created with the Domain Access modules
 projects[] = domain
