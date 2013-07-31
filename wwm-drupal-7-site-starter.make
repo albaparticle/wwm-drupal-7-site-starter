@@ -274,7 +274,8 @@ projects[] = domain_menu_block
 projects[] = domain_path
 projects[] = domain_robotstxt
 projects[] = domain_rules
-projects[] = domain_tac
+; There is no official release for domain_tac
+; projects[] = domain_tac
 projects[] = domain_tax
 projects[] = domain_taxonomy
 projects[] = domain_types
