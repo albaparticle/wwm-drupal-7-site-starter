@@ -260,13 +260,12 @@ projects[] = xmlsitemap
 ; created with the Domain Access modules
 projects[] = domain
 projects[] = domain_admin
+projects[] = domain_blocks
+projects[] = domain_block_title
 projects[] = domain_bonus
 projects[] = domaincontext
 projects[] = domain_content_types
 projects[] = domain_ctools
-projects[] = domain_blocks
-projects[] = domain_block_title
-projects[] = domain_bonus
 projects[] = domain_entity
 projects[] = domain_fields
 projects[] = domain_ip
