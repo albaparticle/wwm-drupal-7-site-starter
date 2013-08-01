@@ -242,6 +242,7 @@ projects[] = unique_field
 projects[] = views
 projects[] = views_bulk_operations
 projects[] = views_slideshow
+projects[] = views_system
 projects[] = webform
 projects[] = widgets
 projects[] = workbench
