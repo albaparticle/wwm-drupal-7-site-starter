@@ -59,7 +59,7 @@ projects[robotstxt][version] = 1.x-dev
 projects[robotstxt][type] = "module"
 projects[] = seckit
 projects[] = site_verify
-projects[] = textile
+; projects[] = textile
 projects[] = variable_clean
 projects[] = vars
 
@@ -305,7 +305,8 @@ projects[] = tabtamer
 projects[] = views_export_xls
 projects[] = views_megarow
 projects[] = views_php
-; The following item needs to be downloaded from WWM Feature Server
+
+; Custom Modules and Features to pull from a Feature Server or Git repo
 ; projects[] = date_navigation
 ; projects[] = publication_date
 ; projects[] = wwm_membership_management
@@ -362,7 +363,6 @@ libraries[simplepie][download][type] = "file"
 libraries[simplepie][download][url] = "http://simplepie.org/downloads/simplepie_1.3.1.mini.php"
 libraries[superfish][download][type] = "file"
 libraries[superfish][download][url] = "http://dl.dropbox.com/u/22795799/superfish-library-for-drupal-v1.1.zip"
-libraries[textpattern][download][branch] = stable
 libraries[tinymce][download][type] = "file"
 libraries[tinymce][download][url] = "http://download.moxiecode.com/tinymce/tinymce_4.0b3.zip"
 libraries[spellchecker-new][download][type] = "file"
