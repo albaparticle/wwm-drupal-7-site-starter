@@ -95,6 +95,7 @@ projects[] = customfilter
 projects[] = date
 projects[] = date_ical
 projects[] = devel
+projects[] = devel_themer
 projects[] = diff
 projects[] = ds
 projects[] = elements
@@ -109,6 +110,7 @@ projects[entityreference][version] = 1.x-dev
 projects[entityreference][type] = "module"
 projects[] = entityreference_prepopulate
 projects[] = entityreference_view_widget
+projects[] = entity_view_mode
 projects[] = easy_breadcrumb
 projects[] = exclude_node_title
 projects[] = extlink
@@ -119,9 +121,11 @@ projects[] = feeds_tamper
 projects[] = fences
 projects[] = field_group
 projects[] = field_slideshow
+projects[] = field_tools
 ;projects[] = file_entity
 projects[file_entity][version] = 2.x-dev
 projects[file_entity][type] = "module"
+projects[] = exposed_filter_data
 projects[] = filefield_paths
 projects[] = filefield_sources
 projects[] = fp
@@ -129,6 +133,7 @@ projects[] = front
 projects[] = fullcalendar
 projects[] = fullcalendar_templates
 projects[] = ga_tokenizer
+projects[] = gdoc_field
 projects[] = getid3
 projects[getresponse][type] = "module"
 projects[getresponse][download][type] = "git"
@@ -155,12 +160,16 @@ projects[] = invite
 projects[] = jcarousel
 projects[] = job_scheduler
 projects[] = jquery_plugin
-; projects[] = jquery_ui
+projects[] = jquery_ui
 projects[] = jquery_update
+projects[] = jquerymenu
 projects[] = libraries
 projects[] = link
 projects[] = location
+projects[] = location_feeds
 projects[] = mailchimp
+; The following item needs to have WWM Patch applied
+; projects[] = mailchimp_lists
 projects[] = mailsystem
 projects[media][version] = 1.2
 ; projects[] = media_archive
@@ -179,6 +188,9 @@ projects[] = media_flickr
 projects[media_gallery][version] = 1.0-beta8
 projects[] = media_node
 projects[] = media_update
+projects[media_wysiwyg_view_mode][type] = "module"
+projects[media_wysiwyg_view_mode][download][type] = "git"
+projects[media_wysiwyg_view_mode][download][url] = "http://git.drupal.org/sandbox/DevinCarlson/1823634.git"
 projects[] = media_vimeo
 projects[] = media_youtube
 projects[] = mediafront
@@ -193,6 +205,7 @@ projects[] = mollom
 projects[multiform][version] = 1.0
 projects[] = nocurrent_pass
 projects[] = node_clone
+projects[] = node_recur
 projects[] = nodereference_url
 ; The following line pulled the 7.x-2.0-beta1 version of the nodequeue module 
 ; and this caused a fatal error because it conflicts with latest version of MariaDB 
@@ -210,8 +223,11 @@ projects[] = panels
 projects[] = password-reset
 projects[] = pathauto
 projects[] = pathologic
+projects[phone][version] = 1.x-dev
+projects[phone][type] = "module"
 projects[] = plupload
 projects[] = popup
+projects[] = prepopulate
 projects[] = print
 projects[] = profiler
 projects[] = projekktor
@@ -222,16 +238,19 @@ projects[] = realname
 projects[] = recaptcha
 ; The following item needs to have WWM Patch applied
 projects[] = redirect
+projects[] = reroute_email
 projects[] = rules
 projects[] = scheduler
 ; The following item needs to have WWM Patch applied
 projects[] = simpleads
+projects[] = simplehtmldom
 projects[] = smartcrop
 projects[] = smtp
 projects[] = socialmedia
 projects[] = stringoverrides
 projects[] = strongarm
 projects[] = system_stream_wrapper
+projects[] = tabtamer
 projects[] = taxonomy_manager
 projects[] = taxonomy_menu
 projects[] = taxonomy_tools
@@ -243,6 +262,9 @@ projects[] = unique_field
 ; The following item needs to have WWM Patch applied
 projects[] = views
 projects[] = views_bulk_operations
+projects[] = views_export_xls
+projects[] = views_megarow
+projects[] = views_php
 projects[] = views_slideshow
 projects[] = views_system
 projects[] = webform
@@ -255,6 +277,13 @@ projects[] = workbench_moderation
 projects[] = wp_blog
 projects[] = wysiwyg
 projects[] = xmlsitemap
+
+
+; Custom Modules and Features to pull from a Feature Server or Git repo
+; projects[] = date_navigation
+; projects[] = publication_date
+; projects[] = wwm_wysiwyg_summary_field
+
 
 ; Modules added for creating a Paid Membership site
 projects[] = acl
@@ -277,40 +306,16 @@ projects[] = commerce_paypal
 projects[] = commerce_product_display_manager
 projects[] = commerce_vbo_views
 projects[] = dc_co_pages
-projects[] = devel_themer
 projects[] = ed_classified
-projects[] = entity_view_mode
-projects[] = exposed_filter_data
 projects[] = field_permissions
-projects[] = field_tools
 projects[] = forum_access
-projects[] = gdoc_field
-projects[] = jquerymenu
-projects[] = location_feeds
-; The following item needs to have WWM Patch applied
-; projects[] = mailchimp_lists
-projects[media_wysiwyg_view_mode][type] = "module"
-projects[media_wysiwyg_view_mode][download][type] = "git"
-projects[media_wysiwyg_view_mode][download][url] = "http://git.drupal.org/sandbox/DevinCarlson/1823634.git"
-projects[] = node_recur
-projects[phone][version] = 1.x-dev
-projects[phone][type] = "module"
-projects[] = prepopulate
 projects[] = profileplus
-projects[] = reroute_email
 ; The following item needs to have WWM Patch applied
 projects[] = role_expire
-projects[] = simplehtmldom
-projects[] = tabtamer
-projects[] = views_export_xls
-projects[] = views_megarow
-projects[] = views_php
 
-; Custom Modules and Features to pull from a Feature Server or Git repo
-; projects[] = date_navigation
-; projects[] = publication_date
+; Custom Modules and Features to pull from a Feature Server or Git repo for creating a Paid Membership site
 ; projects[] = wwm_membership_management
-; wwm_wysiwyg_summary_field
+
 
 ; Themes
 ; --------
