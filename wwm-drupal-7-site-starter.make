@@ -73,6 +73,7 @@ projects[] = amazon_store
 projects[] = archive
 projects[] = auto_nodetitle
 projects[] = better_formats
+projects[] = better_exposed_filters
 projects[] = boxes
 projects[] = captcha
 projects[] = cck
@@ -262,6 +263,7 @@ projects[] = unique_field
 ; The following item needs to have WWM Patch applied
 projects[] = views
 projects[] = views_bulk_operations
+projects[] = views_data_export
 projects[] = views_export_xls
 projects[] = views_megarow
 projects[] = views_php
@@ -275,6 +277,7 @@ projects[] = workbench_media
 ; The following item needs to have WWM Patch applied
 projects[] = workbench_moderation
 projects[] = wp_blog
+; The following item needs to have WWM Patch applied
 projects[] = wysiwyg
 projects[] = xmlsitemap
 
