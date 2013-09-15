@@ -48,7 +48,9 @@ projects[] = boost
 projects[] = config_perms
 projects[] = core_library
 projects[] = css_emimage
-projects[] = entitycache
+;projects[] = entitycache
+projects[entitycache][version] = 1.x-dev
+projects[entitycache][type] = "module"
 projects[] = filefield_nginx_progress
 projects[] = flood_control
 projects[] = fpa
@@ -65,7 +67,7 @@ projects[] = vars
 
 ; Modules Added for Wickwood Marketing Drupal 7 Site Starter
 ; --------
-; The following item needs to have WWM Patch applied
+; The following item needs to have WWM Patch applied X
 projects[] = addressfield
 projects[] = advanced_help
 projects[] = amazon
@@ -85,10 +87,10 @@ projects[] = colors
 projects[] = comment_notify
 projects[] = computed_field
 projects[] = conditional_styles
-; The following item needs to have WWM Patch applied
 projects[] = content_access 
 projects[] = content_taxonomy
 projects[] = context
+projects[] = cron_debug
 projects[] = ctools
 projects[] = custom_breadcrumbs
 projects[] = custom_formatters
@@ -228,13 +230,16 @@ projects[phone][version] = 1.x-dev
 projects[phone][type] = "module"
 projects[] = plupload
 projects[] = popup
+; The following item needs to have WWM Patch applied X
 projects[] = prepopulate
 projects[] = print
 projects[] = profiler
 projects[] = projekktor
 projects[] = publish_button
+projects[] = publishcontent
 projects[] = purl
 projects[] = quicktabs
+projects[] = queue_ui
 projects[] = realname
 projects[] = recaptcha
 ; The following item needs to have WWM Patch applied
@@ -292,8 +297,9 @@ projects[] = xmlsitemap
 projects[] = acl
 projects[] = advanced_forum
 projects[] = advuser
-projects[cer][version] = 2.x-dev
-projects[cer][type] = "module"
+; the CER module was stopped being used.  Not removing yet in case we need to change this decision X
+; projects[cer][version] = 2.x-dev
+; projects[cer][type] = "module"
 projects[] = chain_menu_access
 projects[] = commerce
 projects[] = commerce_addressbook
@@ -311,6 +317,8 @@ projects[] = commerce_vbo_views
 projects[] = dc_co_pages
 projects[] = ed_classified
 projects[] = field_permissions
+; The following item needs to have WWM Patch applied
+projects[] = field_ui_permissions
 projects[] = forum_access
 projects[] = profileplus
 ; The following item needs to have WWM Patch applied
@@ -341,8 +349,6 @@ libraries[ckeditor][download][type] = "file"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.2/ckeditor_3.6.2.tar.gz"
 libraries[colorbox][download][type] = "file"
 libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/master.zip"
-libraries[cycle][download][type] = "file"
-libraries[cycle][download][url] = "http://malsup.github.com/jquery.cycle.all.js"
 libraries[fullcalendar][download][type] = "file"
 libraries[fullcalendar][download][url] = "http://arshaw.com/fullcalendar/downloads/fullcalendar-1.5.3.zip"
 libraries[getid3][download][type] = "file"
@@ -353,6 +359,8 @@ libraries[jcarousel][download][type] = "file"
 libraries[jcarousel][download][url] = "http://sorgalla.com/projects/download.php?jcarousel"
 libraries[jquery][download][type] = "file"
 libraries[jquery][download][url] = "https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"
+libraries[jquery.cycle][download][type] = "file"
+libraries[jquery.cycle][download][url] = "http://malsup.github.com/jquery.cycle.all.js"
 ; libraries[jquery.ui][download][type] = "file"
 ; libraries[jquery.ui][download][url] = "http://jquery-ui.googlecode.com/files/jquery-ui-1.8.17.zip"
 ; libraries[jquery.ui][download][sha1] = "a3d1119d7b5a4a0b4eb50929ffd05cc7e7cd3eb2"
