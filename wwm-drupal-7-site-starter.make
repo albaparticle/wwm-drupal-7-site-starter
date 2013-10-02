@@ -67,7 +67,7 @@ projects[] = vars
 
 ; Modules Added for Wickwood Marketing Drupal 7 Site Starter
 ; --------
-; The following item needs to have WWM Patch applied X
+; The following item needs to have WWM Patch applied
 projects[] = addressfield
 projects[] = advanced_help
 projects[] = amazon
@@ -197,6 +197,7 @@ projects[media_wysiwyg_view_mode][download][url] = "http://git.drupal.org/sandbo
 projects[] = media_vimeo
 projects[] = media_youtube
 projects[] = mediafront
+projects[] = menu_attributes
 projects[] = menu_block
 projects[] = menu_expanded
 projects[] = menu_position
@@ -230,7 +231,7 @@ projects[phone][version] = 1.x-dev
 projects[phone][type] = "module"
 projects[] = plupload
 projects[] = popup
-; The following item needs to have WWM Patch applied X
+; The following item needs to have WWM Patch applied
 projects[] = prepopulate
 projects[] = print
 projects[] = profiler
