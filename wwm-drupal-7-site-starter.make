@@ -197,6 +197,7 @@ projects[media_wysiwyg_view_mode][download][url] = "http://git.drupal.org/sandbo
 projects[] = media_vimeo
 projects[] = media_youtube
 projects[] = mediafront
+projects[] = menu_attributes
 projects[] = menu_block
 projects[] = menu_expanded
 projects[] = menu_position
