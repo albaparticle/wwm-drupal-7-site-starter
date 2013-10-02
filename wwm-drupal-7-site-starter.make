@@ -298,7 +298,7 @@ projects[] = xmlsitemap
 projects[] = acl
 projects[] = advanced_forum
 projects[] = advuser
-; the CER module was stopped being used.  Not removing yet in case we need to change this decision X
+; the CER module was stopped being used.  Not removing yet in case we need to change this decision
 ; projects[cer][version] = 2.x-dev
 ; projects[cer][type] = "module"
 projects[] = chain_menu_access
