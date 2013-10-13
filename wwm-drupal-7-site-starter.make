@@ -69,6 +69,7 @@ projects[] = vars
 ; --------
 ; The following item needs to have WWM Patch applied
 projects[] = addressfield
+projects[] = admin_views
 projects[] = advanced_help
 projects[] = amazon
 projects[] = amazon_store
