@@ -69,6 +69,7 @@ projects[] = vars
 ; --------
 ; The following item needs to have WWM Patch applied
 projects[] = addressfield
+projects[] = admin_views
 projects[] = advanced_help
 projects[] = amazon
 projects[] = amazon_store
@@ -91,7 +92,9 @@ projects[] = content_access
 projects[] = content_taxonomy
 projects[] = context
 projects[] = cron_debug
-projects[] = ctools
+; projects[] = ctools
+projects[ctools][version] = 1.x-dev
+projects[ctools][type] = "module"
 projects[] = custom_breadcrumbs
 projects[] = custom_formatters
 projects[] = customfilter
@@ -239,6 +242,7 @@ projects[] = projekktor
 projects[] = publish_button
 projects[] = publishcontent
 projects[] = purl
+; The following item needs to have WWM Patch applied
 projects[] = quicktabs
 projects[] = queue_ui
 projects[] = realname
