@@ -74,7 +74,7 @@ projects[] = advanced_help
 projects[] = amazon
 projects[] = amazon_store
 projects[] = archive
-projects[] = auto_nodetitle
+projects[] = auto_entitylabel
 projects[] = better_formats
 projects[] = better_exposed_filters
 projects[] = boxes
@@ -121,7 +121,6 @@ projects[] = easy_breadcrumb
 projects[] = exclude_node_title
 projects[] = extlink
 projects[] = features
-; The following item needs to have WWM Patch applied
 projects[] = feeds
 projects[] = feeds_tamper
 projects[] = fences
