@@ -314,7 +314,7 @@ projects[] = wysiwyg
 projects[] = xmlsitemap
 
 
-; Custom Modules and Features to pull from a Feature Server or Git repo
+; WWM Custom Modules and Features to pull from a Feature Server or Git repo
 ; projects[] = date_navigation
 ; projects[] = publication_date
 ; projects[] = user_account_tabs
