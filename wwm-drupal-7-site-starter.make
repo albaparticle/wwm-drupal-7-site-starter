@@ -70,7 +70,7 @@ projects[] = vars
 ; The following item needs to have WWM Patch applied
 ; projects[] = addressfield
 projects[addressfield][version] = 1.x-dev
-projects[addressfield][patch][] = add_views_component_support-991834-131.patch
+projects[addressfield][patch][] = https://drupal.org/files/add_views_component_support-991834-131.patch
 projects[] = admin_views
 projects[] = administerusersbyrole
 projects[] = advanced_help
