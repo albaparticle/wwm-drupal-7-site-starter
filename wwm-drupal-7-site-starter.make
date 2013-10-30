@@ -70,20 +70,24 @@ projects[] = vars
 ; The following item needs to have WWM Patch applied
 projects[] = addressfield
 projects[] = admin_views
+projects[] = administerusersbyrole
 projects[] = advanced_help
 projects[] = amazon
 projects[] = amazon_store
 projects[] = archive
+projects[] = autoassignrole
 projects[] = auto_entitylabel
 projects[] = better_formats
 projects[] = better_exposed_filters
 projects[] = boxes
+projects[] = breakpoints
 projects[] = captcha
 projects[] = cck
 projects[] = ckeditor_swf
 projects[] = clean_module_list
 projects[] = chart 
 projects[] = colorbox
+projects[] = colorbox_node
 projects[] = colors
 projects[] = comment_notify
 projects[] = computed_field
@@ -125,11 +129,18 @@ projects[] = feeds
 projects[] = feeds_tamper
 projects[] = fences
 projects[] = field_group
+projects[] = field_permissions
 projects[] = field_slideshow
 projects[] = field_tools
+; The following item needs to have Patch applied from
+; https://drupal.org/node/1837156#comment-6766880
+;projects[] = field_ui_permissions
+projects[field_ui_permissions][type] = "module"
+projects[field_ui_permissions][download][branch] = "7.x-1.x"
 ;projects[] = file_entity
 projects[file_entity][version] = 2.x-dev
 projects[file_entity][type] = "module"
+projects[] = floating_block
 projects[] = exposed_filter_data
 projects[] = filefield_paths
 projects[] = filefield_sources
@@ -169,6 +180,7 @@ projects[] = jquery_ui
 projects[] = jquery_update
 projects[] = jquerymenu
 projects[] = libraries
+projects[] = lightbox2
 projects[] = link
 projects[] = location
 projects[] = location_feeds
@@ -202,6 +214,7 @@ projects[] = mediafront
 projects[] = menu_attributes
 projects[] = menu_block
 projects[] = menu_expanded
+projects[] = menu_item_visibility
 projects[] = menu_position
 projects[] = mimemail
 projects[] = module_filter
@@ -209,8 +222,10 @@ projects[] = module_instructions
 projects[] = mollom
 ; projects[] = multiform
 projects[multiform][version] = 1.0
+projects[] = navbar
 projects[] = nocurrent_pass
 projects[] = node_clone
+projects[] = node_limit
 projects[] = node_recur
 projects[] = nodereference_url
 ; The following line pulled the 7.x-2.0-beta1 version of the nodequeue module 
@@ -223,7 +238,9 @@ projects[] = noggin
 ; commented out notifications because it requires PHP 5.3 which is not currently supported by BOA
 ; projects[] = notifications	
 projects[] = oauth
-projects[] = options_element				
+projects[] = options_element	
+projects[] = overlay_paths
+projects[] = override_node_options			
 projects[] = page_title
 projects[] = panels
 projects[] = password-reset
@@ -244,16 +261,21 @@ projects[] = purl
 ; The following item needs to have WWM Patch applied
 projects[] = quicktabs
 projects[] = queue_ui
+; The following item needs to have Patch applied from
+; https://drupal.org/files/realname-views-username-field-1239478-43.patch
 projects[] = realname
 projects[] = recaptcha
 ; The following item needs to have WWM Patch applied
 projects[] = redirect
 projects[] = reroute_email
+projects[] = role_delegation
 projects[] = rules
 projects[] = scheduler
+projects[] = search_config
 ; The following item needs to have WWM Patch applied
 projects[] = simpleads
 projects[] = simplehtmldom
+projects[] = site_disclaimer
 projects[] = smartcrop
 projects[] = smtp
 projects[] = socialmedia
@@ -269,6 +291,7 @@ projects[] = token
 projects[] = token_filter
 projects[] = transliteration
 projects[] = unique_field
+projects[] = upload_default_avatar
 ; The following item needs to have WWM Patch applied
 projects[] = views
 projects[] = views_bulk_operations
@@ -294,6 +317,7 @@ projects[] = xmlsitemap
 ; Custom Modules and Features to pull from a Feature Server or Git repo
 ; projects[] = date_navigation
 ; projects[] = publication_date
+; projects[] = user_account_tabs
 ; projects[] = wwm_wysiwyg_summary_field
 
 
