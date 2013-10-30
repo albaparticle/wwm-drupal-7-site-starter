@@ -68,7 +68,9 @@ projects[] = vars
 ; Modules Added for Wickwood Marketing Drupal 7 Site Starter
 ; --------
 ; The following item needs to have WWM Patch applied
-projects[] = addressfield
+; projects[] = addressfield
+projects[addressfield][version] = 1.x-dev
+projects[addressfield][patch][] = add_views_component_support-991834-131.patch
 projects[] = admin_views
 projects[] = administerusersbyrole
 projects[] = advanced_help
