@@ -184,9 +184,9 @@ projects[] = getid3
 
 ; The following module needs to use the dev version 
 ; because nothing else exists
-projects[] = getresponse
-;projects[getresponse][type] = "module"
-;projects[getresponse][download][branch] = "7.x-1.x"
+; projects[] = getresponse
+projects[getresponse][type] = "module"
+projects[getresponse][download][branch] = "7.x-1.x"
 
 projects[] = globalredirect
 projects[] = google_analytics
@@ -353,7 +353,7 @@ projects[] = purl
 ; The following item needs to have WWM Patch applied
 ; WWM applied patch from https://drupal.org/node/2104643#comment-7947547 to fix rendering of tabs when tabs are hidden.
 ; projects[] = quicktabs
-projects[quicktabs][version] = 7.x-3.x
+projects[quicktabs][version] = 3.x-dev
 projects[quicktabs][patch][] = "https://drupal.org/files/2104643-revert-qt-487518-5.patch"
 
 projects[] = queue_ui
@@ -362,7 +362,7 @@ projects[] = queue_ui
 ; from https://drupal.org/node/1239478#comment-6439934 
 ; to allow Views to show actual Username instead of Real Name.
 ; projects[] = realname
-projects[realname][version] = 7.x-1.x
+projects[realname][version] = 1.x-dev
 projects[realname][patch][] = "https://drupal.org/files/realname-views-username-field-1239478-43.patch"
 
 projects[] = recaptcha
@@ -370,7 +370,7 @@ projects[] = recaptcha
 ; The following item needs to have patch applied from
 ; from https://drupal.org/node/1796596 to prevent redirect loops.
 ; projects[] = redirect
-projects[redirect][version] = 7.x-1.x
+projects[redirect][version] = 1.x-dev
 projects[redirect][patch][] = "https://drupal.org/files/realname-views-username-field-1239478-43.patch"
 
 projects[] = reroute_email
@@ -408,7 +408,7 @@ projects[] = upload_default_avatar
 ; from https://drupal.org/node/1249684#comment-6355236 to prevent exposed filter on Roles to stop dissappearing when  
 ; "Only has 'authenticated user' role" or "Has roles in addition to 'authenticated user' ".
 ; projects[] = views
-projects[views][version] = 7.x-3.x
+projects[views][version] = 3.x-dev
 projects[views][patch][] = "https://drupal.org/files/views-1249684-dependency-exposed-filter.patch"
 
 projects[] = views_bulk_operations
@@ -441,7 +441,7 @@ projects[] = workbench_moderation
 ; http://drupal.org/node/741606#comment-6346640 to WYSIWYG editors to exposed summary fields.
 ; Note that there is a later version of the patch, but it also requires patching Media module
 ; projects[] = wysiwyg
-projects[wysiwyg][version] = 7.x-2.x
+projects[wysiwyg][version] = 2.x-dev
 projects[wysiwyg][patch][] = "https://drupal.org/files/wysiwyg-741606.patch"
 
 projects[] = xmlsitemap
@@ -486,11 +486,12 @@ projects[] = rubik
 projects[sky][version] = 3.x-dev
 projects[sky][type] = "theme"
 
-projects[] = tao
+; For some reason zen would not dowload with just the following line
+projects[tao][type] = "theme"
 
 ; For some reason zen would not dowload with just the following line
 ; projects[] = zen
-projects[zen][version] = 7.x-5.4
+projects[zen][version] = 5.4
 projects[zen][type] = "theme"
 
 
