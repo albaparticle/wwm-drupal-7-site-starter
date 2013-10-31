@@ -80,7 +80,7 @@ projects[] = vars
 ; https://drupal.org/node/991834
 ; projects[] = addressfield
 projects[addressfield][version] = 1.x-dev
-projects[addressfield][patch][] = "https://drupal.org/files/add_views_component_support-991834-131.patch"
+projects[addressfield][patch][] = "https://drupal.org/files/addressfield-views_components-991834-109.patch"
 
 projects[] = admin_views
 projects[] = administerusersbyrole
