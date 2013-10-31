@@ -353,7 +353,7 @@ projects[] = purl
 ; The following item needs to have WWM Patch applied
 ; WWM applied patch from https://drupal.org/node/2104643#comment-7947547 to fix rendering of tabs when tabs are hidden.
 ; projects[] = quicktabs
-projects[quicktabs][version] = 7.x-3.6
+projects[quicktabs][version] = 7.x-3.x
 projects[quicktabs][patch][] = "https://drupal.org/files/2104643-revert-qt-487518-5.patch"
 
 projects[] = queue_ui
@@ -362,7 +362,7 @@ projects[] = queue_ui
 ; from https://drupal.org/node/1239478#comment-6439934 
 ; to allow Views to show actual Username instead of Real Name.
 ; projects[] = realname
-projects[realname][version] = 7.x-1.1
+projects[realname][version] = 7.x-1.x
 projects[realname][patch][] = "https://drupal.org/files/realname-views-username-field-1239478-43.patch"
 
 projects[] = recaptcha
@@ -370,7 +370,7 @@ projects[] = recaptcha
 ; The following item needs to have patch applied from
 ; from https://drupal.org/node/1796596 to prevent redirect loops.
 ; projects[] = redirect
-projects[redirect][version] = 7.x-dev
+projects[redirect][version] = 7.x-1.x
 projects[redirect][patch][] = "https://drupal.org/files/realname-views-username-field-1239478-43.patch"
 
 projects[] = reroute_email
@@ -408,7 +408,7 @@ projects[] = upload_default_avatar
 ; from https://drupal.org/node/1249684#comment-6355236 to prevent exposed filter on Roles to stop dissappearing when  
 ; "Only has 'authenticated user' role" or "Has roles in addition to 'authenticated user' ".
 ; projects[] = views
-projects[views][version] = 7.x-dev
+projects[views][version] = 7.x-3.x
 projects[views][patch][] = "https://drupal.org/files/views-1249684-dependency-exposed-filter.patch"
 
 projects[] = views_bulk_operations
@@ -487,7 +487,11 @@ projects[sky][version] = 3.x-dev
 projects[sky][type] = "theme"
 
 projects[] = tao
-projects[] = zen
+
+; For some reason zen would not dowload with just the following line
+; projects[] = zen
+projects[zen][version] = 7.x-5.4
+projects[zen][type] = "theme"
 
 
 ; Libraries Added for Wickwood Marketing Drupal 7 Site Starter
