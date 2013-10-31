@@ -458,15 +458,36 @@ projects[] = xmlsitemap
 ; Themes
 ; --------
 ; Themes Added for Wickwood Marketing Drupal 7 Site Starter
+; The following theme uses the dev version because
+; stable releases are over a year old.
 ; projects[] = adaptivetheme
 projects[adaptivetheme][version] = 3.x-dev
 projects[adaptivetheme][type] = "theme"
-projects[] = corolla
+
+; The following theme uses the dev version because
+; stable releases are over a year old.
+; projects[] = corolla
+projects[corolla][version] = 3.x-dev
+projects[corolla][type] = "theme"
+
 projects[] = fbg
-projects[] = pixture_reloaded
+
+; The following theme uses the dev version because
+; stable releases are over a year old.
+; projects[] = pixture_reloaded
+projects[pixture_reloaded][version] = 3.x-dev
+projects[pixture_reloaded][type] = "theme"
+
 projects[] = rubik
-projects[] = sky
+
+; The following theme uses the dev version because
+; stable releases are over a year old.
+; projects[] = sky
+projects[sky][version] = 3.x-dev
+projects[sky][type] = "theme"
+
 projects[] = tao
+projects[] = zen
 
 
 ; Libraries Added for Wickwood Marketing Drupal 7 Site Starter
