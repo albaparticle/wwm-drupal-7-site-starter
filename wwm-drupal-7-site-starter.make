@@ -48,17 +48,25 @@ projects[] = boost
 projects[] = config_perms
 projects[] = core_library
 projects[] = css_emimage
-;projects[] = entitycache
+
+; The following module needs to use the dev version to fix issue described in
+; {enter URL for Drupal Issue Here}
+; projects[] = entitycache
 projects[entitycache][version] = 1.x-dev
 projects[entitycache][type] = "module"
+
 projects[] = filefield_nginx_progress
 projects[] = flood_control
 projects[] = fpa
 projects[] = httprl
 projects[] = readonlymode
+
+; The following module needs to use the dev version to fix issue described in
+; {enter URL for Drupal Issue Here}
 ; projects[] = robotstxt
 projects[robotstxt][version] = 1.x-dev
 projects[robotstxt][type] = "module"
+
 projects[] = seckit
 projects[] = site_verify
 ; projects[] = textile
@@ -67,10 +75,13 @@ projects[] = vars
 
 ; Modules Added for Wickwood Marketing Drupal 7 Site Starter
 ; --------
-; The following item needs to have WWM Patch applied
+
+; The following module needs to be patched to fix issue described in
+; https://drupal.org/node/991834
 ; projects[] = addressfield
 projects[addressfield][version] = 1.x-dev
-projects[addressfield][patch][] = https://drupal.org/files/add_views_component_support-991834-131.patch
+projects[addressfield][patch][] = "https://drupal.org/files/add_views_component_support-991834-131.patch"
+
 projects[] = admin_views
 projects[] = administerusersbyrole
 projects[] = advanced_help
@@ -98,9 +109,13 @@ projects[] = content_access
 projects[] = content_taxonomy
 projects[] = context
 projects[] = cron_debug
+
+; The following module needs to use the dev version to fix issue described in
+; {enter URL for Drupal Issue Here}
 ; projects[] = ctools
 projects[ctools][version] = 1.x-dev
 projects[ctools][type] = "module"
+
 projects[] = custom_breadcrumbs
 projects[] = custom_formatters
 projects[] = customfilter
@@ -113,13 +128,21 @@ projects[] = ds
 projects[] = elements
 projects[] = email
 projects[] = enabled_modules
-; The following item needs to have WWM Patch applied
-projects[] = entity
+
+; The following module needs to use the dev version to fix issue described in
+; https://drupal.org/node/1440928
+; projects[] = entity
+projects[entity][version] = 1.x-dev
+projects[entity][type] = "module"
+
 projects[] = entity_autocomplete
-; The following item needs to have WWM Patch applied
-;projects[] = entityreference
+
+; The following module needs to be patched to fix issue described in
+; https://drupal.org/node/1967180
+; projects[] = entityreference
 projects[entityreference][version] = 1.x-dev
-projects[entityreference][type] = "module"
+projects[entityreference][patch][] = "https://drupal.org/files/1967180-7.patch"
+
 projects[] = entityreference_prepopulate
 projects[] = entityreference_view_widget
 projects[] = entity_view_mode
@@ -134,11 +157,14 @@ projects[] = field_group
 projects[] = field_permissions
 projects[] = field_slideshow
 projects[] = field_tools
+
 ; The following item needs to have Patch applied from
 ; https://drupal.org/node/1837156#comment-6766880
-;projects[] = field_ui_permissions
+; projects[] = field_ui_permissions
 projects[field_ui_permissions][type] = "module"
 projects[field_ui_permissions][download][branch] = "7.x-1.x"
+projects[field_ui_permissions][patch][] = "https://drupal.org/files/i1837156-1.patch"
+
 ;projects[] = file_entity
 projects[file_entity][version] = 2.x-dev
 projects[file_entity][type] = "module"
