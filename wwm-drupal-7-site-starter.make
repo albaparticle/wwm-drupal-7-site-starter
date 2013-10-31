@@ -165,9 +165,11 @@ projects[field_ui_permissions][type] = "module"
 projects[field_ui_permissions][download][branch] = "7.x-1.x"
 projects[field_ui_permissions][patch][] = "https://drupal.org/files/i1837156-1.patch"
 
+; The following module is only needed if the Media 7.x-2.x module is used
 ;projects[] = file_entity
-projects[file_entity][version] = 2.x-dev
-projects[file_entity][type] = "module"
+;projects[file_entity][version] = 2.x-dev
+;projects[file_entity][type] = "module"
+
 projects[] = floating_block
 projects[] = exposed_filter_data
 projects[] = filefield_paths
@@ -179,26 +181,41 @@ projects[] = fullcalendar_templates
 projects[] = ga_tokenizer
 projects[] = gdoc_field
 projects[] = getid3
-projects[getresponse][type] = "module"
-projects[getresponse][download][type] = "git"
-projects[getresponse][download][url] = "http://git.drupal.org/project/GetResponse.git"
-projects[getresponse][download][branch] = "7.x-1.x"
+
+; The following module needs to use the dev version 
+; because nothing else exists
+projects[] = getresponse
+;projects[getresponse][type] = "module"
+;projects[getresponse][download][branch] = "7.x-1.x"
+
 projects[] = globalredirect
 projects[] = google_analytics
 projects[] = google_analytics_reports
 projects[] = googleanalytics_perpage
 projects[] = html5_base
+
+; The following module needs to use the sandbox version
+; because nothing else exists
 projects[image_effects_text][type] = "module"
 projects[image_effects_text][download][type] = "git"
 projects[image_effects_text][download][url] = "http://git.drupal.org/sandbox/fietserwin/1435964.git"
+
 projects[] = image_resize_filter
 projects[] = imagecache_actions
 projects[] = imagecache_profiles
+
+; The following module is commented out because
+;
 ; projects[] = imagecache_scale9actions
+
 projects[] = imagecache_proportions
+
+; The following module needs to use the dev version 
+; because "stable" release candidate is very old
 ; projects[] = imagecrop
-projects[imagecrop][version] = 1.x-dev
 projects[imagecrop][type] = "module"
+projects[imagecrop][version] = 1.x-dev
+
 projects[] = inline_entity_form
 projects[] = invite
 projects[] = jcarousel
@@ -213,29 +230,61 @@ projects[] = link
 projects[] = location
 projects[] = location_feeds
 projects[] = mailchimp
-; The following item needs to have WWM Patch applied
+
+; The following submodule of mailchimp needs to have WWM Patch applied
+; only if you need to filter out users with invalid emails designated with nomail.invalid
+; during the sync with Mailchimp
 ; projects[] = mailchimp_lists
+; projects[mailchimp_lists][patch][] = "path/to/local/patch"
+
 projects[] = mailsystem
-projects[media][version] = 1.2
+
+; The following module needs to use the dev version 
+; because version 2 is not ready for production and 
+; only bug fixes are being applied to 1.x-dev
+; projects[] = media
+projects[media][type] = "module"
+projects[media][version] = 1.x-dev
+
+; The following module is commented out because
+;
 ; projects[] = media_archive
+
 projects[] = media_bliptv
+
 ; The following line pulled the dev version of the module and this caused a fatal error
 ; projects[] = media_browser_plus
 projects[media_browser_plus][version] = 1.0-beta3
 projects[media_browser_plus][type] = "module"
+
 ; The media_derivatives modules are not ready for production environments
 ; projects[] = media_derivatives
 ; projects[] = media_derivatives_html5
+
 projects[] = media_feeds
+
+; The following module is commented out because
+;
 ; projects[] = media_ffmpeg_simple
+
 projects[] = media_flickr
+
+; The following module uses the beta8 release because
+; that is the most stable version
 ;projects[] = media_gallery
 projects[media_gallery][version] = 1.0-beta8
+
 projects[] = media_node
 projects[] = media_update
+
+; The following module needs to use the sandbox version
+; from https://drupal.org/sandbox/DevinCarlson/1823634
+; because nothing else exists but it may soon be added to media module
+; according to https://drupal.org/node/2062659
 projects[media_wysiwyg_view_mode][type] = "module"
 projects[media_wysiwyg_view_mode][download][type] = "git"
 projects[media_wysiwyg_view_mode][download][url] = "http://git.drupal.org/sandbox/DevinCarlson/1823634.git"
+
 projects[] = media_vimeo
 projects[] = media_youtube
 projects[] = mediafront
@@ -248,23 +297,29 @@ projects[] = mimemail
 projects[] = module_filter
 projects[] = module_instructions
 projects[] = mollom
-; projects[] = multiform
-projects[multiform][version] = 1.0
+
+projects[] = multiform
+;projects[multiform][version] = 1.0
+
 projects[] = navbar
 projects[] = nocurrent_pass
 projects[] = node_clone
 projects[] = node_limit
 projects[] = node_recur
 projects[] = nodereference_url
+
 ; The following line pulled the 7.x-2.0-beta1 version of the nodequeue module 
 ; and this caused a fatal error because it conflicts with latest version of MariaDB 
 ; projects[] = nodequeue
 projects[nodequeue][version] = 2.x-dev
 projects[nodequeue][type] = "module"
+
 projects[] = nodesquirrel
 projects[] = noggin
+
 ; commented out notifications because it requires PHP 5.3 which is not currently supported by BOA
 ; projects[] = notifications	
+
 projects[] = oauth
 projects[] = options_element	
 projects[] = overlay_paths
@@ -274,34 +329,62 @@ projects[] = panels
 projects[] = password-reset
 projects[] = pathauto
 projects[] = pathologic
+
+; The following module needs to use the dev version
+; because nothing else exists
 projects[phone][version] = 1.x-dev
 projects[phone][type] = "module"
+
 projects[] = plupload
 projects[] = popup
-; The following item needs to have WWM Patch applied
+
+; The following item requires a custome WWM patch to be applied
+; in order to allow prepopulation from links created with Views.
 projects[] = prepopulate
+; projects[mailchimp_lists][patch][] = "path/to/local/patch"
+
 projects[] = print
 projects[] = profiler
 projects[] = projekktor
 projects[] = publish_button
 projects[] = publishcontent
 projects[] = purl
+
 ; The following item needs to have WWM Patch applied
-projects[] = quicktabs
+; WWM applied patch from https://drupal.org/node/2104643#comment-7947547 to fix rendering of tabs when tabs are hidden.
+; projects[] = quicktabs
+projects[quicktabs][version] = 7.x-3.6
+projects[quicktabs][patch][] = "https://drupal.org/files/2104643-revert-qt-487518-5.patch"
+
 projects[] = queue_ui
-; The following item needs to have Patch applied from
-; https://drupal.org/files/realname-views-username-field-1239478-43.patch
-projects[] = realname
+
+; The following item needs to have patch applied from
+; from https://drupal.org/node/1239478#comment-6439934 
+; to allow Views to show actual Username instead of Real Name.
+; projects[] = realname
+projects[realname][version] = 7.x-1.1
+projects[realname][patch][] = "https://drupal.org/files/realname-views-username-field-1239478-43.patch"
+
 projects[] = recaptcha
-; The following item needs to have WWM Patch applied
-projects[] = redirect
+
+; The following item needs to have patch applied from
+; from https://drupal.org/node/1796596 to prevent redirect loops.
+; projects[] = redirect
+projects[redirect][version] = 7.x-dev
+projects[redirect][patch][] = "https://drupal.org/files/realname-views-username-field-1239478-43.patch"
+
 projects[] = reroute_email
 projects[] = role_delegation
 projects[] = rules
 projects[] = scheduler
 projects[] = search_config
-; The following item needs to have WWM Patch applied
+
+; The following item needs to have a patch applied
+; from http://drupal.org/node/1928156#comment-7145266 to allow Image style select in simpleads block configuration. 
+; and a cutom WWM patch applied to provide an added extra text field for image ads.
 projects[] = simpleads
+; projects[simpleads][patch][] = "path/to/local/patch"
+
 projects[] = simplehtmldom
 projects[] = site_disclaimer
 projects[] = smartcrop
@@ -320,8 +403,14 @@ projects[] = token_filter
 projects[] = transliteration
 projects[] = unique_field
 projects[] = upload_default_avatar
-; The following item needs to have WWM Patch applied
-projects[] = views
+
+; The following item needs to have a patch applied
+; from https://drupal.org/node/1249684#comment-6355236 to prevent exposed filter on Roles to stop dissappearing when  
+; "Only has 'authenticated user' role" or "Has roles in addition to 'authenticated user' ".
+; projects[] = views
+projects[views][version] = 7.x-dev
+projects[views][patch][] = "https://drupal.org/files/views-1249684-dependency-exposed-filter.patch"
+
 projects[] = views_bulk_operations
 projects[] = views_data_export
 projects[] = views_export_xls
@@ -334,11 +423,27 @@ projects[] = widgets
 projects[] = workbench
 projects[] = workbench_access
 projects[] = workbench_media
-; The following item needs to have WWM Patch applied
+
+; The following item requires a custom WWM patch that is created from patching this module with a patch from
+; https://drupal.org/node/1447886#comment-7570151 to limit viewing of unpubished nodes by content type.
+; and the patch from https://drupal.org/node/1361210#comment-6052334 to fix issue with 
+; 'Workbench moderation: current' views filter does not list all content 
+; when a draft or needs review revision exists after a published revision.
 projects[] = workbench_moderation
-projects[] = wp_blog
-; The following item needs to have WWM Patch applied
-projects[] = wysiwyg
+; projects[simpleads][patch][] = "path/to/local/patch"
+
+; The following item is commented out because 
+; it has to many thing hardcoded that should be configurabale
+; and it does not uninstall well
+; projects[] = wp_blog
+
+; The following item needs to a patch applied from
+; http://drupal.org/node/741606#comment-6346640 to WYSIWYG editors to exposed summary fields.
+; Note that there is a later version of the patch, but it also requires patching Media module
+; projects[] = wysiwyg
+projects[wysiwyg][version] = 7.x-2.x
+projects[wysiwyg][patch][] = "https://drupal.org/files/wysiwyg-741606.patch"
+
 projects[] = xmlsitemap
 
 
@@ -346,6 +451,7 @@ projects[] = xmlsitemap
 ; projects[] = date_navigation
 ; projects[] = publication_date
 ; projects[] = user_account_tabs
+; The following WWM Custom Module is no longer needed do to the patch to the WYSIWYG module above
 ; projects[] = wwm_wysiwyg_summary_field
 
 
