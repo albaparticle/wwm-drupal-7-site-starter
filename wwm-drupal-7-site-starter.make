@@ -224,6 +224,7 @@ projects[] = jquery_plugin
 projects[] = jquery_ui
 projects[] = jquery_update
 projects[] = jquerymenu
+projects[] = konamicode
 projects[] = libraries
 projects[] = lightbox2
 projects[] = link
@@ -363,6 +364,7 @@ projects[] = queue_ui
 ; to allow Views to show actual Username instead of Real Name.
 ; projects[] = realname
 projects[realname][version] = 1.x-dev
+; Patch did not apply
 projects[realname][patch][] = "https://drupal.org/files/realname-views-username-field-1239478-43.patch"
 
 projects[] = recaptcha
@@ -409,6 +411,7 @@ projects[] = upload_default_avatar
 ; "Only has 'authenticated user' role" or "Has roles in addition to 'authenticated user' ".
 ; projects[] = views
 projects[views][version] = 3.x-dev
+; Patch did not apply
 projects[views][patch][] = "https://drupal.org/files/views-1249684-dependency-exposed-filter.patch"
 
 projects[] = views_bulk_operations
@@ -442,6 +445,7 @@ projects[] = workbench_moderation
 ; Note that there is a later version of the patch, but it also requires patching Media module
 ; projects[] = wysiwyg
 projects[wysiwyg][version] = 2.x-dev
+; Patch did not apply
 projects[wysiwyg][patch][] = "https://drupal.org/files/wysiwyg-741606.patch"
 
 projects[] = xmlsitemap
