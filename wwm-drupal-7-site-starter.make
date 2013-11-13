@@ -272,7 +272,13 @@ projects[] = transliteration
 projects[] = unique_field
 ; The following item needs to have WWM Patch applied
 projects[] = views
+
+; The following item needs to have the patch applied from
+; https://drupal.org/node/1967702#comment-7289190 
+; to allow view arguments be passed as parameters to rule set.
 projects[] = views_bulk_operations
+
+
 projects[] = views_data_export
 projects[] = views_export_xls
 projects[] = views_megarow
