@@ -150,7 +150,9 @@ projects[] = easy_breadcrumb
 projects[] = exclude_node_title
 projects[] = extlink
 projects[] = features
+; The following item needs to have WWM Patch applied
 projects[] = feeds
+
 projects[] = feeds_tamper
 projects[] = fences
 projects[] = field_group
@@ -339,7 +341,7 @@ projects[phone][type] = "module"
 projects[] = plupload
 projects[] = popup
 
-; The following item requires a custome WWM patch to be applied
+; The following item requires a custom WWM patch to be applied
 ; in order to allow prepopulation from links created with Views.
 projects[] = prepopulate
 ; projects[mailchimp_lists][patch][] = "path/to/local/patch"
@@ -378,6 +380,8 @@ projects[redirect][patch][] = "https://drupal.org/files/realname-views-username-
 projects[] = reroute_email
 projects[] = role_delegation
 projects[] = rules
+projects[] = rules_link
+projects[] = rules_linkevent
 projects[] = scheduler
 projects[] = search_config
 
@@ -414,7 +418,11 @@ projects[views][version] = 3.x-dev
 ; Patch did not apply
 projects[views][patch][] = "https://drupal.org/files/views-1249684-dependency-exposed-filter.patch"
 
+; The following item needs to have the patch applied from
+; https://drupal.org/node/1967702#comment-7289190 
+; to allow view arguments be passed as parameters to rule set.
 projects[] = views_bulk_operations
+
 projects[] = views_data_export
 projects[] = views_export_xls
 projects[] = views_megarow
