@@ -33,7 +33,7 @@ projects[drupal][download][url] = "http://files.aegir.cc/core/drupal-7.24.1.tar.
 
 ; Patch Pressflow to run on BOA
 ; and use robotstxt module_builder
-projects[pressflow][patch][] = "file:///data/disk/wwmhosting-admin/static/custom/platform-make-files/wwm-drupal-7-site-starter/boa-pressflow-patch.patch"
+; projects[pressflow][patch][] = "file:///data/disk/wwmhosting-admin/static/custom/platform-make-files/wwm-drupal-7-site-starter/boa-pressflow-patch.patch"
 
   
 ; Add Modules that are automatically included by BOA hosting system
