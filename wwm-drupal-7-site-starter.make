@@ -75,13 +75,7 @@ projects[] = vars
 
 ; Modules Added for Wickwood Marketing Drupal 7 Site Starter
 ; --------
-
-; The following module needs to be patched to fix issue described in
-; https://drupal.org/node/991834
-; projects[] = addressfield
-projects[addressfield][version] = 1.x-dev
-projects[addressfield][patch][] = "https://drupal.org/files/addressfield-views_components-991834-109.patch"
-
+projects[] = addressfield
 projects[] = admin_views
 projects[] = administerusersbyrole
 projects[] = advanced_help
