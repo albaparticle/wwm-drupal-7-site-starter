@@ -251,6 +251,8 @@ projects[] = recaptcha
 projects[] = redirect
 projects[] = reroute_email
 projects[] = rules
+projects[] = rules_link
+projects[] = rules_linkevent
 projects[] = scheduler
 ; The following item needs to have WWM Patch applied
 projects[] = simpleads
@@ -321,6 +323,7 @@ projects[] = commerce_cheque
 projects[] = commerce_devel
 projects[] = commerce_extra
 projects[] = commerce_extra_panes
+projects[] = commerce_fieldgroup_panes
 projects[] = commerce_pay_in_person
 projects[] = commerce_paypal
 projects[] = commerce_product_display_manager
