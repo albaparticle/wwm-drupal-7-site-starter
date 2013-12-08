@@ -26,10 +26,10 @@ api = 2
 ; alternative core projects like Pressflow. Note that makefiles included with
 ; install profiles *should not* include a core project.
   
-; Use Pressflow instead of Drupal core:
-projects[pressflow][type] = "core"
-projects[pressflow][download][type] = "git"
-projects[pressflow][download][url] = "git://github.com/pressflow/7.git"
+; Use Omega8.cc enhanced Drupal core instead of Drupal core:
+projects[drupal][type] = "core"
+projects[drupal][download][type] = "get"
+projects[drupal][download][url] = "http://files.aegir.cc/core/drupal-7.24.1.tar.gz"
 
 ; Patch Pressflow to run on BOA
 ; and use robotstxt module_builder
