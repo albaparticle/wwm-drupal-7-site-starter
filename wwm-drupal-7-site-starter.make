@@ -366,7 +366,7 @@ projects[] = queue_ui
 projects[realname][type] = "module"
 projects[realname][download][type] = "git"
 projects[realname][download][url] = "https://github.com/wickwood/realname.git"
-projects[realname][download][branch] = 7.x-1.x-wmm
+projects[realname][download][branch] = 7.x-1.x-wwm
 
 
 projects[] = recaptcha
