@@ -249,7 +249,7 @@ projects[] = mailsystem
 ; We pull patched module from WWM GitHub
 projects[media][type] = "module"
 projects[media][download][type] = "git"
-projects[media][download][url] = "https://github.com/wickwood/wysiwyg.git"
+projects[media][download][url] = "https://github.com/wickwood/media.git"
 projects[media][download][branch] = 7.x-1.x-wwm
 
 ; The following module is commented out because
