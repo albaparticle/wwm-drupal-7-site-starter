@@ -372,10 +372,10 @@ projects[realname][download][branch] = 7.x-1.x-wwm
 projects[] = recaptcha
 
 ; The following item needs to have patch applied from
-; from https://drupal.org/node/1796596 to prevent redirect loops.
+; from https://drupal.org/comment/8220853#comment-8220853 to prevent redirect loops.
 ; projects[] = redirect
 projects[redirect][version] = 1.x-dev
-projects[redirect][patch][] = "https://drupal.org/files/realname-views-username-field-1239478-43.patch"
+projects[redirect][patch][] = "https://drupal.org/files/issues/redirect.circular-loops.1796596-124.patch"
 
 projects[] = reroute_email
 projects[] = role_delegation
