@@ -481,8 +481,6 @@ projects[] = xmlsitemap
 ; projects[] = date_navigation
 ; projects[] = publication_date
 ; projects[] = user_account_tabs
-; The following WWM Custom Module is no longer needed do to the patch to the WYSIWYG module above
-; projects[] = wwm_wysiwyg_summary_field
 
 
 ; Themes
