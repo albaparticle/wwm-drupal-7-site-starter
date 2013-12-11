@@ -414,9 +414,13 @@ projects[] = upload_default_avatar
 ; from https://drupal.org/node/1249684#comment-6355236 to prevent exposed filter on Roles to stop dissappearing when  
 ; "Only has 'authenticated user' role" or "Has roles in addition to 'authenticated user' ".
 ; projects[] = views
-projects[views][version] = 3.x-dev
-; Patch did not apply
-projects[views][patch][] = "https://drupal.org/files/views-1249684-dependency-exposed-filter.patch"
+; projects[views][version] = 3.x-dev
+; projects[views][patch][] = "https://drupal.org/files/views-1249684-dependency-exposed-filter.patch"
+; Patch did not apply so pulling from WWM Github Repo
+projects[realname][type] = "module"
+projects[realname][download][type] = "git"
+projects[realname][download][url] = "https://github.com/wickwood/views.git"
+projects[realname][download][branch] = 7.x-3.x-wwm
 
 ; The following item needs to have the patch applied from
 ; https://drupal.org/node/1967702#comment-7289190 
