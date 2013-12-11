@@ -352,6 +352,16 @@ projects[] = prepopulate
 projects[] = print
 projects[] = profiler
 projects[] = projekktor
+
+; The following module may need to be patched if Publication date not accessible at node creation
+; https://drupal.org/node/1864946
+projects[publication_date][version] = 1.x-dev
+projects[publication_date][type] = "module"
+; projects[publication_date][download][type] = "git"
+; projects[publication_date][download][url] = "https://github.com/wickwood/publication_date.git"
+; projects[publication_date][download][branch] = 7.x-1.x-wwm
+
+
 projects[] = publish_button
 projects[] = publishcontent
 projects[] = purl
@@ -477,10 +487,20 @@ projects[wysiwyg][download][branch] = 7.x-2.x-wwm
 projects[] = xmlsitemap
 
 
-; WWM Custom Modules and Features to pull from a Feature Server or Git repo
+; WWM Custom Modules and Features to pull from a GitHub
 ; projects[] = date_navigation
 ; projects[] = publication_date
 ; projects[] = user_account_tabs
+
+projects[date_navigation][type] = "module"
+projects[date_navigation][download][type] = "git"
+projects[date_navigation][download][url] = "https://github.com/wickwood/date_navigation.git"
+projects[date_navigation][download][branch] = 7.x-1.x-wwm
+
+projects[user_account_tabs][type] = "module"
+projects[user_account_tabs][download][type] = "git"
+projects[user_account_tabs][download][url] = "https://github.com/wickwood/user_account_tabs.git"
+projects[user_account_tabs][download][branch] = 7.x-1.x-wwm
 
 
 ; Themes
