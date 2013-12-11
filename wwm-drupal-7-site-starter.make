@@ -240,8 +240,17 @@ projects[] = mailsystem
 ; because version 2 is not ready for production and 
 ; only bug fixes are being applied to 1.x-dev
 ; projects[] = media
+; projects[media][type] = "module"
+; projects[media][version] = 1.x-dev
+
+; The following item needs to a patch applied from
+; https://drupal.org/comment/7421208#comment-7421208 to support WYSIWYG editors to exposed summary fields, 
+; which is created by patching WYSIWYG module with patch from https://drupal.org/comment/7404872#comment-7404872
+; We pull patched module from WWM GitHub
 projects[media][type] = "module"
-projects[media][version] = 1.x-dev
+projects[media][download][type] = "git"
+projects[media][download][url] = "https://github.com/wickwood/wysiwyg.git"
+projects[media][download][branch] = 7.x-1.x-wwm
 
 ; The following module is commented out because
 ;
