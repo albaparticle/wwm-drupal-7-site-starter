@@ -417,10 +417,10 @@ projects[] = upload_default_avatar
 ; projects[views][version] = 3.x-dev
 ; projects[views][patch][] = "https://drupal.org/files/views-1249684-dependency-exposed-filter.patch"
 ; Patch did not apply so pulling from WWM Github Repo
-projects[realname][type] = "module"
-projects[realname][download][type] = "git"
-projects[realname][download][url] = "https://github.com/wickwood/views.git"
-projects[realname][download][branch] = 7.x-3.x-wwm
+projects[views][type] = "module"
+projects[views][download][type] = "git"
+projects[views][download][url] = "https://github.com/wickwood/views.git"
+projects[views][download][branch] = 7.x-3.x-wwm
 
 ; The following item needs to have the patch applied from
 ; https://drupal.org/node/1967702#comment-7289190 
@@ -453,12 +453,17 @@ projects[] = workbench_moderation
 ; projects[] = wp_blog
 
 ; The following item needs to a patch applied from
-; http://drupal.org/node/741606#comment-6346640 to WYSIWYG editors to exposed summary fields.
-; Note that there is a later version of the patch, but it also requires patching Media module
+; https://drupal.org/comment/7404872#comment-7404872 to WYSIWYG editors to exposed summary fields.
+; Note this version of the patch also requires patching Media module
+; from https://drupal.org/comment/7421208#comment-7421208)
 ; projects[] = wysiwyg
-projects[wysiwyg][version] = 2.x-dev
-; Patch did not apply
-projects[wysiwyg][patch][] = "https://drupal.org/files/wysiwyg-741606.patch"
+; projects[wysiwyg][version] = 2.x-dev
+; projects[wysiwyg][patch][] = "https://drupal.org/files/wysiwyg-741606.45.patch"
+; Since patch did not apply, we pull patched module from WWM GitHub
+projects[wysiwyg][type] = "module"
+projects[wysiwyg][download][type] = "git"
+projects[wysiwyg][download][url] = "https://github.com/wickwood/wysiwyg.git"
+projects[wysiwyg][download][branch] = 7.x-2.x-wwm
 
 projects[] = xmlsitemap
 
