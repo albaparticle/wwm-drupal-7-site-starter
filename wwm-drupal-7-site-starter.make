@@ -549,7 +549,6 @@ projects[zen][type] = "theme"
 
 ; Libraries Added for Wickwood Marketing Drupal 7 Site Starter
 ; ---------
-
 libraries[ckeditor][download][type] = "file"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.2/ckeditor_3.6.2.tar.gz"
 libraries[colorbox][download][type] = "file"
