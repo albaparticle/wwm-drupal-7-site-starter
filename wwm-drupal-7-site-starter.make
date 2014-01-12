@@ -48,7 +48,6 @@ projects[] = boost
 projects[] = config_perms
 projects[] = core_library
 projects[] = css_emimage
-projects[] = delta
 
 ; The following module needs to use the dev version to fix issue described in
 ; {enter URL for Drupal Issue Here}
@@ -118,6 +117,7 @@ projects[] = date
 projects[] = date_ical
 projects[] = devel
 projects[] = devel_themer
+projects[] = delta
 projects[] = diff
 projects[] = ds
 projects[] = elements
@@ -127,8 +127,9 @@ projects[] = enabled_modules
 ; The following module needs to use the dev version to fix issue described in
 ; https://drupal.org/node/1440928
 ; projects[] = entity
-projects[entity][version] = 1.x-dev
+projects[entity][version] = 1.3
 projects[entity][type] = "module"
+projects[entity][patch][] = "https://drupal.org/files/1440928_fix_fatal_error_for_entity_tokens-44.patch"
 
 projects[] = entity_autocomplete
 
