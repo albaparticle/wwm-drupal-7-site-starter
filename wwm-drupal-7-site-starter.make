@@ -48,6 +48,7 @@ projects[] = boost
 projects[] = config_perms
 projects[] = core_library
 projects[] = css_emimage
+projects[] = delta
 
 ; The following module needs to use the dev version to fix issue described in
 ; {enter URL for Drupal Issue Here}
@@ -327,6 +328,7 @@ projects[] = noggin
 ; projects[] = notifications	
 
 projects[] = oauth
+projects[] = omega_tools
 projects[] = options_element	
 projects[] = overlay_paths
 projects[] = override_node_options			
@@ -520,6 +522,7 @@ projects[corolla][version] = 3.x-dev
 projects[corolla][type] = "theme"
 
 projects[] = fbg
+projects[omega][type] = "theme"
 
 ; The following theme uses the dev version because
 ; stable releases are over a year old.
@@ -535,7 +538,6 @@ projects[] = rubik
 projects[sky][version] = 3.x-dev
 projects[sky][type] = "theme"
 
-; For some reason zen would not dowload with just the following line
 projects[tao][type] = "theme"
 
 ; For some reason zen would not dowload with just the following line
