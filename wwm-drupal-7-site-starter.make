@@ -384,13 +384,13 @@ projects[] = queue_ui
 ; to allow Views to show actual Username instead of Real Name.
 ; For now we will use WWM fork of this module pulled from GitHub
 ; projects[] = realname
-; projects[realname][version] = 1.x-dev
-; Patch did not apply
-; projects[realname][patch][] = "https://drupal.org/files/realname-views-username-field-1239478-43.patch"
 projects[realname][type] = "module"
-projects[realname][download][type] = "git"
-projects[realname][download][url] = "https://github.com/wickwood/realname.git"
-projects[realname][download][branch] = 7.x-1.x-wwm
+projects[realname][version] = 1.x-dev
+projects[realname][patch][] = "https://drupal.org/files/issues/realname-views-username-field-1239478-79.patch"
+
+;projects[realname][download][type] = "git"
+;projects[realname][download][url] = "https://github.com/wickwood/realname.git"
+;projects[realname][download][branch] = 7.x-1.x-wwm
 
 
 projects[] = recaptcha
