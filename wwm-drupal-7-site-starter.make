@@ -244,7 +244,7 @@ projects[] = mailsystem
 ; only bug fixes are being applied to 1.x-dev
 ; projects[] = media
 projects[media][type] = "module"
-projects[media][version] = 1.x-dev
+projects[media][version] = 1.4
 projects[media][patch][] = "https://drupal.org/files/issues/media-7.x-2.x-wysiwyg-summary-support-1995030-6.patch"
 
 ; The following item needs to a patch applied from
