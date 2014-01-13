@@ -526,6 +526,7 @@ projects[corolla][type] = "theme"
 
 projects[] = fbg
 projects[omega][type] = "theme"
+projects[omega][version] = 3.1
 
 ; The following theme uses the dev version because
 ; stable releases are over a year old.
