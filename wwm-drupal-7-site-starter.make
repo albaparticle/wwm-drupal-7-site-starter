@@ -331,7 +331,13 @@ projects[] = noggin
 ; projects[] = notifications	
 
 projects[] = oauth
-projects[] = omega_tools
+
+; The following module needs to be patched
+; from  to fix the fatal error in omega_tools_write_archive if file_temporary_path is relative.  See https://drupal.org/node/1492588 for details
+; projects[] = omega_tools
+projects[omega_tools][version] = 3.x-dev
+projects[omega_tools][patch][] = "https://drupal.org/files/null_path_theme_tarball_download-1492588-2.patch"
+
 projects[] = options_element	
 projects[] = overlay_paths
 projects[] = override_node_options			
