@@ -47,9 +47,9 @@ projects[] = css_emimage
 
 ; The following module needs to use the dev version to fix issue described in
 ; {enter URL for Drupal Issue Here}
-; projects[] = entitycache
-projects[entitycache][version] = 1.x-dev
-projects[entitycache][type] = "module"
+projects[] = entitycache
+; projects[entitycache][version] = 1.x-dev
+; projects[entitycache][type] = "module"
 
 projects[] = filefield_nginx_progress
 projects[] = flood_control
