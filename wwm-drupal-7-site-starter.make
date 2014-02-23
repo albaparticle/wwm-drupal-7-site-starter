@@ -27,14 +27,10 @@ api = 2
 ; install profiles *should not* include a core project.
   
 ; Use Omega8.cc enhanced Drupal core instead of Drupal core:
+; See https://omega8.cc/how-to-add-custom-platform-properly-140 for latest download URL
 projects[drupal][type] = "core"
 projects[drupal][download][type] = "get"
-projects[drupal][download][url] = "http://files.aegir.cc/core/drupal-7.24.1.tar.gz"
-
-; Patch Pressflow to run on BOA
-; and use robotstxt module_builder
-; projects[pressflow][patch][] = "file:///data/disk/wwmhosting-admin/static/custom/platform-make-files/wwm-drupal-7-site-starter/boa-pressflow-patch.patch"
-
+projects[drupal][download][url] = "http://files.aegir.cc/core/drupal-7.26.1.tar.gz"
   
 ; Add Modules that are automatically included by BOA hosting system
 ; to override them with the latest versions
