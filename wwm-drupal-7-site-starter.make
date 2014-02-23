@@ -200,7 +200,7 @@ projects[] = imagecache_actions
 projects[] = imagecache_profiles
 
 ; The following module is commented out because
-;
+; because it only exists for Drupal 6
 ; projects[] = imagecache_scale9actions
 
 projects[] = imagecache_proportions
