@@ -206,7 +206,8 @@ projects[] = imagecache_profiles
 projects[] = imagecache_proportions
 
 ; The following module needs to use the dev version 
-; because "stable" release candidate is very old
+; because "stable" release candidate is very old 
+; As of this commit the latest dev release was 2013-Dec-23
 ; projects[] = imagecrop
 projects[imagecrop][type] = "module"
 projects[imagecrop][version] = 1.x-dev
