@@ -37,7 +37,7 @@ cd /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-t
 rm -r wkhtmltopdf
 
 # Change name of SimplePie Library
-mv /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/simplepie/simplepie_*.*.*.mini.php /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/static/$platform_dir/sites/all/libraries/simplepie/simplepie.compiled.php
+mv /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/simplepie/simplepie_*.*.*.mini.php /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/simplepie/simplepie.compiled.php
 
 # Change ownership of the platform
-# chown -R wwmhosting-admin /data/disk/wwmhosting-admin/static/$platform_dir
+chown -R steve /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir
