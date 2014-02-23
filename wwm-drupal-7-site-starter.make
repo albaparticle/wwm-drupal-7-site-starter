@@ -25,11 +25,9 @@ api = 2
 ; a core project. This is usually Drupal core, but you can also specify
 ; alternative core projects like Pressflow. Note that makefiles included with
 ; install profiles *should not* include a core project.
-  
-; Use Omega8.cc enhanced Drupal core instead of Drupal core:
-projects[drupal][type] = "core"
-projects[drupal][download][type] = "get"
-projects[drupal][download][url] = "http://files.aegir.cc/core/drupal-7.24.1.tar.gz"
+
+projects[drupal][version] = 7  
+
 
 ; Patch Pressflow to run on BOA
 ; and use robotstxt module_builder
@@ -185,6 +183,8 @@ projects[] = getid3
 ; projects[] = getresponse
 projects[getresponse][type] = "module"
 projects[getresponse][download][branch] = "7.x-1.x"
+projects[getresponse][download][type] = "git"
+projects[getresponse][download][url] = "http://git.drupal.org/project/GetResponse.git"
 
 projects[] = globalredirect
 projects[] = google_analytics
