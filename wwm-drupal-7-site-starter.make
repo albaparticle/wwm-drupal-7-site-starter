@@ -99,13 +99,7 @@ projects[] = content_access
 projects[] = content_taxonomy
 projects[] = context
 projects[] = cron_debug
-
-; The following module needs to use the dev version to prevent fatal error 
-; "unsupported operand types in common.inc line 4465".  See https://drupal.org/node/2074525
-; projects[] = ctools
-projects[ctools][version] = 1.x-dev
-projects[ctools][type] = "module"
-
+projects[] = ctools
 projects[] = custom_breadcrumbs
 projects[] = custom_formatters
 projects[] = customfilter
