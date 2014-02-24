@@ -478,10 +478,15 @@ projects[views][download][type] = "git"
 projects[views][download][url] = "https://github.com/wickwood/views.git"
 projects[views][download][branch] = 7.x-3.x-wwm
 
+; Reviewed on 2014-02-24
 ; The following item needs to have the patch applied from
 ; https://drupal.org/node/1967702#comment-7289190 
 ; to allow view arguments be passed as parameters to rule set.
-projects[] = views_bulk_operations
+; projects[] = views_bulk_operations
+projects[views_bulk_operations][type] = "module"
+projects[views_bulk_operations][download][type] = "git"
+projects[views_bulk_operations][download][url] = "https://github.com/wickwood/views_bulk_operations.git"
+projects[views_bulk_operations][download][branch] = 7.x-3.x-wwm
 
 projects[] = views_data_export
 projects[] = views_export_xls
