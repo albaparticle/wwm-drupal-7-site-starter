@@ -396,14 +396,17 @@ projects[] = publish_button
 projects[] = publishcontent
 projects[] = purl
 
-; The following item needs to have WWM Patch applied
-; WWM applied patch from https://drupal.org/node/2104643#comment-7947547 to fix rendering of tabs when tabs are hidden.
-; projects[] = quicktabs
-projects[quicktabs][version] = 3.x-dev
-projects[quicktabs][patch][] = "https://drupal.org/files/2104643-revert-qt-487518-5.patch"
+; Reviewed on 2014-02-24
+; The issues reported in https://drupal.org/node/2104643 and https://drupal.org/node/2108935
+; are supposedly fixed with version 7.x-3.6
+projects[] = quicktabs
+; The following can be removed if the issues stated above have been resolved by committed fixes.
+; projects[quicktabs][version] = 3.x-dev
+; projects[quicktabs][patch][] = "https://drupal.org/files/2104643-revert-qt-487518-5.patch"
 
 projects[] = queue_ui
 
+; Reviewed on 2014-02-24
 ; The following item needs to have patch applied from
 ; from https://drupal.org/node/1239478#comment-6439934 
 ; to allow Views to show actual Username instead of Real Name.
@@ -412,11 +415,10 @@ projects[] = queue_ui
 projects[realname][type] = "module"
 projects[realname][version] = 1.x-dev
 projects[realname][patch][] = "https://drupal.org/files/issues/realname-views-username-field-1239478-79.patch"
-
+; The following can be removed if the issues stated above have are fixed by the above patch.
 ;projects[realname][download][type] = "git"
 ;projects[realname][download][url] = "https://github.com/wickwood/realname.git"
 ;projects[realname][download][branch] = 7.x-1.x-wwm
-
 
 projects[] = recaptcha
 
