@@ -382,14 +382,15 @@ projects[] = print
 projects[] = profiler
 projects[] = projekktor
 
-; The following module may need to be patched if Publication date not accessible at node creation
-; https://drupal.org/node/1864946
+; Reviewed on 2014-02-24
+; The following module may need to be patched if the issues reported on
+; https://drupal.org/node/969318, https://drupal.org/node/1864946 and https://drupal.org/node/2094395
 projects[publication_date][version] = 1.x-dev
 projects[publication_date][type] = "module"
+; The following can be removed if the issues stated above have been resolved by committed fixes.
 ; projects[publication_date][download][type] = "git"
 ; projects[publication_date][download][url] = "https://github.com/wickwood/publication_date.git"
 ; projects[publication_date][download][branch] = 7.x-1.x-wwm
-
 
 projects[] = publish_button
 projects[] = publishcontent
