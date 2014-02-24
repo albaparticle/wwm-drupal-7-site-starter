@@ -255,13 +255,13 @@ projects[media][download][type] = "git"
 projects[media][download][url] = "https://github.com/wickwood/media.git"
 projects[media][download][branch] = 7.x-1.x-wwm
 
-; The following module is commented out because
-;
-; projects[] = media_archive
 
+projects[] = media_archive
 projects[] = media_bliptv
 
-; The following line pulled the dev version of the module and this caused a fatal error
+; Use the following guidelines depending on which version of Media module is being used:
+; MBP 7.x-1.x is for Media 7.x-1.x - requires explicitly stating which version to pull
+; MBP 7.x-3.x is for Media 7.x-2.x
 ; projects[] = media_browser_plus
 projects[media_browser_plus][version] = 1.0-beta3
 projects[media_browser_plus][type] = "module"
@@ -273,14 +273,15 @@ projects[media_browser_plus][type] = "module"
 projects[] = media_feeds
 
 ; The following module is commented out because
-;
+; it depends on the media_derivatives module
 ; projects[] = media_ffmpeg_simple
 
 projects[] = media_flickr
 
 ; The following module uses the beta8 release because
 ; that is the most stable version
-;projects[] = media_gallery
+; 7.x-1.x - requires explicitly stating which version to pull
+; projects[] = media_gallery
 projects[media_gallery][version] = 1.0-beta8
 
 projects[] = media_node
@@ -288,8 +289,8 @@ projects[] = media_update
 
 ; The following module needs to use the sandbox version
 ; from https://drupal.org/sandbox/DevinCarlson/1823634
-; because nothing else exists but it may soon be added to media module
-; according to https://drupal.org/node/2062659
+; because nothing else exists yet but it may soon be added to media module
+; according to https://drupal.org/node/2062659 and https://drupal.org/node/1792738
 projects[media_wysiwyg_view_mode][type] = "module"
 projects[media_wysiwyg_view_mode][download][type] = "git"
 projects[media_wysiwyg_view_mode][download][url] = "http://git.drupal.org/sandbox/DevinCarlson/1823634.git"
@@ -306,10 +307,7 @@ projects[] = mimemail
 projects[] = module_filter
 projects[] = module_instructions
 projects[] = mollom
-
 projects[] = multiform
-;projects[multiform][version] = 1.0
-
 projects[] = navbar
 projects[] = nocurrent_pass
 projects[] = node_clone
