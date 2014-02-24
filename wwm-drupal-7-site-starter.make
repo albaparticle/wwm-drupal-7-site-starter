@@ -422,11 +422,12 @@ projects[realname][patch][] = "https://drupal.org/files/issues/realname-views-us
 
 projects[] = recaptcha
 
+; Reviewed on 2014-02-24
 ; The following item needs to have patch applied from
-; from https://drupal.org/comment/8220853#comment-8220853 to prevent redirect loops.
+; from https://drupal.org/comment/8506117#comment-8506117 to prevent redirect loops.
 ; projects[] = redirect
 projects[redirect][version] = 1.x-dev
-projects[redirect][patch][] = "https://drupal.org/files/issues/redirect.circular-loops.1796596-124.patch"
+projects[redirect][patch][] = "https://drupal.org/files/issues/redirect.circular-loops.1796596-146.patch"
 
 projects[] = reroute_email
 projects[] = role_delegation
