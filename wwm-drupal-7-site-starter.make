@@ -25,7 +25,8 @@ api = 2
 ; a core project. This is usually Drupal core, but you can also specify
 ; alternative core projects like Pressflow. Note that makefiles included with
 ; install profiles *should not* include a core project.
-  
+
+; Reviewed on 2014-02-24
 ; Use Omega8.cc enhanced Drupal core instead of Drupal core:
 ; See https://omega8.cc/how-to-add-custom-platform-properly-140 for latest download URL
 projects[drupal][type] = "core"
@@ -45,6 +46,7 @@ projects[] = config_perms
 projects[] = core_library
 projects[] = css_emimage
 
+; Reviewed on 2014-02-24
 ; The following module needs to use the dev version to fix issue described in
 ; {enter URL for Drupal Issue Here}
 projects[] = entitycache
@@ -57,6 +59,7 @@ projects[] = fpa
 projects[] = httprl
 projects[] = readonlymode
 
+; Reviewed on 2014-02-24
 ; The following module needs to use the dev version to fix issue described in
 ; {enter URL for Drupal Issue Here}
 ; projects[] = robotstxt
@@ -114,6 +117,7 @@ projects[] = elements
 projects[] = email
 projects[] = enabled_modules
 
+; Reviewed on 2014-02-24
 ; The following module needs to use the dev version to fix issue described in
 ; https://drupal.org/node/1440928
 ; projects[] = entity
@@ -123,6 +127,7 @@ projects[entity][patch][] = "https://drupal.org/files/1440928_fix_fatal_error_fo
 
 projects[] = entity_autocomplete
 
+; Reviewed on 2014-02-24
 ; The following module needs to be patched to fix issue described in
 ; https://drupal.org/node/1967180
 ; projects[] = entityreference
@@ -137,6 +142,7 @@ projects[] = exclude_node_title
 projects[] = extlink
 projects[] = features
 
+; Reviewed on 2014-02-24
 ; The following item needs to have WWM Patch applied to 
 ; support import of encrypted passwords from 
 ; https://drupal.org/files/1611554-3-support-for-encrypted-passwords.patch
@@ -153,6 +159,7 @@ projects[] = field_permissions
 projects[] = field_slideshow
 projects[] = field_tools
 
+; Reviewed on 2014-02-24
 ; The following item needs to have Patch applied from
 ; https://drupal.org/node/1837156#comment-6766880
 ; projects[] = field_ui_permissions
@@ -160,6 +167,7 @@ projects[field_ui_permissions][type] = "module"
 projects[field_ui_permissions][download][branch] = "7.x-1.x"
 projects[field_ui_permissions][patch][] = "https://drupal.org/files/i1837156-1.patch"
 
+; Reviewed on 2014-02-24
 ; The following module is only needed if the Media 7.x-2.x module is used
 ;projects[] = file_entity
 ;projects[file_entity][version] = 2.x-dev
@@ -177,6 +185,7 @@ projects[] = ga_tokenizer
 projects[] = gdoc_field
 projects[] = getid3
 
+; Reviewed on 2014-02-24
 ; The following module needs to use the dev version 
 ; because nothing else exists
 ; projects[] = getresponse
@@ -189,6 +198,7 @@ projects[] = google_analytics_reports
 projects[] = googleanalytics_perpage
 projects[] = html5_base
 
+; Reviewed on 2014-02-24
 ; The following module needs to use the sandbox version
 ; because nothing else exists
 projects[image_effects_text][type] = "module"
@@ -199,12 +209,14 @@ projects[] = image_resize_filter
 projects[] = imagecache_actions
 projects[] = imagecache_profiles
 
+; Reviewed on 2014-02-24
 ; The following module is commented out because
 ; because it only exists for Drupal 6
 ; projects[] = imagecache_scale9actions
 
 projects[] = imagecache_proportions
 
+; Reviewed on 2014-02-24
 ; The following module needs to use the dev version 
 ; because "stable" release candidate is very old 
 ; As of this commit the latest dev release was 2013-Dec-23
@@ -227,6 +239,7 @@ projects[] = link
 projects[] = location
 projects[] = location_feeds
 
+; Reviewed on 2014-02-24
 ; The mailchimp_lists submodule of mailchimp needs to have WWM Patch applied
 ; only if you need to filter out users with invalid emails designated with nomail.invalid
 ; during the sync with Mailchimp
@@ -238,6 +251,7 @@ projects[mailchimp][download][branch] = 7.x-2.x-skip-noemail-on-sync
 
 projects[] = mailsystem
 
+; Reviewed on 2014-02-24
 ; The following module needs to use the dev version 
 ; because version 2 is not ready for production and 
 ; only bug fixes are being applied to 1.x-dev
@@ -259,6 +273,7 @@ projects[media][download][branch] = 7.x-1.x-wwm
 projects[] = media_archive
 projects[] = media_bliptv
 
+; Reviewed on 2014-02-24
 ; Use the following guidelines depending on which version of Media module is being used:
 ; MBP 7.x-1.x is for Media 7.x-1.x - requires explicitly stating which version to pull
 ; MBP 7.x-3.x is for Media 7.x-2.x
@@ -266,18 +281,21 @@ projects[] = media_bliptv
 projects[media_browser_plus][version] = 1.0-beta3
 projects[media_browser_plus][type] = "module"
 
+; Reviewed on 2014-02-24
 ; The media_derivatives modules are not ready for production environments
 ; projects[] = media_derivatives
 ; projects[] = media_derivatives_html5
 
 projects[] = media_feeds
 
+; Reviewed on 2014-02-24
 ; The following module is commented out because
 ; it depends on the media_derivatives module
 ; projects[] = media_ffmpeg_simple
 
 projects[] = media_flickr
 
+; Reviewed on 2014-02-24
 ; The following module uses the beta8 release because
 ; that is the most stable version
 ; 7.x-1.x - requires explicitly stating which version to pull
@@ -287,6 +305,7 @@ projects[media_gallery][version] = 1.0-beta8
 projects[] = media_node
 projects[] = media_update
 
+; Reviewed on 2014-02-24
 ; The following module needs to use the sandbox version
 ; from https://drupal.org/sandbox/DevinCarlson/1823634
 ; because nothing else exists yet but it may soon be added to media module
@@ -315,6 +334,7 @@ projects[] = node_limit
 projects[] = node_recur
 projects[] = nodereference_url
 
+; Reviewed on 2014-02-24
 ; The following line pulled the 7.x-2.0-beta1 version of the nodequeue module 
 ; and this caused a fatal error because it conflicts with latest version of MariaDB 
 ; presumably because the latest stable release is 7.x-2.0-beta1 version on 2011-Sep-20
@@ -325,8 +345,8 @@ projects[nodequeue][type] = "module"
 projects[] = nodesquirrel
 projects[] = noggin
 
-; Comment updated on 2014-02-24
-; notifications was orginially commented out because it requires PHP 5.3 which was not supported by BOA
+; Reviewed on 2014-02-24
+; Notifications was orginially commented out because it requires PHP 5.3 which was not supported by BOA
 ; BOA now does support PHP 5.3, but there is not a stable release of the module yet and we do not have
 ; a clear need for it at this time to make it worth adding and testing
 ; projects[] = notifications	
@@ -341,6 +361,7 @@ projects[] = password-reset
 projects[] = pathauto
 projects[] = pathologic
 
+; Reviewed on 2014-02-24
 ; The following module needs to use the dev version
 ; because nothing else exists
 projects[phone][version] = 1.x-dev
@@ -349,10 +370,13 @@ projects[phone][type] = "module"
 projects[] = plupload
 projects[] = popup
 
+; Reviewed on 2014-02-24
 ; The following item requires a custom WWM patch to be applied
 ; in order to allow prepopulation from links created with Views.
-projects[] = prepopulate
-; projects[mailchimp_lists][patch][] = "path/to/local/patch"
+; projects[] = prepopulate
+projects[prepopulate][download][type] = "git"
+projects[prepopulate][download][url] = "https://github.com/wickwood/prepopulate.git"
+projects[prepopulate][download][branch] = 7.x-2.x-wwm
 
 projects[] = print
 projects[] = profiler
