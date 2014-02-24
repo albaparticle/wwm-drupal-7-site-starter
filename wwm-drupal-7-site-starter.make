@@ -317,6 +317,7 @@ projects[] = nodereference_url
 
 ; The following line pulled the 7.x-2.0-beta1 version of the nodequeue module 
 ; and this caused a fatal error because it conflicts with latest version of MariaDB 
+; presumably because the latest stable release is 7.x-2.0-beta1 version on 2011-Sep-20
 ; projects[] = nodequeue
 projects[nodequeue][version] = 2.x-dev
 projects[nodequeue][type] = "module"
@@ -324,7 +325,10 @@ projects[nodequeue][type] = "module"
 projects[] = nodesquirrel
 projects[] = noggin
 
-; commented out notifications because it requires PHP 5.3 which is not currently supported by BOA
+; Comment updated on 2014-02-24
+; notifications was orginially commented out because it requires PHP 5.3 which was not supported by BOA
+; BOA now does support PHP 5.3, but there is not a stable release of the module yet and we do not have
+; a clear need for it at this time to make it worth adding and testing
 ; projects[] = notifications	
 
 projects[] = oauth
