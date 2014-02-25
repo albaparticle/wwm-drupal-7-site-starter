@@ -597,21 +597,30 @@ projects[role_expire][download][branch] = 7.x-1.x-wwm
 ; Themes
 ; --------
 ; Themes Added for Wickwood Marketing Drupal 7 Site Starter
+
+; Reviewed on 2014-02-24
 ; The following theme uses the dev version because
 ; stable releases are over a year old.
 ; projects[] = adaptivetheme
 projects[adaptivetheme][version] = 3.x-dev
 projects[adaptivetheme][type] = "theme"
 
+; Reviewed on 2014-02-24
 ; The following theme uses the dev version because
 ; stable releases are over a year old.
 ; projects[] = corolla
 projects[corolla][version] = 3.x-dev
 projects[corolla][type] = "theme"
 
+; Reviewed on 2014-02-24
+; projects[] = ember
+projects[ember][version] = 2.x-dev
+projects[ember][type] = "theme"
+
 projects[] = fbg
 projects[] = omega
 
+; Reviewed on 2014-02-24
 ; The following theme uses the dev version because
 ; stable releases are over a year old.
 ; projects[] = pixture_reloaded
