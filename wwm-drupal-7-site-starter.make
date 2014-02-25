@@ -500,13 +500,17 @@ projects[] = workbench
 projects[] = workbench_access
 projects[] = workbench_media
 
+; Reviewed on 2014-02-24
 ; The following item requires a custom WWM patch that is created from patching this module with a patch from
 ; https://drupal.org/node/1447886#comment-7570151 to limit viewing of unpubished nodes by content type.
 ; and the patch from https://drupal.org/node/1361210#comment-6052334 to fix issue with 
 ; 'Workbench moderation: current' views filter does not list all content 
 ; when a draft or needs review revision exists after a published revision.
-projects[] = workbench_moderation
-; projects[simpleads][patch][] = "path/to/local/patch"
+; projects[] = workbench_moderation
+projects[workbench_moderation][type] = "module"
+projects[workbench_moderation][download][type] = "git"
+projects[workbench_moderation][download][url] = "https://github.com/wickwood/workbench_moderation.git"
+projects[workbench_moderation][download][branch] = 7.x-1.x-wwm
 
 ; The following item is commented out because 
 ; it has to many thing hardcoded that should be configurabale
