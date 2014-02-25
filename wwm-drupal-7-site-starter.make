@@ -512,11 +512,6 @@ projects[workbench_moderation][download][type] = "git"
 projects[workbench_moderation][download][url] = "https://github.com/wickwood/workbench_moderation.git"
 projects[workbench_moderation][download][branch] = 7.x-1.x-wwm
 
-; The following item is commented out because 
-; it has to many thing hardcoded that should be configurabale
-; and it does not uninstall well
-; projects[] = wp_blog
-
 ; The following item needs to a patch applied from
 ; https://drupal.org/comment/7404872#comment-7404872 to WYSIWYG editors to exposed summary fields.
 ; Note this version of the patch also requires patching Media module
