@@ -601,6 +601,13 @@ projects[wwm_membership_management][download][type] = "git"
 projects[wwm_membership_management][download][url] = "https://github.com/wickwood/wwm_membership_management.git"
 projects[wwm_membership_management][download][branch] = master
 
+; This feature is currently customized for the MHCC website.
+projects[mhcc_bikeabout_management][type] = "module"
+projects[mhcc_bikeabout_management][download][type] = "git"
+projects[mhcc_bikeabout_management][download][url] = "https://github.com/wickwood/mhcc_bikeabout_management.git"
+projects[mhcc_bikeabout_management][download][branch] = master
+
+
 
 ; Themes
 ; --------
