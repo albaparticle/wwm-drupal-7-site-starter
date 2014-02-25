@@ -593,8 +593,13 @@ projects[role_expire][download][type] = "git"
 projects[role_expire][download][url] = "https://github.com/wickwood/role_expire.git"
 projects[role_expire][download][branch] = 7.x-1.x-wwm
 
-; Custom Modules and Features to pull from a Feature Server or Git repo for creating a Paid Membership site
+; Custom Modules and Features to pull from WWM Git repo for creating a Paid Membership site.
+; This feature is currently customized for the MHCC website.
 ; projects[] = wwm_membership_management
+projects[wwm_membership_management][type] = "module"
+projects[wwm_membership_management][download][type] = "git"
+projects[wwm_membership_management][download][url] = "https://github.com/wickwood/wwm_membership_management.git"
+projects[wwm_membership_management][download][branch] = master
 
 
 ; Themes
