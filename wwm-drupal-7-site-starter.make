@@ -584,8 +584,14 @@ projects[field_ui_permissions][patch][] = "https://drupal.org/files/i1837156-1.p
 
 projects[] = forum_access
 projects[] = profileplus
+
+; Reviewed on 2014-02-24
 ; The following item needs to have WWM Patch applied
-projects[] = role_expire
+; projects[] = role_expire
+projects[role_expire][type] = "module"
+projects[role_expire][download][type] = "git"
+projects[role_expire][download][url] = "https://github.com/wickwood/role_expire.git"
+projects[role_expire][download][branch] = 7.x-1.x-wwm
 
 ; Custom Modules and Features to pull from a Feature Server or Git repo for creating a Paid Membership site
 ; projects[] = wwm_membership_management
