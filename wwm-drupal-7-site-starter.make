@@ -512,14 +512,12 @@ projects[workbench_moderation][download][type] = "git"
 projects[workbench_moderation][download][url] = "https://github.com/wickwood/workbench_moderation.git"
 projects[workbench_moderation][download][branch] = 7.x-1.x-wwm
 
+; Reviewed on 2014-02-24
 ; The following item needs to a patch applied from
 ; https://drupal.org/comment/7404872#comment-7404872 to WYSIWYG editors to exposed summary fields.
 ; Note this version of the patch also requires patching Media module
-; from https://drupal.org/comment/7421208#comment-7421208)
+; from https://drupal.org/comment/7421208#comment-7421208
 ; projects[] = wysiwyg
-; projects[wysiwyg][version] = 2.x-dev
-; projects[wysiwyg][patch][] = "https://drupal.org/files/wysiwyg-741606.45.patch"
-; Since patch did not apply, we pull patched module from WWM GitHub
 projects[wysiwyg][type] = "module"
 projects[wysiwyg][download][type] = "git"
 projects[wysiwyg][download][url] = "https://github.com/wickwood/wysiwyg.git"
