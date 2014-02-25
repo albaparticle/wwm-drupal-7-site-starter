@@ -528,8 +528,6 @@ projects[] = xmlsitemap
 
 ; WWM Custom Modules and Features to pull from a GitHub
 ; projects[] = date_navigation
-; projects[] = user_account_tabs
-
 projects[date_navigation][type] = "module"
 projects[date_navigation][download][type] = "git"
 projects[date_navigation][download][url] = "https://github.com/wickwood/date_navigation.git"
@@ -537,6 +535,8 @@ projects[date_navigation][download][branch] = 7.x-1.x-wwm
 
 ; Current state of custom account tabs requires that this module be installed 
 ; and used at the site module level not the platform level
+; This is module is currently customized only for the ICCA website.
+; projects[] = user_account_tabs
 ; projects[user_account_tabs][type] = "module"
 ; projects[user_account_tabs][download][type] = "git"
 ; projects[user_account_tabs][download][url] = "https://github.com/wickwood/user_account_tabs.git"
