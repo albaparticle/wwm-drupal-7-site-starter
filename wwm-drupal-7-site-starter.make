@@ -571,7 +571,6 @@ projects[] = commerce_product_display_manager
 projects[] = commerce_vbo_views
 projects[] = dc_co_pages
 projects[] = ed_classified
-projects[] = field_permissions
 
 ; Reviewed on 2014-02-24
 ; The following item needs to have a patch applied to
