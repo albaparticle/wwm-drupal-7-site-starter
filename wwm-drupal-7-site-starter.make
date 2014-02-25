@@ -572,8 +572,16 @@ projects[] = commerce_vbo_views
 projects[] = dc_co_pages
 projects[] = ed_classified
 projects[] = field_permissions
-; The following item needs to have WWM Patch applied
-projects[] = field_ui_permissions
+
+; Reviewed on 2014-02-24
+; The following item needs to have a patch applied to
+; hide "manage display" tab when permissions are revoked
+; from https://drupal.org/comment/6766880#comment-6766880
+; projects[] = field_ui_permissions
+projects[field_ui_permissions][version] = 1.0-beta1
+projects[field_ui_permissions][type] = "module"
+projects[field_ui_permissions][patch][] = "https://drupal.org/files/i1837156-1.patch"
+
 projects[] = forum_access
 projects[] = profileplus
 ; The following item needs to have WWM Patch applied
