@@ -569,6 +569,7 @@ projects[] = commerce_fieldgroup_panes
 projects[] = commerce_pay_in_person
 projects[] = commerce_paypal
 projects[] = commerce_product_display_manager
+projects[] = commerce_rules_extra
 projects[] = commerce_vbo_views
 projects[] = dc_co_pages
 projects[] = ed_classified
