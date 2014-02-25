@@ -272,7 +272,6 @@ projects[media][download][type] = "git"
 projects[media][download][url] = "https://github.com/wickwood/media.git"
 projects[media][download][branch] = 7.x-1.x-wwm
 
-
 projects[] = media_archive
 projects[] = media_bliptv
 
