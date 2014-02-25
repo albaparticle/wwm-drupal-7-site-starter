@@ -83,6 +83,7 @@ projects[] = amazon_store
 projects[] = archive
 projects[] = autoassignrole
 projects[] = auto_entitylabel
+projects[] = auto_nodetitle
 projects[] = better_formats
 projects[] = better_exposed_filters
 projects[] = boxes
