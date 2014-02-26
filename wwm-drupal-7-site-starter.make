@@ -498,7 +498,7 @@ projects[] = views_php
 ; Reviewed on 2014-02-26
 ; Must apply patch from https://drupal.org/comment/8388179#comment-8388179 to remove the dependency on views >=3.0
 ; projects[] = views_slideshow
-projects[views_slideshow][version] = 3.x
+projects[views_slideshow][version] = 3.x-dev
 projects[views_slideshow][patch][] = "https://drupal.org/files/issues/views_slideshow-n2176563-1.patch"
 
 projects[] = views_system
