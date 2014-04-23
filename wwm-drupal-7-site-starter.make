@@ -189,7 +189,7 @@ projects[] = field_permissions
 projects[] = field_slideshow
 projects[] = field_tools
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-22
 ; The following item needs to have a patch applied to
 ; hide "manage display" tab when permissions are revoked
 ; from https://drupal.org/comment/6766880#comment-6766880
@@ -199,11 +199,11 @@ projects[field_ui_permissions][type] = "module"
 projects[field_ui_permissions][version] = 1.x-dev
 projects[field_ui_permissions][patch][] = "https://drupal.org/files/i1837156-1.patch"
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-22
 ; The following module is only needed if the Media 7.x-2.x module is used
-;projects[] = file_entity
-;projects[file_entity][version] = 2.x-dev
-;projects[file_entity][type] = "module"
+; projects[] = file_entity
+; projects[file_entity][version] = 2.x-dev
+; projects[file_entity][type] = "module"
 
 projects[] = floating_block
 projects[] = exposed_filter_data
@@ -217,12 +217,12 @@ projects[] = ga_tokenizer
 projects[] = gdoc_field
 projects[] = getid3
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-22
 ; The following module needs to use the dev version 
 ; because nothing else exists
-; projects[] = getresponse
-projects[getresponse][type] = "module"
-projects[getresponse][download][branch] = "7.x-1.x"
+projects[] = getresponse
+; projects[getresponse][type] = "module"
+; projects[getresponse][download][branch] = "7.x-1.x"
 
 projects[] = globalredirect
 projects[] = google_analytics
