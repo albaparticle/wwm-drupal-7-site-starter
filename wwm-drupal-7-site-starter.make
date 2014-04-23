@@ -26,51 +26,89 @@ api = 2
 ; alternative core projects like Pressflow. Note that makefiles included with
 ; install profiles *should not* include a core project.
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-22
 ; Use Omega8.cc enhanced Drupal core instead of Drupal core:
 ; See https://omega8.cc/how-to-add-custom-platform-properly-140 for latest download URL
 projects[drupal][type] = "core"
 projects[drupal][download][type] = "get"
-projects[drupal][download][url] = "http://files.aegir.cc/core/drupal-7.26.1.tar.gz"
+projects[drupal][download][url] = "http://files.aegir.cc/core/drupal-7.27.1.tar.gz"
   
+; Reviewed on 2014-04-22
 ; Add Modules that are automatically included by BOA hosting system
 ; to override them with the latest versions
+; See https://omega8.cc/supported-enabled-disabled-a-complete-list-150
 ; --------
-projects[] = admin							
-projects[] = agrcache
+; Contrib [S]upported:	
+projects[] = ais
 projects[] = backup_migrate
-projects[] = backup_migrate_files
+projects[] = ckeditor
+projects[] = fbconnect
+projects[] = imagecache
+projects[] = imagecache_external
+projects[] = responsive_images
+projects[] = tinybrowser
+projects[] = wysiwyg_spellcheck
+	
+; Contrib [S]upported and [B]undled:	
+projects[] = advagg
 projects[] = blockcache_alter
 projects[] = boost
+projects[] = cdn
 projects[] = config_perms
-projects[] = core_library
 projects[] = css_emimage
-
-; Reviewed on 2014-02-24
-; The following module needs to use the dev version to fix issue described in
-; {enter URL for Drupal Issue Here}
-projects[] = entitycache
-; projects[entitycache][version] = 1.x-dev
-; projects[entitycache][type] = "module"
-
+projects[] = display_cache
+projects[] = esi
+projects[] = expire
 projects[] = filefield_nginx_progress
 projects[] = flood_control
+projects[] = force_password_change
 projects[] = fpa
 projects[] = httprl
+projects[] = login_security
+projects[] = nocurrent_pass
+projects[] = panels_content_cache
+projects[] = purge
 projects[] = readonlymode
-
-; Reviewed on 2014-02-24
-; The following module needs to use the dev version to fix issue described in
-; {enter URL for Drupal Issue Here}
+projects[] = reroute_email
+projects[] = securesite
+projects[] = site_verify
+projects[] = speedy
+projects[] = taxonomy_edge
+projects[] = textile
+projects[] = variable_clean
+projects[] = vars
+projects[] = views_cache_bully
+projects[] = views_content_cache
+projects[] = views404
+	
+; Contrib [F]orce[E]nabled	
+projects[] = entitycache
+; The following module needs to use the dev version because stable release is too old
 ; projects[] = robotstxt
 projects[robotstxt][version] = 1.x-dev
 projects[robotstxt][type] = "module"
+	
+; Contrib [F]orce[D]isabled	
+; Commented out modules never used anyway
+; projects[] = background_process
+; projects[] = coder
+; projects[] = css_gzip
+projects[] = devel
+; projects[] = javascript_aggregator
+; projects[] = l10n_update
+; projects[] = performance
+; projects[] = poormanscron
+; projects[] = supercron
+; projects[] = ultimate_cron
 
-projects[] = seckit
-projects[] = site_verify
-; projects[] = textile
-projects[] = variable_clean
-projects[] = vars
+; Contrib [NA]:	
+; Commented out modules never used anyway
+; projects[] = cache_backport
+; projects[] = redis
+	
+; Contrib [S]oft[E]nabled:		
+projects[] = admin
+projects[] = rubik
 
 ; Modules Added for Wickwood Marketing Drupal 7 Site Starter
 ; --------
@@ -109,7 +147,6 @@ projects[] = custom_formatters
 projects[] = customfilter
 projects[] = date
 projects[] = date_ical
-projects[] = devel
 projects[] = devel_themer
 projects[] = delta
 projects[] = diff
@@ -585,8 +622,6 @@ projects[] = omega
 ; projects[] = pixture_reloaded
 projects[pixture_reloaded][version] = 3.x-dev
 projects[pixture_reloaded][type] = "theme"
-
-projects[] = rubik
 
 ; The following theme uses the dev version because
 ; stable releases are over a year old.
