@@ -157,9 +157,9 @@ projects[] = enabled_modules
 projects[] = entity
 projects[] = entity_autocomplete
 
-; Reviewed on 2014-02-24
-; The following module needs to be patched to fix issue described in
-; https://drupal.org/node/1967180
+; Reviewed on 2014-04-22
+; The following module needs to be patched to allow skipping entity access check when rendering field
+; as described in https://drupal.org/node/1967180
 ; projects[] = entityreference
 projects[entityreference][version] = 1.x-dev
 projects[entityreference][patch][] = "https://drupal.org/files/1967180-7.patch"
@@ -172,15 +172,15 @@ projects[] = exclude_node_title
 projects[] = extlink
 projects[] = features
 
-; Reviewed on 2014-02-24
-; The following item needs to have WWM Patch applied to 
-; support import of encrypted passwords from 
+; Reviewed on 2014-04-22
+; The following module needs to have Patch applied to support import of encrypted passwords from 
 ; https://drupal.org/files/1611554-3-support-for-encrypted-passwords.patch
-; projects[] = feeds
-projects[feeds][type] = "module"
-projects[feeds][download][type] = "git"
-projects[feeds][download][url] = "https://github.com/wickwood/feeds.git"
-projects[feeds][download][branch] = wwm-7.x-2.x-with-support-for-encrypted-passwords-4
+; If this feature is not nessary than the stable version can be used.
+projects[] = feeds
+; projects[feeds][type] = "module"
+; projects[feeds][download][type] = "git"
+; projects[feeds][download][url] = "https://github.com/wickwood/feeds.git"
+; projects[feeds][download][branch] = wwm-7.x-2.x-with-support-for-encrypted-passwords-4
 
 projects[] = feeds_tamper
 projects[] = fences
