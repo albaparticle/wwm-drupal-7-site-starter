@@ -25,16 +25,13 @@ api = 2
 ; a core project. This is usually Drupal core, but you can also specify
 ; alternative core projects like Pressflow. Note that makefiles included with
 ; install profiles *should not* include a core project.
-  
+
+; Reviewed on 2014-02-24
 ; Use Omega8.cc enhanced Drupal core instead of Drupal core:
+; See https://omega8.cc/how-to-add-custom-platform-properly-140 for latest download URL
 projects[drupal][type] = "core"
 projects[drupal][download][type] = "get"
-projects[drupal][download][url] = "http://files.aegir.cc/core/drupal-7.24.1.tar.gz"
-
-; Patch Pressflow to run on BOA
-; and use robotstxt module_builder
-; projects[pressflow][patch][] = "file:///data/disk/wwmhosting-admin/static/custom/platform-make-files/wwm-drupal-7-site-starter/boa-pressflow-patch.patch"
-
+projects[drupal][download][url] = "http://files.aegir.cc/core/drupal-7.26.1.tar.gz"
   
 ; Add Modules that are automatically included by BOA hosting system
 ; to override them with the latest versions
@@ -49,11 +46,12 @@ projects[] = config_perms
 projects[] = core_library
 projects[] = css_emimage
 
+; Reviewed on 2014-02-24
 ; The following module needs to use the dev version to fix issue described in
 ; {enter URL for Drupal Issue Here}
-; projects[] = entitycache
-projects[entitycache][version] = 1.x-dev
-projects[entitycache][type] = "module"
+projects[] = entitycache
+; projects[entitycache][version] = 1.x-dev
+; projects[entitycache][type] = "module"
 
 projects[] = filefield_nginx_progress
 projects[] = flood_control
@@ -61,6 +59,7 @@ projects[] = fpa
 projects[] = httprl
 projects[] = readonlymode
 
+; Reviewed on 2014-02-24
 ; The following module needs to use the dev version to fix issue described in
 ; {enter URL for Drupal Issue Here}
 ; projects[] = robotstxt
@@ -84,6 +83,7 @@ projects[] = amazon_store
 projects[] = archive
 projects[] = autoassignrole
 projects[] = auto_entitylabel
+projects[] = auto_nodetitle
 projects[] = better_formats
 projects[] = better_exposed_filters
 projects[] = boxes
@@ -103,13 +103,7 @@ projects[] = content_access
 projects[] = content_taxonomy
 projects[] = context
 projects[] = cron_debug
-
-; The following module needs to use the dev version to fix issue described in
-; {enter URL for Drupal Issue Here}
-; projects[] = ctools
-projects[ctools][version] = 1.x-dev
-projects[ctools][type] = "module"
-
+projects[] = ctools
 projects[] = custom_breadcrumbs
 projects[] = custom_formatters
 projects[] = customfilter
@@ -124,6 +118,7 @@ projects[] = elements
 projects[] = email
 projects[] = enabled_modules
 
+; Reviewed on 2014-02-24
 ; The following module needs to use the dev version to fix issue described in
 ; https://drupal.org/node/1440928
 ; projects[] = entity
@@ -133,6 +128,7 @@ projects[entity][patch][] = "https://drupal.org/files/1440928_fix_fatal_error_fo
 
 projects[] = entity_autocomplete
 
+; Reviewed on 2014-02-24
 ; The following module needs to be patched to fix issue described in
 ; https://drupal.org/node/1967180
 ; projects[] = entityreference
@@ -146,8 +142,16 @@ projects[] = easy_breadcrumb
 projects[] = exclude_node_title
 projects[] = extlink
 projects[] = features
-; The following item needs to have WWM Patch applied
-projects[] = feeds
+
+; Reviewed on 2014-02-24
+; The following item needs to have WWM Patch applied to 
+; support import of encrypted passwords from 
+; https://drupal.org/files/1611554-3-support-for-encrypted-passwords.patch
+; projects[] = feeds
+projects[feeds][type] = "module"
+projects[feeds][download][type] = "git"
+projects[feeds][download][url] = "https://github.com/wickwood/feeds.git"
+projects[feeds][download][branch] = wwm-7.x-2.x-with-support-for-encrypted-passwords-4
 
 projects[] = feeds_tamper
 projects[] = fences
@@ -156,13 +160,17 @@ projects[] = field_permissions
 projects[] = field_slideshow
 projects[] = field_tools
 
-; The following item needs to have Patch applied from
-; https://drupal.org/node/1837156#comment-6766880
+; Reviewed on 2014-02-24
+; The following item needs to have a patch applied to
+; hide "manage display" tab when permissions are revoked
+; from https://drupal.org/comment/6766880#comment-6766880
 ; projects[] = field_ui_permissions
 projects[field_ui_permissions][type] = "module"
-projects[field_ui_permissions][download][branch] = "7.x-1.x"
+; projects[field_ui_permissions][version] = 1.0-beta1
+projects[field_ui_permissions][version] = 1.x-dev
 projects[field_ui_permissions][patch][] = "https://drupal.org/files/i1837156-1.patch"
 
+; Reviewed on 2014-02-24
 ; The following module is only needed if the Media 7.x-2.x module is used
 ;projects[] = file_entity
 ;projects[file_entity][version] = 2.x-dev
@@ -180,6 +188,7 @@ projects[] = ga_tokenizer
 projects[] = gdoc_field
 projects[] = getid3
 
+; Reviewed on 2014-02-24
 ; The following module needs to use the dev version 
 ; because nothing else exists
 ; projects[] = getresponse
@@ -192,6 +201,7 @@ projects[] = google_analytics_reports
 projects[] = googleanalytics_perpage
 projects[] = html5_base
 
+; Reviewed on 2014-02-24
 ; The following module needs to use the sandbox version
 ; because nothing else exists
 projects[image_effects_text][type] = "module"
@@ -202,14 +212,17 @@ projects[] = image_resize_filter
 projects[] = imagecache_actions
 projects[] = imagecache_profiles
 
+; Reviewed on 2014-02-24
 ; The following module is commented out because
-;
+; because it only exists for Drupal 6
 ; projects[] = imagecache_scale9actions
 
 projects[] = imagecache_proportions
 
+; Reviewed on 2014-02-24
 ; The following module needs to use the dev version 
-; because "stable" release candidate is very old
+; because "stable" release candidate is very old 
+; As of this commit the latest dev release was 2013-Dec-23
 ; projects[] = imagecrop
 projects[imagecrop][type] = "module"
 projects[imagecrop][version] = 1.x-dev
@@ -229,20 +242,24 @@ projects[] = lightbox2
 projects[] = link
 projects[] = location
 projects[] = location_feeds
-projects[] = mailchimp
 
-; The following submodule of mailchimp needs to have WWM Patch applied
+; Reviewed on 2014-02-24
+; The mailchimp_lists submodule of mailchimp needs to have WWM Patch applied
 ; only if you need to filter out users with invalid emails designated with nomail.invalid
 ; during the sync with Mailchimp
-; projects[] = mailchimp_lists
-; projects[mailchimp_lists][patch][] = "path/to/local/patch"
+; projects[] = mailchimp
+projects[mailchimp][type] = "module"
+projects[mailchimp][download][type] = "git"
+projects[mailchimp][download][url] = "https://github.com/wickwood/mailchimp.git"
+projects[mailchimp][download][branch] = 7.x-2.x-skip-noemail-on-sync
 
 projects[] = mailsystem
 
+; Reviewed on 2014-02-24
 ; The following module needs to use the dev version 
 ; because version 2 is not ready for production and 
 ; only bug fixes are being applied to 1.x-dev
-; projects[] = media
+projects[] = media
 ; projects[media][type] = "module"
 ; projects[media][version] = 2.x-dev
 ; projects[media][patch][] = "https://drupal.org/files/issues/media-7.x-2.x-wysiwyg-summary-support-1995030-6.patch"
@@ -251,46 +268,51 @@ projects[] = mailsystem
 ; https://drupal.org/comment/7421208#comment-7421208 to support WYSIWYG editors to exposed summary fields, 
 ; which is created by patching WYSIWYG module with patch from https://drupal.org/comment/7404872#comment-7404872
 ; We pull patched module from WWM GitHub
-projects[media][type] = "module"
-projects[media][download][type] = "git"
-projects[media][download][url] = "https://github.com/wickwood/media.git"
-projects[media][download][branch] = 7.x-1.x-wwm
+; projects[media][type] = "module"
+; projects[media][download][type] = "git"
+; projects[media][download][url] = "https://github.com/wickwood/media.git"
+; projects[media][download][branch] = 7.x-1.x-wwm
 
-; The following module is commented out because
-;
-; projects[] = media_archive
-
+projects[] = media_archive
 projects[] = media_bliptv
 
-; The following line pulled the dev version of the module and this caused a fatal error
+; Reviewed on 2014-02-24
+; Use the following guidelines depending on which version of Media module is being used:
+; MBP 7.x-1.x is for Media 7.x-1.x - requires explicitly stating which version to pull
+; MBP 7.x-3.x is for Media 7.x-2.x
 ; projects[] = media_browser_plus
 projects[media_browser_plus][version] = 1.0-beta3
 projects[media_browser_plus][type] = "module"
 
+; Reviewed on 2014-02-24
 ; The media_derivatives modules are not ready for production environments
 ; projects[] = media_derivatives
 ; projects[] = media_derivatives_html5
 
 projects[] = media_feeds
 
+; Reviewed on 2014-02-24
 ; The following module is commented out because
-;
+; it depends on the media_derivatives module
 ; projects[] = media_ffmpeg_simple
 
 projects[] = media_flickr
 
+; Reviewed on 2014-02-24
 ; The following module uses the beta8 release because
 ; that is the most stable version
-;projects[] = media_gallery
+; 7.x-1.x - requires explicitly stating which version to pull
+; projects[] = media_gallery
 projects[media_gallery][version] = 1.0-beta8
 
 projects[] = media_node
 projects[] = media_update
 
+; Reviewed on 2014-02-24
 ; The following module needs to use the sandbox version
 ; from https://drupal.org/sandbox/DevinCarlson/1823634
-; because nothing else exists but it may soon be added to media module
-; according to https://drupal.org/node/2062659
+; because nothing else exists yet but it may soon be added to media module
+; according to https://drupal.org/node/2062659 and https://drupal.org/node/1792738
 projects[media_wysiwyg_view_mode][type] = "module"
 projects[media_wysiwyg_view_mode][download][type] = "git"
 projects[media_wysiwyg_view_mode][download][url] = "http://git.drupal.org/sandbox/DevinCarlson/1823634.git"
@@ -307,10 +329,7 @@ projects[] = mimemail
 projects[] = module_filter
 projects[] = module_instructions
 projects[] = mollom
-
 projects[] = multiform
-;projects[multiform][version] = 1.0
-
 projects[] = navbar
 projects[] = nocurrent_pass
 projects[] = node_clone
@@ -318,8 +337,10 @@ projects[] = node_limit
 projects[] = node_recur
 projects[] = nodereference_url
 
+; Reviewed on 2014-02-24
 ; The following line pulled the 7.x-2.0-beta1 version of the nodequeue module 
 ; and this caused a fatal error because it conflicts with latest version of MariaDB 
+; presumably because the latest stable release is 7.x-2.0-beta1 version on 2011-Sep-20
 ; projects[] = nodequeue
 projects[nodequeue][version] = 2.x-dev
 projects[nodequeue][type] = "module"
@@ -327,17 +348,13 @@ projects[nodequeue][type] = "module"
 projects[] = nodesquirrel
 projects[] = noggin
 
-; commented out notifications because it requires PHP 5.3 which is not currently supported by BOA
+; Reviewed on 2014-02-24
+; Notifications was orginially commented out because it requires PHP 5.3 which was not supported by BOA
+; BOA now does support PHP 5.3, but there is not a stable release of the module yet and we do not have
+; a clear need for it at this time to make it worth adding and testing
 ; projects[] = notifications	
 
 projects[] = oauth
-
-; The following module needs to be patched
-; from  to fix the fatal error in omega_tools_write_archive if file_temporary_path is relative.  See https://drupal.org/node/1492588 for details
-; projects[] = omega_tools
-projects[omega_tools][version] = 3.x-dev
-projects[omega_tools][patch][] = "https://drupal.org/files/null_path_theme_tarball_download-1492588-2.patch"
-
 projects[] = options_element	
 projects[] = overlay_paths
 projects[] = override_node_options			
@@ -347,6 +364,7 @@ projects[] = password-reset
 projects[] = pathauto
 projects[] = pathologic
 
+; Reviewed on 2014-02-24
 ; The following module needs to use the dev version
 ; because nothing else exists
 projects[phone][version] = 1.x-dev
@@ -355,36 +373,43 @@ projects[phone][type] = "module"
 projects[] = plupload
 projects[] = popup
 
+; Reviewed on 2014-02-24
 ; The following item requires a custom WWM patch to be applied
 ; in order to allow prepopulation from links created with Views.
-projects[] = prepopulate
-; projects[mailchimp_lists][patch][] = "path/to/local/patch"
+; projects[] = prepopulate
+projects[prepopulate][download][type] = "git"
+projects[prepopulate][download][url] = "https://github.com/wickwood/prepopulate.git"
+projects[prepopulate][download][branch] = 7.x-2.x-wwm
 
 projects[] = print
 projects[] = profiler
 projects[] = projekktor
 
-; The following module may need to be patched if Publication date not accessible at node creation
-; https://drupal.org/node/1864946
+; Reviewed on 2014-02-24
+; The following module may need to be patched if the issues reported on
+; https://drupal.org/node/969318, https://drupal.org/node/1864946 and https://drupal.org/node/2094395
 projects[publication_date][version] = 1.x-dev
 projects[publication_date][type] = "module"
+; The following can be removed if the issues stated above have been resolved by committed fixes.
 ; projects[publication_date][download][type] = "git"
 ; projects[publication_date][download][url] = "https://github.com/wickwood/publication_date.git"
 ; projects[publication_date][download][branch] = 7.x-1.x-wwm
-
 
 projects[] = publish_button
 projects[] = publishcontent
 projects[] = purl
 
-; The following item needs to have WWM Patch applied
-; WWM applied patch from https://drupal.org/node/2104643#comment-7947547 to fix rendering of tabs when tabs are hidden.
-; projects[] = quicktabs
-projects[quicktabs][version] = 3.x-dev
-projects[quicktabs][patch][] = "https://drupal.org/files/2104643-revert-qt-487518-5.patch"
+; Reviewed on 2014-02-24
+; The issues reported in https://drupal.org/node/2104643 and https://drupal.org/node/2108935
+; are supposedly fixed with version 7.x-3.6
+projects[] = quicktabs
+; The following can be removed if the issues stated above have been resolved by committed fixes.
+; projects[quicktabs][version] = 3.x-dev
+; projects[quicktabs][patch][] = "https://drupal.org/files/2104643-revert-qt-487518-5.patch"
 
 projects[] = queue_ui
 
+; Reviewed on 2014-02-24
 ; The following item needs to have patch applied from
 ; from https://drupal.org/node/1239478#comment-6439934 
 ; to allow Views to show actual Username instead of Real Name.
@@ -393,19 +418,19 @@ projects[] = queue_ui
 projects[realname][type] = "module"
 projects[realname][version] = 1.x-dev
 projects[realname][patch][] = "https://drupal.org/files/issues/realname-views-username-field-1239478-79.patch"
-
+; The following can be removed if the issues stated above have are fixed by the above patch.
 ;projects[realname][download][type] = "git"
 ;projects[realname][download][url] = "https://github.com/wickwood/realname.git"
 ;projects[realname][download][branch] = 7.x-1.x-wwm
 
-
 projects[] = recaptcha
 
+; Reviewed on 2014-02-24
 ; The following item needs to have patch applied from
-; from https://drupal.org/comment/8220853#comment-8220853 to prevent redirect loops.
+; from https://drupal.org/comment/8506117#comment-8506117 to prevent redirect loops.
 ; projects[] = redirect
 projects[redirect][version] = 1.x-dev
-projects[redirect][patch][] = "https://drupal.org/files/issues/redirect.circular-loops.1796596-124.patch"
+projects[redirect][patch][] = "https://drupal.org/files/issues/redirect.circular-loops.1796596-146.patch"
 
 projects[] = reroute_email
 projects[] = role_delegation
@@ -415,11 +440,14 @@ projects[] = rules_linkevent
 projects[] = scheduler
 projects[] = search_config
 
+; Reviewed on 2014-02-24
 ; The following item needs to have a patch applied
 ; from http://drupal.org/node/1928156#comment-7145266 to allow Image style select in simpleads block configuration. 
 ; and a cutom WWM patch applied to provide an added extra text field for image ads.
-projects[] = simpleads
-; projects[simpleads][patch][] = "path/to/local/patch"
+; projects[] = simpleads
+projects[simpleads][download][type] = "git"
+projects[simpleads][download][url] = "https://github.com/wickwood/simpleads.git"
+projects[simpleads][download][branch] = 7.x-1.x-wwm
 
 projects[] = simplehtmldom
 projects[] = site_disclaimer
@@ -440,6 +468,7 @@ projects[] = transliteration
 projects[] = unique_field
 projects[] = upload_default_avatar
 
+; Reviewed on 2014-02-24
 ; The following item needs to have a patch applied
 ; from https://drupal.org/node/1249684#comment-6355236 to prevent exposed filter on Roles to stop dissappearing when  
 ; "Only has 'authenticated user' role" or "Has roles in addition to 'authenticated user' ".
@@ -452,16 +481,26 @@ projects[views][download][type] = "git"
 projects[views][download][url] = "https://github.com/wickwood/views.git"
 projects[views][download][branch] = 7.x-3.x-wwm
 
+; Reviewed on 2014-02-24
 ; The following item needs to have the patch applied from
 ; https://drupal.org/node/1967702#comment-7289190 
 ; to allow view arguments be passed as parameters to rule set.
-projects[] = views_bulk_operations
+; projects[] = views_bulk_operations
+projects[views_bulk_operations][type] = "module"
+projects[views_bulk_operations][download][type] = "git"
+projects[views_bulk_operations][download][url] = "https://github.com/wickwood/views_bulk_operations.git"
+projects[views_bulk_operations][download][branch] = 7.x-3.x-wwm
 
 projects[] = views_data_export
 projects[] = views_export_xls
 projects[] = views_megarow
 projects[] = views_php
-projects[] = views_slideshow
+
+; Reviewed on 2014-03-13
+; Must dev version of this views_slideshow to remove the dependency on views >=3.0
+; projects[] = views_slideshow
+projects[views_slideshow][version] = 3.x-dev
+
 projects[] = views_system
 projects[] = webform
 projects[] = widgets
@@ -469,27 +508,24 @@ projects[] = workbench
 projects[] = workbench_access
 projects[] = workbench_media
 
+; Reviewed on 2014-02-24
 ; The following item requires a custom WWM patch that is created from patching this module with a patch from
 ; https://drupal.org/node/1447886#comment-7570151 to limit viewing of unpubished nodes by content type.
 ; and the patch from https://drupal.org/node/1361210#comment-6052334 to fix issue with 
 ; 'Workbench moderation: current' views filter does not list all content 
 ; when a draft or needs review revision exists after a published revision.
-projects[] = workbench_moderation
-; projects[simpleads][patch][] = "path/to/local/patch"
+; projects[] = workbench_moderation
+projects[workbench_moderation][type] = "module"
+projects[workbench_moderation][download][type] = "git"
+projects[workbench_moderation][download][url] = "https://github.com/wickwood/workbench_moderation.git"
+projects[workbench_moderation][download][branch] = 7.x-1.x-wwm
 
-; The following item is commented out because 
-; it has to many thing hardcoded that should be configurabale
-; and it does not uninstall well
-; projects[] = wp_blog
-
+; Reviewed on 2014-02-24
 ; The following item needs to a patch applied from
 ; https://drupal.org/comment/7404872#comment-7404872 to WYSIWYG editors to exposed summary fields.
 ; Note this version of the patch also requires patching Media module
-; from https://drupal.org/comment/7421208#comment-7421208)
+; from https://drupal.org/comment/7421208#comment-7421208
 ; projects[] = wysiwyg
-; projects[wysiwyg][version] = 2.x-dev
-; projects[wysiwyg][patch][] = "https://drupal.org/files/wysiwyg-741606.45.patch"
-; Since patch did not apply, we pull patched module from WWM GitHub
 projects[wysiwyg][type] = "module"
 projects[wysiwyg][download][type] = "git"
 projects[wysiwyg][download][url] = "https://github.com/wickwood/wysiwyg.git"
@@ -499,16 +535,18 @@ projects[] = xmlsitemap
 
 
 ; WWM Custom Modules and Features to pull from a GitHub
+; Reviewed on 2014-02-24
 ; projects[] = date_navigation
-; projects[] = user_account_tabs
-
 projects[date_navigation][type] = "module"
 projects[date_navigation][download][type] = "git"
 projects[date_navigation][download][url] = "https://github.com/wickwood/date_navigation.git"
 projects[date_navigation][download][branch] = 7.x-1.x-wwm
 
+; Reviewed on 2014-02-24
 ; Current state of custom account tabs requires that this module be installed 
 ; and used at the site module level not the platform level
+; This is module is currently customized only for the ICCA website.
+; projects[] = user_account_tabs
 ; projects[user_account_tabs][type] = "module"
 ; projects[user_account_tabs][download][type] = "git"
 ; projects[user_account_tabs][download][url] = "https://github.com/wickwood/user_account_tabs.git"
@@ -518,22 +556,30 @@ projects[date_navigation][download][branch] = 7.x-1.x-wwm
 ; Themes
 ; --------
 ; Themes Added for Wickwood Marketing Drupal 7 Site Starter
+
+; Reviewed on 2014-02-24
 ; The following theme uses the dev version because
 ; stable releases are over a year old.
 ; projects[] = adaptivetheme
 projects[adaptivetheme][version] = 3.x-dev
 projects[adaptivetheme][type] = "theme"
 
+; Reviewed on 2014-02-24
 ; The following theme uses the dev version because
 ; stable releases are over a year old.
 ; projects[] = corolla
 projects[corolla][version] = 3.x-dev
 projects[corolla][type] = "theme"
 
-projects[] = fbg
-projects[omega][type] = "theme"
-projects[omega][version] = 3.1
+; Reviewed on 2014-02-24
+; projects[] = ember
+projects[ember][version] = 2.x-dev
+projects[ember][type] = "theme"
 
+projects[] = fbg
+projects[] = omega
+
+; Reviewed on 2014-02-24
 ; The following theme uses the dev version because
 ; stable releases are over a year old.
 ; projects[] = pixture_reloaded
