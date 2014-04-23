@@ -154,15 +154,7 @@ projects[] = ds
 projects[] = elements
 projects[] = email
 projects[] = enabled_modules
-
-; Reviewed on 2014-02-24
-; The following module needs to use the dev version to fix issue described in
-; https://drupal.org/node/1440928
-; projects[] = entity
-projects[entity][version] = 1.3
-projects[entity][type] = "module"
-projects[entity][patch][] = "https://drupal.org/files/1440928_fix_fatal_error_for_entity_tokens-44.patch"
-
+projects[] = entity
 projects[] = entity_autocomplete
 
 ; Reviewed on 2014-02-24
