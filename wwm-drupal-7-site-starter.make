@@ -490,7 +490,7 @@ projects[] = transliteration
 projects[] = unique_field
 projects[] = upload_default_avatar
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The following item needs to have a patch applied
 ; from https://drupal.org/node/1249684#comment-6355236 to prevent exposed filter on Roles to stop dissappearing when  
 ; "Only has 'authenticated user' role" or "Has roles in addition to 'authenticated user' ".
@@ -503,7 +503,7 @@ projects[views][download][type] = "git"
 projects[views][download][url] = "https://github.com/wickwood/views.git"
 projects[views][download][branch] = 7.x-3.x-wwm
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The following item needs to have the patch applied from
 ; https://drupal.org/node/1967702#comment-7289190 
 ; to allow view arguments be passed as parameters to rule set.
@@ -518,7 +518,7 @@ projects[] = views_export_xls
 projects[] = views_megarow
 projects[] = views_php
 
-; Reviewed on 2014-03-13
+; Reviewed on 2014-04-30
 ; Must dev version of this views_slideshow to remove the dependency on views >=3.0
 ; projects[] = views_slideshow
 projects[views_slideshow][version] = 3.x-dev
