@@ -230,22 +230,15 @@ projects[] = google_analytics_reports
 projects[] = googleanalytics_perpage
 projects[] = html5_base
 
-; Reviewed on 2014-02-24
-; The following module needs to use the sandbox version
-; because nothing else exists
-projects[image_effects_text][type] = "module"
-projects[image_effects_text][download][type] = "git"
-projects[image_effects_text][download][url] = "http://git.drupal.org/sandbox/fietserwin/1435964.git"
+; Reviewed on 2014-04-30
+; This sandbox project has been integrated into the 7.x-1.0 version of the imagecache_actions project.
+; projects[image_effects_text][type] = "module"
+; projects[image_effects_text][download][type] = "git"
+; projects[image_effects_text][download][url] = "http://git.drupal.org/sandbox/fietserwin/1435964.git"
 
 projects[] = image_resize_filter
 projects[] = imagecache_actions
 projects[] = imagecache_profiles
-
-; Reviewed on 2014-02-24
-; The following module is commented out because
-; because it only exists for Drupal 6
-; projects[] = imagecache_scale9actions
-
 projects[] = imagecache_proportions
 
 ; Reviewed on 2014-02-24
