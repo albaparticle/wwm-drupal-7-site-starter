@@ -302,13 +302,13 @@ projects[media][patch][] = "https://drupal.org/files/issues/wysiwyg_summary-1995
 projects[] = media_archive
 projects[] = media_bliptv
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; Use the following guidelines depending on which version of Media module is being used:
 ; MBP 7.x-1.x is for Media 7.x-1.x - requires explicitly stating which version to pull
 ; MBP 7.x-3.x is for Media 7.x-2.x
 ; projects[] = media_browser_plus
-projects[media_browser_plus][version] = 1.0-beta3
 projects[media_browser_plus][type] = "module"
+projects[media_browser_plus][version] = 1.x-dev
 
 ; Reviewed on 2014-02-24
 ; The media_derivatives modules are not ready for production environments
