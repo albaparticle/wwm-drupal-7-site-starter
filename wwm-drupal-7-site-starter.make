@@ -421,12 +421,12 @@ projects[] = publish_button
 projects[] = publishcontent
 projects[] = purl
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The issues reported in https://drupal.org/node/2104643 and https://drupal.org/node/2108935
 ; are supposedly fixed with version 7.x-3.6
-projects[] = quicktabs
+; projects[] = quicktabs
 ; The following can be removed if the issues stated above have been resolved by committed fixes.
-; projects[quicktabs][version] = 3.x-dev
+projects[quicktabs][version] = 3.x-dev
 ; projects[quicktabs][patch][] = "https://drupal.org/files/2104643-revert-qt-487518-5.patch"
 
 projects[] = queue_ui
