@@ -363,7 +363,7 @@ projects[] = node_limit
 projects[] = node_recur
 projects[] = nodereference_url
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The following line pulled the 7.x-2.0-beta1 version of the nodequeue module 
 ; and this caused a fatal error because it conflicts with latest version of MariaDB 
 ; presumably because the latest stable release is 7.x-2.0-beta1 version on 2011-Sep-20
@@ -374,7 +374,7 @@ projects[nodequeue][type] = "module"
 projects[] = nodesquirrel
 projects[] = noggin
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; Notifications was orginially commented out because it requires PHP 5.3 which was not supported by BOA
 ; BOA now does support PHP 5.3, but there is not a stable release of the module yet and we do not have
 ; a clear need for it at this time to make it worth adding and testing
@@ -390,16 +390,16 @@ projects[] = password-reset
 projects[] = pathauto
 projects[] = pathologic
 
-; Reviewed on 2014-02-24
-; The following module needs to use the dev version
-; because nothing else exists
-projects[phone][version] = 1.x-dev
+; Reviewed on 2014-04-30
+; Phone 1.0-beta1 released 2014-Jan-14
 projects[phone][type] = "module"
+projects[phone][version] = 1.0-beta1
+
 
 projects[] = plupload
 projects[] = popup
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The following item requires a custom WWM patch to be applied
 ; in order to allow prepopulation from links created with Views.
 ; projects[] = prepopulate
@@ -411,15 +411,11 @@ projects[] = print
 projects[] = profiler
 projects[] = projekktor
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The following module may need to be patched if the issues reported on
 ; https://drupal.org/node/969318, https://drupal.org/node/1864946 and https://drupal.org/node/2094395
-projects[publication_date][version] = 1.x-dev
 projects[publication_date][type] = "module"
-; The following can be removed if the issues stated above have been resolved by committed fixes.
-; projects[publication_date][download][type] = "git"
-; projects[publication_date][download][url] = "https://github.com/wickwood/publication_date.git"
-; projects[publication_date][download][branch] = 7.x-1.x-wwm
+projects[publication_date][version] = 1.x-dev
 
 projects[] = publish_button
 projects[] = publishcontent
