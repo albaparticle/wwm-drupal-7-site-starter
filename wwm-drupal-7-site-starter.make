@@ -431,7 +431,7 @@ projects[quicktabs][version] = 3.x-dev
 
 projects[] = queue_ui
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The following item needs to have patch applied from
 ; from https://drupal.org/node/1239478#comment-6439934 
 ; to allow Views to show actual Username instead of Real Name.
@@ -447,7 +447,7 @@ projects[realname][patch][] = "https://drupal.org/files/issues/realname-views-us
 
 projects[] = recaptcha
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The following item needs to have patch applied from
 ; from https://drupal.org/comment/8506117#comment-8506117 to prevent redirect loops.
 ; projects[] = redirect
@@ -462,7 +462,7 @@ projects[] = rules_linkevent
 projects[] = scheduler
 projects[] = search_config
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The following item needs to have a patch applied
 ; from http://drupal.org/node/1928156#comment-7145266 to allow Image style select in simpleads block configuration. 
 ; and a cutom WWM patch applied to provide an added extra text field for image ads.
