@@ -310,21 +310,21 @@ projects[] = media_bliptv
 projects[media_browser_plus][type] = "module"
 projects[media_browser_plus][version] = 1.x-dev
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The media_derivatives modules are not ready for production environments
 ; projects[] = media_derivatives
 ; projects[] = media_derivatives_html5
 
 projects[] = media_feeds
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The following module is commented out because
 ; it depends on the media_derivatives module
 ; projects[] = media_ffmpeg_simple
 
 projects[] = media_flickr
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The following module uses the beta8 release because
 ; that is the most stable version
 ; 7.x-1.x - requires explicitly stating which version to pull
@@ -334,7 +334,7 @@ projects[media_gallery][version] = 1.0-beta8
 projects[] = media_node
 projects[] = media_update
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The following module needs to use the sandbox version
 ; from https://drupal.org/sandbox/DevinCarlson/1823634
 ; because nothing else exists yet but it may soon be added to media module
