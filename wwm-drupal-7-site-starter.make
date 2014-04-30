@@ -241,7 +241,7 @@ projects[] = imagecache_actions
 projects[] = imagecache_profiles
 projects[] = imagecache_proportions
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The following module needs to use the dev version 
 ; because "stable" release candidate is very old 
 ; As of this commit the latest dev release was 2013-Dec-23
@@ -265,24 +265,28 @@ projects[] = link
 projects[] = location
 projects[] = location_feeds
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The mailchimp_lists submodule of mailchimp needs to have WWM Patch applied
 ; only if you need to filter out users with invalid emails designated with nomail.invalid
 ; during the sync with Mailchimp
-; projects[] = mailchimp
-projects[mailchimp][type] = "module"
-projects[mailchimp][download][type] = "git"
-projects[mailchimp][download][url] = "https://github.com/wickwood/mailchimp.git"
-projects[mailchimp][download][branch] = 7.x-2.x-skip-noemail-on-sync
+projects[] = mailchimp
+; projects[mailchimp][type] = "module"
+; projects[mailchimp][download][type] = "git"
+; projects[mailchimp][download][url] = "https://github.com/wickwood/mailchimp.git"
+; projects[mailchimp][download][branch] = 7.x-2.x-skip-noemail-on-sync
 
 projects[] = mailsystem
 
-; Reviewed on 2014-02-24
-; The following module needs to use the dev version 
+; Reviewed on 2014-04-30
+; The following module needs to use the 1.x-dev version 
 ; because version 2 is not ready for production and 
 ; only bug fixes are being applied to 1.x-dev
-projects[] = media
-; projects[media][type] = "module"
+; Also need to apply patch from 
+: https://drupal.org/node/1995030 to add support for media in WYSIWYG summary 
+; projects[] = media
+projects[media][type] = "module"
+projects[media][version] = 1.x-dev
+projects[media][patch][] = "https://drupal.org/files/issues/wysiwyg_summary-1995030-3.patch"
 ; projects[media][version] = 2.x-dev
 ; projects[media][patch][] = "https://drupal.org/files/issues/media-7.x-2.x-wysiwyg-summary-support-1995030-6.patch"
 
