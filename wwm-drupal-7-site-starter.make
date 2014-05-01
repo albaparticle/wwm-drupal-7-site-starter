@@ -530,7 +530,7 @@ projects[] = workbench
 projects[] = workbench_access
 projects[] = workbench_media
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The following item requires a custom WWM patch that is created from patching this module with a patch from
 ; https://drupal.org/node/1447886#comment-7570151 to limit viewing of unpubished nodes by content type.
 ; and the patch from https://drupal.org/node/1361210#comment-6052334 to fix issue with 
@@ -542,7 +542,7 @@ projects[workbench_moderation][download][type] = "git"
 projects[workbench_moderation][download][url] = "https://github.com/wickwood/workbench_moderation.git"
 projects[workbench_moderation][download][branch] = 7.x-1.x-wwm
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The following item needs to a patch applied from
 ; https://drupal.org/comment/7404872#comment-7404872 to WYSIWYG editors to exposed summary fields.
 ; Note this version of the patch also requires patching Media module
@@ -557,14 +557,14 @@ projects[] = xmlsitemap
 
 
 ; WWM Custom Modules and Features to pull from a GitHub
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; projects[] = date_navigation
 projects[date_navigation][type] = "module"
 projects[date_navigation][download][type] = "git"
 projects[date_navigation][download][url] = "https://github.com/wickwood/date_navigation.git"
 projects[date_navigation][download][branch] = 7.x-1.x-wwm
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; Current state of custom account tabs requires that this module be installed 
 ; and used at the site module level not the platform level
 ; This is module is currently customized only for the ICCA website.
@@ -578,20 +578,9 @@ projects[date_navigation][download][branch] = 7.x-1.x-wwm
 ; Themes
 ; --------
 ; Themes Added for Wickwood Marketing Drupal 7 Site Starter
-
-; Reviewed on 2014-02-24
-; The following theme uses the dev version because
-; stable releases are over a year old.
-; projects[] = adaptivetheme
-projects[adaptivetheme][version] = 3.x-dev
-projects[adaptivetheme][type] = "theme"
-
-; Reviewed on 2014-02-24
-; The following theme uses the dev version because
-; stable releases are over a year old.
-; projects[] = corolla
-projects[corolla][version] = 3.x-dev
-projects[corolla][type] = "theme"
+; Reviewed on 2014-04-30
+projects[] = adaptivetheme
+projects[] = corolla
 
 ; Reviewed on 2014-02-24
 ; projects[] = ember
@@ -600,26 +589,14 @@ projects[ember][type] = "theme"
 
 projects[] = fbg
 projects[] = omega
-
-; Reviewed on 2014-02-24
-; The following theme uses the dev version because
-; stable releases are over a year old.
-; projects[] = pixture_reloaded
-projects[pixture_reloaded][version] = 3.x-dev
-projects[pixture_reloaded][type] = "theme"
-
-; The following theme uses the dev version because
-; stable releases are over a year old.
-; projects[] = sky
-projects[sky][version] = 3.x-dev
-projects[sky][type] = "theme"
-
-projects[tao][type] = "theme"
+projects[] = pixture_reloaded
+projects[] = sky
+projects[] = tao
 
 ; For some reason zen would not dowload with just the following line
-; projects[] = zen
-projects[zen][version] = 5.4
-projects[zen][type] = "theme"
+projects[] = zen
+; projects[zen][version] = 5.4
+; projects[zen][type] = "theme"
 
 
 ; Libraries Added for Wickwood Marketing Drupal 7 Site Starter
