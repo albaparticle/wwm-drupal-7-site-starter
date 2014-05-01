@@ -357,7 +357,6 @@ projects[] = module_instructions
 projects[] = mollom
 projects[] = multiform
 projects[] = navbar
-projects[] = nocurrent_pass
 projects[] = node_clone
 projects[] = node_limit
 projects[] = node_recur
@@ -454,7 +453,6 @@ projects[] = recaptcha
 projects[redirect][version] = 1.x-dev
 projects[redirect][patch][] = "https://drupal.org/files/issues/redirect.circular-loops.1796596-146.patch"
 
-projects[] = reroute_email
 projects[] = role_delegation
 projects[] = rules
 projects[] = rules_link
@@ -642,7 +640,7 @@ libraries[spellchecker-new][download][url] = "http://github.com/downloads/tinymc
 libraries[spellchecker-new][directory_name] = "spellchecker-new"
 libraries[spellchecker-new][destination] = "libraries/tinymce/jscripts/tiny_mce/plugins"
 libraries[wkhtmltopdf][download][type] = "file"
-libraries[wkhtmltopdf][download][url] = "http://wkhtmltopdf.googlecode.com/files/wkhtmltopdf-0.11.0_rc1-static-amd64.tar.bz2"
+libraries[wkhtmltopdf][download][url] = "http://downloads.sourceforge.net/project/wkhtmltopdf/0.12.0/wkhtmltox-linux-amd64_0.12.0-03c001d.tar.xz"
 
 
 
