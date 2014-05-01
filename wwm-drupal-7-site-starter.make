@@ -43,7 +43,6 @@ projects[] = ais
 projects[] = backup_migrate
 projects[] = ckeditor
 projects[] = fbconnect
-projects[] = imagecache
 projects[] = imagecache_external
 projects[] = responsive_images
 projects[] = tinybrowser
