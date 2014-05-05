@@ -592,9 +592,9 @@ projects[] = sky
 projects[] = tao
 
 ; For some reason zen would not dowload with just the following line
-projects[] = zen
-; projects[zen][version] = 5.4
-; projects[zen][type] = "theme"
+; projects[] = zen
+projects[zen][version] = 5.5
+projects[zen][type] = "theme"
 
 
 ; Libraries Added for Wickwood Marketing Drupal 7 Site Starter
