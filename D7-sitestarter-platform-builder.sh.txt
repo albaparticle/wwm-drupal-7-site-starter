@@ -5,10 +5,10 @@
 platform_dir=$1
 
 # Call the Drush Make to create the platform
-drush make wwm-drupal-7-site-starter.make /data/disk/wwmhosting-admin/static/$platform_dir
+# drush make wwm-drupal-7-site-starter.make /data/disk/wwmhosting-admin/static/$platform_dir
  
 # Set permissions on sites directory
-chmod g+w /data/disk/wwmhosting-admin/static/$platform_dir/sites
+# chmod g+w /data/disk/wwmhosting-admin/static/$platform_dir/sites
 
 # Set permissions on DOMPDF font cache directory
 # chmod go+w /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/dompdf/lib/fonts
@@ -23,21 +23,23 @@ rm -r /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/plupl
 mv /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar-org
 mv /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar-org/fullcalendar /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar
 rm -r /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar-org
+chown -R wwmhosting-admin:users /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar
+
 
 # Copy jquery.ui to jquery_ui module because for some reason it is not being recognized in the 
 # sites/all/libraries directory
 # cp -r /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/jquery.ui /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/modules/jquery_ui
 
 # Setup wkhtmltopdf Library
-cd /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/wkhtmltopdf
-tar xjf wkhtmltopdf-0.11.0_rc1-static-amd64.tar.bz2
-cp -r wkhtmltopdf-amd64 /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/modules/print/lib/wkhtmltopdf
-chmod 775 /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/modules/print/lib/wkhtmltopdf*
-cd /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries
-rm -r wkhtmltopdf
+# cd /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/wkhtmltopdf
+# tar xjf wkhtmltopdf-0.11.0_rc1-static-amd64.tar.bz2
+# cp -r wkhtmltopdf-amd64 /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/modules/print/lib/wkhtmltopdf
+# chmod 775 /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/modules/print/lib/wkhtmltopdf*
+# cd /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries
+# rm -r wkhtmltopdf
 
 # Change name of SimplePie Library
 mv /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/simplepie/simplepie_*.*.*.mini.php /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/simplepie/simplepie.compiled.php
 
 # Change ownership of the platform
-chown -R wwmhosting-admin /data/disk/wwmhosting-admin/static/$platform_dir
+# chown -R wwmhosting-admin /data/disk/wwmhosting-admin/static/$platform_dir
