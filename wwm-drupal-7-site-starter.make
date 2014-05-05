@@ -67,6 +67,8 @@ projects[] = login_security
 projects[] = nocurrent_pass
 projects[] = panels_content_cache
 projects[] = purge
+; Print module is now included in BOA and patched to use BOA wkhtmltopdf library for security
+; projects[] = print
 projects[] = readonlymode
 projects[] = reroute_email
 projects[] = securesite
@@ -405,7 +407,6 @@ projects[prepopulate][download][type] = "git"
 projects[prepopulate][download][url] = "https://github.com/wickwood/prepopulate.git"
 projects[prepopulate][download][branch] = 7.x-2.x-wwm
 
-projects[] = print
 projects[] = profiler
 projects[] = projekktor
 
