@@ -286,7 +286,7 @@ projects[] = mailsystem
 : https://drupal.org/node/1995030 to add support for media in WYSIWYG summary 
 ; projects[] = media
 projects[media][type] = "module"
-projects[media][version] = 1.x-dev
+projects[media][version] = 1.4
 projects[media][patch][] = "https://drupal.org/files/issues/wysiwyg_summary-1995030-3.patch"
 ; projects[media][version] = 2.x-dev
 ; projects[media][patch][] = "https://drupal.org/files/issues/media-7.x-2.x-wysiwyg-summary-support-1995030-6.patch"
