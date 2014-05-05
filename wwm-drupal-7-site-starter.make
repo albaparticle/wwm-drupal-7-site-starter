@@ -308,8 +308,11 @@ projects[] = media_bliptv
 ; MBP 7.x-1.x is for Media 7.x-1.x - requires explicitly stating which version to pull
 ; MBP 7.x-3.x is for Media 7.x-2.x
 ; projects[] = media_browser_plus
-projects[media_browser_plus][type] = "module"
+; projects[media_browser_plus][type] = "module"
 projects[media_browser_plus][version] = 1.x-dev
+; projects[media_browser_plus][download][type] = "get"
+; projects[media_browser_plus][download][url] = "http://ftp.drupal.org/files/projects/media_browser_plus-7.x-1.x-dev.tar.gz"
+
 
 ; Reviewed on 2014-04-30
 ; The media_derivatives modules are not ready for production environments
