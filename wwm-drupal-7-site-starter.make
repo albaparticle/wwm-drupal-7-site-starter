@@ -123,6 +123,7 @@ projects[] = archive
 projects[] = autoassignrole
 projects[] = auto_entitylabel
 projects[] = auto_nodetitle
+projects[] = backup_migrate_files
 projects[] = better_formats
 projects[] = better_exposed_filters
 projects[] = boxes
