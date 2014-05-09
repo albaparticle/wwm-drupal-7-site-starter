@@ -16,12 +16,6 @@ mv /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcale
 rm -r /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar-org
 chown -R wwmhosting-admin:users /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar
 
-
-# Copy jquery.ui to jquery_ui module because for some reason it is not being recognized in the 
-# sites/all/libraries directory
-# cp -r /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/jquery.ui /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/modules/jquery_ui
-# chown -R wwmhosting-admin:users /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/modules/jquery_ui
-
 # Change name of SimplePie Library
 mv /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/simplepie/simplepie_*.*.*.mini.php /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/simplepie/simplepie.compiled.php
 chown -R wwmhosting-admin:users /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/simplepie/simplepie.compiled.php
