@@ -26,3 +26,15 @@ chown -R wwmhosting-admin:users /data/disk/wwmhosting-admin/static/$platform_dir
 mv /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/simplepie/simplepie_*.*.*.mini.php /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/simplepie/simplepie.compiled.php
 chown -R wwmhosting-admin:users /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/simplepie/simplepie.compiled.php
 
+# Move TinyMCE Spell Checker
+# rm -rf /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/tinymce/jscripts/tiny_mce/plugins/spellchecker
+# mv  /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/tinymce/jscripts/tiny_mce/plugins/spellchecker-new  /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/tinymce/jscripts/tiny_mce/plugins/spellchecker
+# chown wwmhosting-admin:users /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/tinymce/jscripts/tiny_mce/plugins/spellchecker
+
+# Unzip Aspell Spell Checker
+mv /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell/aspell.7z /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell.7z
+cd /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/ckeditor/plugins/
+7z x aspell.7z
+rm /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell.7z
+chown -R wwmhosting-admin:users /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell
+
