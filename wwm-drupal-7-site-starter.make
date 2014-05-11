@@ -600,8 +600,10 @@ projects[] = ed_classified
 projects[] = forum_access
 projects[] = profileplus
 
-; Reviewed on 2014-02-24
-; The following item needs to have WWM Patch applied
+; Reviewed on 2014-05-10
+; The following item needs to have WWM version of module which applies patch
+; from https://drupal.org/comment/8506285#comment-8506285 to create Rules Event on Role Expiration
+; and removes restriction on expiration dates being in the past.
 ; projects[] = role_expire
 projects[role_expire][type] = "module"
 projects[role_expire][download][type] = "git"
