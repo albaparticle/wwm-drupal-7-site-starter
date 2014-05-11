@@ -578,12 +578,6 @@ projects[date_navigation][download][branch] = 7.x-1.x-wwm
 projects[] = acl
 projects[] = advanced_forum
 projects[] = advuser
-
-; Reviewed on 2014-02-24
-; the CER module was stopped being used.  Not removing yet in case we need to change this decision
-; projects[cer][version] = 2.x-dev
-; projects[cer][type] = "module"
-
 projects[] = chain_menu_access
 projects[] = commerce
 projects[] = commerce_addressbook
