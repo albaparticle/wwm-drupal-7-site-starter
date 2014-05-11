@@ -26,51 +26,90 @@ api = 2
 ; alternative core projects like Pressflow. Note that makefiles included with
 ; install profiles *should not* include a core project.
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-22
 ; Use Omega8.cc enhanced Drupal core instead of Drupal core:
 ; See https://omega8.cc/how-to-add-custom-platform-properly-140 for latest download URL
 projects[drupal][type] = "core"
 projects[drupal][download][type] = "get"
-projects[drupal][download][url] = "http://files.aegir.cc/core/drupal-7.26.1.tar.gz"
+projects[drupal][download][url] = "http://files.aegir.cc/core/drupal-7.27.2.tar.gz"
   
+; Reviewed on 2014-04-22
 ; Add Modules that are automatically included by BOA hosting system
 ; to override them with the latest versions
+; See https://omega8.cc/supported-enabled-disabled-a-complete-list-150
 ; --------
-projects[] = admin							
-projects[] = agrcache
+; Contrib [S]upported:	
+projects[] = ais
 projects[] = backup_migrate
-projects[] = backup_migrate_files
+projects[] = ckeditor
+; projects[] = fbconnect
+projects[] = imagecache_external
+projects[] = responsive_images
+projects[] = tinybrowser
+projects[] = wysiwyg_spellcheck
+	
+; Contrib [S]upported and [B]undled:	
+projects[] = advagg
 projects[] = blockcache_alter
 projects[] = boost
+projects[] = cdn
 projects[] = config_perms
-projects[] = core_library
 projects[] = css_emimage
-
-; Reviewed on 2014-02-24
-; The following module needs to use the dev version to fix issue described in
-; {enter URL for Drupal Issue Here}
-projects[] = entitycache
-; projects[entitycache][version] = 1.x-dev
-; projects[entitycache][type] = "module"
-
+projects[] = display_cache
+projects[] = esi
+projects[] = expire
 projects[] = filefield_nginx_progress
 projects[] = flood_control
+projects[] = force_password_change
 projects[] = fpa
 projects[] = httprl
+projects[] = login_security
+projects[] = nocurrent_pass
+projects[] = panels_content_cache
+projects[] = purge
+; Print module is now included in BOA and patched to use BOA wkhtmltopdf library for security
+; projects[] = print
 projects[] = readonlymode
-
-; Reviewed on 2014-02-24
-; The following module needs to use the dev version to fix issue described in
-; {enter URL for Drupal Issue Here}
+projects[] = reroute_email
+projects[] = securesite
+projects[] = site_verify
+projects[] = speedy
+projects[] = taxonomy_edge
+projects[] = textile
+projects[] = variable_clean
+projects[] = vars
+projects[] = views_cache_bully
+projects[] = views_content_cache
+projects[] = views404
+	
+; Contrib [F]orce[E]nabled	
+projects[] = entitycache
+; The following module needs to use the dev version because stable release is too old
 ; projects[] = robotstxt
 projects[robotstxt][version] = 1.x-dev
 projects[robotstxt][type] = "module"
+	
+; Contrib [F]orce[D]isabled	
+; Commented out modules never used anyway
+; projects[] = background_process
+; projects[] = coder
+; projects[] = css_gzip
+projects[] = devel
+; projects[] = javascript_aggregator
+; projects[] = l10n_update
+; projects[] = performance
+; projects[] = poormanscron
+; projects[] = supercron
+; projects[] = ultimate_cron
 
-projects[] = seckit
-projects[] = site_verify
-; projects[] = textile
-projects[] = variable_clean
-projects[] = vars
+; Contrib [NA]:	
+; Commented out modules never used anyway
+; projects[] = cache_backport
+; projects[] = redis
+	
+; Contrib [S]oft[E]nabled:		
+projects[] = admin
+projects[] = rubik
 
 ; Modules Added for Wickwood Marketing Drupal 7 Site Starter
 ; --------
@@ -84,6 +123,7 @@ projects[] = archive
 projects[] = autoassignrole
 projects[] = auto_entitylabel
 projects[] = auto_nodetitle
+projects[] = backup_migrate_files
 projects[] = better_formats
 projects[] = better_exposed_filters
 projects[] = boxes
@@ -109,7 +149,6 @@ projects[] = custom_formatters
 projects[] = customfilter
 projects[] = date
 projects[] = date_ical
-projects[] = devel
 projects[] = devel_themer
 projects[] = delta
 projects[] = diff
@@ -117,20 +156,12 @@ projects[] = ds
 projects[] = elements
 projects[] = email
 projects[] = enabled_modules
-
-; Reviewed on 2014-02-24
-; The following module needs to use the dev version to fix issue described in
-; https://drupal.org/node/1440928
-; projects[] = entity
-projects[entity][version] = 1.3
-projects[entity][type] = "module"
-projects[entity][patch][] = "https://drupal.org/files/1440928_fix_fatal_error_for_entity_tokens-44.patch"
-
+projects[] = entity
 projects[] = entity_autocomplete
 
-; Reviewed on 2014-02-24
-; The following module needs to be patched to fix issue described in
-; https://drupal.org/node/1967180
+; Reviewed on 2014-04-22
+; The following module needs to be patched to allow skipping entity access check when rendering field
+; as described in https://drupal.org/node/1967180
 ; projects[] = entityreference
 projects[entityreference][version] = 1.x-dev
 projects[entityreference][patch][] = "https://drupal.org/files/1967180-7.patch"
@@ -143,15 +174,15 @@ projects[] = exclude_node_title
 projects[] = extlink
 projects[] = features
 
-; Reviewed on 2014-02-24
-; The following item needs to have WWM Patch applied to 
-; support import of encrypted passwords from 
+; Reviewed on 2014-04-22
+; The following module needs to have Patch applied to support import of encrypted passwords from 
 ; https://drupal.org/files/1611554-3-support-for-encrypted-passwords.patch
-; projects[] = feeds
-projects[feeds][type] = "module"
-projects[feeds][download][type] = "git"
-projects[feeds][download][url] = "https://github.com/wickwood/feeds.git"
-projects[feeds][download][branch] = wwm-7.x-2.x-with-support-for-encrypted-passwords-4
+; If this feature is not nessary than the stable version can be used.
+projects[] = feeds
+; projects[feeds][type] = "module"
+; projects[feeds][download][type] = "git"
+; projects[feeds][download][url] = "https://github.com/wickwood/feeds.git"
+; projects[feeds][download][branch] = wwm-7.x-2.x-with-support-for-encrypted-passwords-4
 
 projects[] = feeds_tamper
 projects[] = fences
@@ -160,7 +191,7 @@ projects[] = field_permissions
 projects[] = field_slideshow
 projects[] = field_tools
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-22
 ; The following item needs to have a patch applied to
 ; hide "manage display" tab when permissions are revoked
 ; from https://drupal.org/comment/6766880#comment-6766880
@@ -170,11 +201,11 @@ projects[field_ui_permissions][type] = "module"
 projects[field_ui_permissions][version] = 1.x-dev
 projects[field_ui_permissions][patch][] = "https://drupal.org/files/i1837156-1.patch"
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-22
 ; The following module is only needed if the Media 7.x-2.x module is used
-;projects[] = file_entity
-;projects[file_entity][version] = 2.x-dev
-;projects[file_entity][type] = "module"
+; projects[] = file_entity
+; projects[file_entity][version] = 2.x-dev
+; projects[file_entity][type] = "module"
 
 projects[] = floating_block
 projects[] = exposed_filter_data
@@ -188,12 +219,12 @@ projects[] = ga_tokenizer
 projects[] = gdoc_field
 projects[] = getid3
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-22
 ; The following module needs to use the dev version 
 ; because nothing else exists
-; projects[] = getresponse
-projects[getresponse][type] = "module"
-projects[getresponse][download][branch] = "7.x-1.x"
+projects[] = getresponse
+; projects[getresponse][type] = "module"
+; projects[getresponse][download][branch] = "7.x-1.x"
 
 projects[] = globalredirect
 projects[] = google_analytics
@@ -201,25 +232,18 @@ projects[] = google_analytics_reports
 projects[] = googleanalytics_perpage
 projects[] = html5_base
 
-; Reviewed on 2014-02-24
-; The following module needs to use the sandbox version
-; because nothing else exists
-projects[image_effects_text][type] = "module"
-projects[image_effects_text][download][type] = "git"
-projects[image_effects_text][download][url] = "http://git.drupal.org/sandbox/fietserwin/1435964.git"
+; Reviewed on 2014-04-30
+; This sandbox project has been integrated into the 7.x-1.0 version of the imagecache_actions project.
+; projects[image_effects_text][type] = "module"
+; projects[image_effects_text][download][type] = "git"
+; projects[image_effects_text][download][url] = "http://git.drupal.org/sandbox/fietserwin/1435964.git"
 
 projects[] = image_resize_filter
 projects[] = imagecache_actions
 projects[] = imagecache_profiles
-
-; Reviewed on 2014-02-24
-; The following module is commented out because
-; because it only exists for Drupal 6
-; projects[] = imagecache_scale9actions
-
 projects[] = imagecache_proportions
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The following module needs to use the dev version 
 ; because "stable" release candidate is very old 
 ; As of this commit the latest dev release was 2013-Dec-23
@@ -233,33 +257,37 @@ projects[] = javascript_libraries
 projects[] = jcarousel
 projects[] = job_scheduler
 projects[] = jquery_plugin
-projects[] = jquery_ui
 projects[] = jquery_update
 projects[] = jquerymenu
+projects[] = konamicode
 projects[] = libraries
 projects[] = lightbox2
 projects[] = link
 projects[] = location
 projects[] = location_feeds
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The mailchimp_lists submodule of mailchimp needs to have WWM Patch applied
 ; only if you need to filter out users with invalid emails designated with nomail.invalid
 ; during the sync with Mailchimp
-; projects[] = mailchimp
-projects[mailchimp][type] = "module"
-projects[mailchimp][download][type] = "git"
-projects[mailchimp][download][url] = "https://github.com/wickwood/mailchimp.git"
-projects[mailchimp][download][branch] = 7.x-2.x-skip-noemail-on-sync
+projects[] = mailchimp
+; projects[mailchimp][type] = "module"
+; projects[mailchimp][download][type] = "git"
+; projects[mailchimp][download][url] = "https://github.com/wickwood/mailchimp.git"
+; projects[mailchimp][download][branch] = 7.x-2.x-skip-noemail-on-sync
 
 projects[] = mailsystem
 
-; Reviewed on 2014-02-24
-; The following module needs to use the dev version 
+; Reviewed on 2014-04-30
+; The following module needs to use the 1.x-dev version 
 ; because version 2 is not ready for production and 
 ; only bug fixes are being applied to 1.x-dev
-projects[] = media
-; projects[media][type] = "module"
+; Also need to apply patch from 
+: https://drupal.org/node/1995030 to add support for media in WYSIWYG summary 
+; projects[] = media
+projects[media][type] = "module"
+projects[media][version] = 1.4
+projects[media][patch][] = "https://drupal.org/files/wysiwyg_summary-1995030-3.patch"
 ; projects[media][version] = 2.x-dev
 ; projects[media][patch][] = "https://drupal.org/files/issues/media-7.x-2.x-wysiwyg-summary-support-1995030-6.patch"
 
@@ -275,29 +303,32 @@ projects[] = media
 projects[] = media_archive
 projects[] = media_bliptv
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; Use the following guidelines depending on which version of Media module is being used:
 ; MBP 7.x-1.x is for Media 7.x-1.x - requires explicitly stating which version to pull
 ; MBP 7.x-3.x is for Media 7.x-2.x
 ; projects[] = media_browser_plus
-projects[media_browser_plus][version] = 1.0-beta3
-projects[media_browser_plus][type] = "module"
+; projects[media_browser_plus][type] = "module"
+; projects[media_browser_plus][version] = 1.x-dev
+projects[media_browser_plus][download][type] = "get"
+projects[media_browser_plus][download][url] = "http://ftp.drupal.org/files/projects/media_browser_plus-7.x-1.x-dev.tar.gz"
 
-; Reviewed on 2014-02-24
+
+; Reviewed on 2014-04-30
 ; The media_derivatives modules are not ready for production environments
 ; projects[] = media_derivatives
 ; projects[] = media_derivatives_html5
 
 projects[] = media_feeds
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The following module is commented out because
 ; it depends on the media_derivatives module
 ; projects[] = media_ffmpeg_simple
 
 projects[] = media_flickr
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The following module uses the beta8 release because
 ; that is the most stable version
 ; 7.x-1.x - requires explicitly stating which version to pull
@@ -307,7 +338,7 @@ projects[media_gallery][version] = 1.0-beta8
 projects[] = media_node
 projects[] = media_update
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The following module needs to use the sandbox version
 ; from https://drupal.org/sandbox/DevinCarlson/1823634
 ; because nothing else exists yet but it may soon be added to media module
@@ -330,13 +361,12 @@ projects[] = module_instructions
 projects[] = mollom
 projects[] = multiform
 projects[] = navbar
-projects[] = nocurrent_pass
 projects[] = node_clone
 projects[] = node_limit
 projects[] = node_recur
 projects[] = nodereference_url
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The following line pulled the 7.x-2.0-beta1 version of the nodequeue module 
 ; and this caused a fatal error because it conflicts with latest version of MariaDB 
 ; presumably because the latest stable release is 7.x-2.0-beta1 version on 2011-Sep-20
@@ -347,7 +377,7 @@ projects[nodequeue][type] = "module"
 projects[] = nodesquirrel
 projects[] = noggin
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; Notifications was orginially commented out because it requires PHP 5.3 which was not supported by BOA
 ; BOA now does support PHP 5.3, but there is not a stable release of the module yet and we do not have
 ; a clear need for it at this time to make it worth adding and testing
@@ -363,16 +393,16 @@ projects[] = password-reset
 projects[] = pathauto
 projects[] = pathologic
 
-; Reviewed on 2014-02-24
-; The following module needs to use the dev version
-; because nothing else exists
-projects[phone][version] = 1.x-dev
+; Reviewed on 2014-04-30
+; Phone 1.0-beta1 released 2014-Jan-14
 projects[phone][type] = "module"
+projects[phone][version] = 1.0-beta1
+
 
 projects[] = plupload
 projects[] = popup
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The following item requires a custom WWM patch to be applied
 ; in order to allow prepopulation from links created with Views.
 ; projects[] = prepopulate
@@ -380,19 +410,14 @@ projects[prepopulate][download][type] = "git"
 projects[prepopulate][download][url] = "https://github.com/wickwood/prepopulate.git"
 projects[prepopulate][download][branch] = 7.x-2.x-wwm
 
-projects[] = print
 projects[] = profiler
 projects[] = projekktor
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The following module may need to be patched if the issues reported on
 ; https://drupal.org/node/969318, https://drupal.org/node/1864946 and https://drupal.org/node/2094395
-projects[publication_date][version] = 1.x-dev
 projects[publication_date][type] = "module"
-; The following can be removed if the issues stated above have been resolved by committed fixes.
-; projects[publication_date][download][type] = "git"
-; projects[publication_date][download][url] = "https://github.com/wickwood/publication_date.git"
-; projects[publication_date][download][branch] = 7.x-1.x-wwm
+projects[publication_date][version] = 1.x-dev
 
 projects[] = publish_button
 projects[] = publishcontent
@@ -407,7 +432,7 @@ projects[quicktabs][version] = 3.x-dev
 
 projects[] = queue_ui
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The following item needs to have patch applied from
 ; from https://drupal.org/node/1239478#comment-6439934 
 ; to allow Views to show actual Username instead of Real Name.
@@ -423,14 +448,13 @@ projects[realname][patch][] = "https://drupal.org/files/issues/realname-views-us
 
 projects[] = recaptcha
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The following item needs to have patch applied from
 ; from https://drupal.org/comment/8506117#comment-8506117 to prevent redirect loops.
 ; projects[] = redirect
 projects[redirect][version] = 1.x-dev
 projects[redirect][patch][] = "https://drupal.org/files/issues/redirect.circular-loops.1796596-146.patch"
 
-projects[] = reroute_email
 projects[] = role_delegation
 projects[] = rules
 projects[] = rules_link
@@ -438,7 +462,7 @@ projects[] = rules_linkevent
 projects[] = scheduler
 projects[] = search_config
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The following item needs to have a patch applied
 ; from http://drupal.org/node/1928156#comment-7145266 to allow Image style select in simpleads block configuration. 
 ; and a cutom WWM patch applied to provide an added extra text field for image ads.
@@ -466,7 +490,7 @@ projects[] = transliteration
 projects[] = unique_field
 projects[] = upload_default_avatar
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The following item needs to have a patch applied
 ; from https://drupal.org/node/1249684#comment-6355236 to prevent exposed filter on Roles to stop dissappearing when  
 ; "Only has 'authenticated user' role" or "Has roles in addition to 'authenticated user' ".
@@ -479,7 +503,7 @@ projects[views][download][type] = "git"
 projects[views][download][url] = "https://github.com/wickwood/views.git"
 projects[views][download][branch] = 7.x-3.x-wwm
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The following item needs to have the patch applied from
 ; https://drupal.org/node/1967702#comment-7289190 
 ; to allow view arguments be passed as parameters to rule set.
@@ -494,7 +518,7 @@ projects[] = views_export_xls
 projects[] = views_megarow
 projects[] = views_php
 
-; Reviewed on 2014-03-13
+; Reviewed on 2014-04-30
 ; Must dev version of this views_slideshow to remove the dependency on views >=3.0
 ; projects[] = views_slideshow
 projects[views_slideshow][version] = 3.x-dev
@@ -506,7 +530,7 @@ projects[] = workbench
 projects[] = workbench_access
 projects[] = workbench_media
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The following item requires a custom WWM patch that is created from patching this module with a patch from
 ; https://drupal.org/node/1447886#comment-7570151 to limit viewing of unpubished nodes by content type.
 ; and the patch from https://drupal.org/node/1361210#comment-6052334 to fix issue with 
@@ -518,7 +542,7 @@ projects[workbench_moderation][download][type] = "git"
 projects[workbench_moderation][download][url] = "https://github.com/wickwood/workbench_moderation.git"
 projects[workbench_moderation][download][branch] = 7.x-1.x-wwm
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; The following item needs to a patch applied from
 ; https://drupal.org/comment/7404872#comment-7404872 to WYSIWYG editors to exposed summary fields.
 ; Note this version of the patch also requires patching Media module
@@ -533,14 +557,14 @@ projects[] = xmlsitemap
 
 
 ; WWM Custom Modules and Features to pull from a GitHub
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; projects[] = date_navigation
 projects[date_navigation][type] = "module"
 projects[date_navigation][download][type] = "git"
 projects[date_navigation][download][url] = "https://github.com/wickwood/date_navigation.git"
 projects[date_navigation][download][branch] = 7.x-1.x-wwm
 
-; Reviewed on 2014-02-24
+; Reviewed on 2014-04-30
 ; Current state of custom account tabs requires that this module be installed 
 ; and used at the site module level not the platform level
 ; This is module is currently customized only for the ICCA website.
@@ -594,20 +618,9 @@ projects[role_expire][download][branch] = 7.x-1.x-wwm
 ; Themes
 ; --------
 ; Themes Added for Wickwood Marketing Drupal 7 Site Starter
-
-; Reviewed on 2014-02-24
-; The following theme uses the dev version because
-; stable releases are over a year old.
-; projects[] = adaptivetheme
-projects[adaptivetheme][version] = 3.x-dev
-projects[adaptivetheme][type] = "theme"
-
-; Reviewed on 2014-02-24
-; The following theme uses the dev version because
-; stable releases are over a year old.
-; projects[] = corolla
-projects[corolla][version] = 3.x-dev
-projects[corolla][type] = "theme"
+; Reviewed on 2014-04-30
+projects[] = adaptivetheme
+projects[] = corolla
 
 ; Reviewed on 2014-02-24
 ; projects[] = ember
@@ -616,27 +629,13 @@ projects[ember][type] = "theme"
 
 projects[] = fbg
 projects[] = omega
-
-; Reviewed on 2014-02-24
-; The following theme uses the dev version because
-; stable releases are over a year old.
-; projects[] = pixture_reloaded
-projects[pixture_reloaded][version] = 3.x-dev
-projects[pixture_reloaded][type] = "theme"
-
-projects[] = rubik
-
-; The following theme uses the dev version because
-; stable releases are over a year old.
-; projects[] = sky
-projects[sky][version] = 3.x-dev
-projects[sky][type] = "theme"
-
-projects[tao][type] = "theme"
+projects[] = pixture_reloaded
+projects[] = sky
+projects[] = tao
 
 ; For some reason zen would not dowload with just the following line
 ; projects[] = zen
-projects[zen][version] = 5.4
+projects[zen][version] = 5.5
 projects[zen][type] = "theme"
 
 
@@ -658,16 +657,10 @@ libraries[jquery][download][type] = "file"
 libraries[jquery][download][url] = "https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"
 libraries[jquery.cycle][download][type] = "file"
 libraries[jquery.cycle][download][url] = "http://malsup.github.com/jquery.cycle.all.js"
-; libraries[jquery.ui][download][type] = "file"
-; libraries[jquery.ui][download][url] = "http://jquery-ui.googlecode.com/files/jquery-ui-1.8.17.zip"
-; libraries[jquery.ui][download][sha1] = "a3d1119d7b5a4a0b4eb50929ffd05cc7e7cd3eb2"
-; libraries[jquery.ui][destination] = "sites/all/modules/jquery_ui"
 libraries[iCalcreator][download][type] = "file"
 libraries[iCalcreator][download][url] = "http://kigkonsult.se/downloads/dl.php?f=iCalcreatorusing-2.18"
 libraries[simplepie][download][type] = "file"
 libraries[simplepie][download][url] = "https://github.com/simplepie/simplepie/archive/master.zip"
-libraries[jquery.ui][download][type] = "file"
-libraries[jquery.ui][download][url] = "http://jqueryui.com/resources/download/jquery-ui-1.10.2.zip"
 libraries[mailchimp][download][type] = "file"
 libraries[mailchimp][download][url] = "http://apidocs.mailchimp.com/api/downloads/mailchimp-api-class.zip"
 libraries[plupload][download][type] = "file"
@@ -678,12 +671,15 @@ libraries[superfish][download][type] = "file"
 libraries[superfish][download][url] = "http://dl.dropbox.com/u/22795799/superfish-library-for-drupal-v1.1.zip"
 libraries[tinymce][download][type] = "file"
 libraries[tinymce][download][url] = "http://download.moxiecode.com/tinymce/tinymce_4.0b3.zip"
-libraries[spellchecker-new][download][type] = "file"
-libraries[spellchecker-new][download][url] = "http://github.com/downloads/tinymce/tinymce/tinymce_spellchecker_php_2_0_6.zip"
-libraries[spellchecker-new][directory_name] = "spellchecker-new"
-libraries[spellchecker-new][destination] = "libraries/tinymce/jscripts/tiny_mce/plugins"
-libraries[wkhtmltopdf][download][type] = "file"
-libraries[wkhtmltopdf][download][url] = "http://wkhtmltopdf.googlecode.com/files/wkhtmltopdf-0.11.0_rc1-static-amd64.tar.bz2"
+
+; Sub-library plugins
+libraries[aspell][download][type] = "file"
+libraries[aspell][download][url] = "http://s1.ckeditor.com/sites/default/files/uploads/aspell.7z"
+libraries[aspell][destination] = "libraries/ckeditor/plugins"
+libraries[spellchecker][download][type] = "file"
+libraries[spellchecker][download][url] = "http://download.moxiecode.com/spellcheckers/tinymce_spellchecker_php_4.0.zip"
+libraries[spellchecker][directory_name] = "spellchecker"
+libraries[spellchecker][destination] = "libraries/tinymce/jscripts/tiny_mce/plugins"
 
 
 
