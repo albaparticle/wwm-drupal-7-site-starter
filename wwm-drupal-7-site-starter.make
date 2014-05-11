@@ -174,15 +174,15 @@ projects[] = exclude_node_title
 projects[] = extlink
 projects[] = features
 
-; Reviewed on 2014-04-22
+; Reviewed on 2014-05-11
 ; The following module needs to have Patch applied to support import of encrypted passwords from 
 ; https://drupal.org/files/1611554-3-support-for-encrypted-passwords.patch
 ; If this feature is not nessary than the stable version can be used.
-projects[] = feeds
-; projects[feeds][type] = "module"
-; projects[feeds][download][type] = "git"
-; projects[feeds][download][url] = "https://github.com/wickwood/feeds.git"
-; projects[feeds][download][branch] = wwm-7.x-2.x-with-support-for-encrypted-passwords-4
+; projects[] = feeds
+projects[feeds][type] = "module"
+projects[feeds][download][type] = "git"
+projects[feeds][download][url] = "https://github.com/wickwood/feeds.git"
+projects[feeds][download][branch] = wwm-7.x-2.x-with-support-for-encrypted-passwords-4
 
 projects[] = feeds_tamper
 projects[] = fences
