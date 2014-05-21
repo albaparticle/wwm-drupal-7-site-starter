@@ -173,7 +173,7 @@ projects[] = easy_breadcrumb
 projects[] = exclude_node_title
 
 ; Reviewed on 2014-05-18
-; Module needs to be patched to fix 
+; extlink Module needs to be patched to fix 
 ; Images linking to an external link ALWAYS have the "external link" icon displayed
 ; see issue: https://drupal.org/node/2257023
 ;projects[] = extlink
@@ -438,6 +438,7 @@ projects[] = purl
 ; however, we do not need to patch
 ; projects[] = quicktabs
 projects[quicktabs][version] = 3.x-dev
+projects[quicktabs][patch][] = "https://drupal.org/files/2104643-revert-qt-487518-5.patch"
 
 projects[] = queue_ui
 
@@ -643,7 +644,7 @@ projects[] = tao
 projects[zen][version] = 5.5
 projects[zen][type] = "theme"
 
-
+; Reviewed on 2014-05-18
 ; Libraries Added for Wickwood Marketing Drupal 7 Site Starter
 ; ---------
 libraries[ckeditor][download][type] = "file"
@@ -651,7 +652,7 @@ libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEd
 libraries[colorbox][download][type] = "file"
 libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/master.zip"
 libraries[fullcalendar][download][type] = "file"
-libraries[fullcalendar][download][url] = "http://arshaw.com/fullcalendar/downloads/fullcalendar-1.5.3.zip"
+libraries[fullcalendar][download][url] = "https://github.com/arshaw/fullcalendar/releases/download/v1.6.4/fullcalendar-1.6.4.zip"
 libraries[getid3][download][type] = "file"
 libraries[getid3][download][url] = "http://downloads.sourceforge.net/project/getid3/getID3%28%29%201.x/1.9.3/getid3-1.9.3-20111213.zip"
 libraries[html5bp][download][type] = "file"
