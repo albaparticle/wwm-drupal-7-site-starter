@@ -167,7 +167,15 @@ projects[entityreference][version] = 1.x-dev
 projects[entityreference][patch][] = "https://drupal.org/files/1967180-7.patch"
 
 projects[] = entityreference_prepopulate
-projects[] = entityreference_view_widget
+
+; Reviewed on 2014-05-21
+; Pulling verions 7.x-2.0-alpha2 of entityreference_view_widgetto test
+; if this is the cause of the problem of field in Ride Reports 
+; not saving selected rides.  Keeping everything else the same that was updated and
+; just reverting this module.
+; projects[] = entityreference_view_widget
+projects[entityreference_view_widget][version] = 2.0-alpha2
+
 projects[] = entity_view_mode
 projects[] = easy_breadcrumb
 projects[] = exclude_node_title
