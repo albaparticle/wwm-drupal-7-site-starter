@@ -167,7 +167,19 @@ projects[entityreference][version] = 1.x-dev
 projects[entityreference][patch][] = "https://drupal.org/files/1967180-7.patch"
 
 projects[] = entityreference_prepopulate
-projects[] = entityreference_view_widget
+
+; Reviewed on 2014-05-21
+; Pulling verions 7.x-2.0-alpha3 of entityreference_view_widget to test
+; if this is the cause of the problem of field in Ride Reports 
+; not saving selected rides.  Keeping everything else the same that was updated and
+; just reverting this module.
+; projects[] = entityreference_view_widget
+; projects[entityreference_view_widget][version] = 2.0-alpha3
+projects[entityreference_view_widget][type] = "module"
+projects[entityreference_view_widget][download][type] = "git"
+projects[entityreference_view_widget][download][url] = "https://github.com/wickwood/entityreference_view_widget.git"
+projects[entityreference_view_widget][download][branch] = 7.x-2.x-21776175-wwm
+
 projects[] = entity_view_mode
 projects[] = easy_breadcrumb
 projects[] = exclude_node_title
@@ -438,7 +450,7 @@ projects[] = purl
 ; however, we do not need to patch
 ; projects[] = quicktabs
 projects[quicktabs][version] = 3.x-dev
-projects[quicktabs][patch][] = "https://drupal.org/files/2104643-revert-qt-487518-5.patch"
+; projects[quicktabs][patch][] = "https://drupal.org/files/2104643-revert-qt-487518-5.patch"
 
 projects[] = queue_ui
 
