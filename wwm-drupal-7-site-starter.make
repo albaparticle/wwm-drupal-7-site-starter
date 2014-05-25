@@ -291,11 +291,11 @@ projects[] = location_feeds
 ; The mailchimp_lists submodule of mailchimp needs to have WWM Patch applied
 ; only if you need to filter out users with invalid emails designated with nomail.invalid
 ; during the sync with Mailchimp
-projects[] = mailchimp
-; projects[mailchimp][type] = "module"
-; projects[mailchimp][download][type] = "git"
-; projects[mailchimp][download][url] = "https://github.com/wickwood/mailchimp.git"
-; projects[mailchimp][download][branch] = 7.x-2.x-skip-noemail-on-sync
+; projects[] = mailchimp
+projects[mailchimp][type] = "module"
+projects[mailchimp][download][type] = "git"
+projects[mailchimp][download][url] = "https://github.com/wickwood/mailchimp.git"
+projects[mailchimp][download][branch] = 7.x-2.x-skip-noemail-on-sync
 
 projects[] = mailsystem
 
