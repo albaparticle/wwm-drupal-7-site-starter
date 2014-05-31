@@ -114,6 +114,7 @@ projects[] = rubik
 ; Modules Added for Wickwood Marketing Drupal 7 Site Starter
 ; --------
 projects[] = addressfield
+projects[] = anchors_panels_navigation
 projects[] = admin_views
 projects[] = administerusersbyrole
 projects[] = advanced_help
