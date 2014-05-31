@@ -156,7 +156,17 @@ projects[] = ds
 projects[] = elements
 projects[] = email
 projects[] = enabled_modules
-projects[] = entity
+
+; Reviewed on 2014-05-26
+; Must pull patched module from WWM GitHub repo to
+; allow for tokens to be created for date fields that have both starting and end dates.
+; https://drupal.org/node/1621084
+; projects[] = entity
+projects[entity][type] = "module"
+projects[entity][download][type] = "git"
+projects[entity][download][url] = "https://github.com/wickwood/entity.git"
+projects[entity][download][branch] = 7.x-1.1-dev-wwm
+
 projects[] = entity_autocomplete
 
 ; Reviewed on 2014-04-22
