@@ -437,8 +437,8 @@ projects[] = projekktor
 ; The publication_date module must be pulled from the WWM GitHub Repo
 ; to apply custimizations to work with custom Date Navigation module
 projects[publication_date][download][type] = "git"
-projects[publication_date][download][url] = "https://github.com/wickwood/prepopulate.git"
-projects[publication_date][download][branch] = 7.x-2.x-wwm
+projects[publication_date][download][url] = "https://github.com/wickwood/publication_date.git"
+projects[publication_date][download][branch] = 7.x-1.x-wwm
 
 projects[] = publish_button
 projects[] = publishcontent
