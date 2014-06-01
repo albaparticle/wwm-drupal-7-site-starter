@@ -434,10 +434,11 @@ projects[] = profiler
 projects[] = projekktor
 
 ; Reviewed on 2014-04-30
-; The following module may need to be patched if the issues reported on
-; https://drupal.org/node/969318, https://drupal.org/node/1864946 and https://drupal.org/node/2094395
-projects[publication_date][type] = "module"
-projects[publication_date][version] = 1.x-dev
+; The publication_date module must be pulled from the WWM GitHub Repo
+; to apply custimizations to work with custom Date Navigation module
+projects[publication_date][download][type] = "git"
+projects[publication_date][download][url] = "https://github.com/wickwood/prepopulate.git"
+projects[publication_date][download][branch] = 7.x-2.x-wwm
 
 projects[] = publish_button
 projects[] = publishcontent
