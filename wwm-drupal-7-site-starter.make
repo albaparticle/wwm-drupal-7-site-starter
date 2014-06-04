@@ -546,6 +546,7 @@ projects[views_slideshow][version] = 3.x-dev
 
 projects[] = views_system
 projects[] = webform
+projects[] = webform_ajax
 projects[] = widgets
 projects[] = workbench
 projects[] = workbench_access
