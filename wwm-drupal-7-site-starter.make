@@ -677,7 +677,7 @@ libraries[jquery.cycle][download][url] = "http://malsup.github.com/jquery.cycle.
 libraries[iCalcreator][download][type] = "file"
 libraries[iCalcreator][download][url] = "http://kigkonsult.se/downloads/dl.php?f=iCalcreatorusing-2.18"
 libraries[jquery.imagesloaded][download][type] = "file"
-libraries[jquery.imagesloaded][download][url] = "https://github.com/desandro/imagesloaded.git"
+libraries[jquery.imagesloaded][download][url] = "https://github.com/desandro/imagesloaded/archive/master.zip"
 libraries[mailchimp][download][type] = "get"
 libraries[mailchimp][download][url] = "https://bitbucket.org/mailchimp/mailchimp-api-php/get/2.0.4.zip"
 libraries[simplepie][download][type] = "file"
