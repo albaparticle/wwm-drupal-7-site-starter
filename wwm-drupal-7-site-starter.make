@@ -114,6 +114,7 @@ projects[] = rubik
 ; Modules Added for Wickwood Marketing Drupal 7 Site Starter
 ; --------
 projects[] = addressfield
+projects[] = advuser
 projects[] = anchors_panels_navigation
 projects[] = admin_views
 projects[] = administerusersbyrole
@@ -430,6 +431,8 @@ projects[prepopulate][download][type] = "git"
 projects[prepopulate][download][url] = "https://github.com/wickwood/prepopulate.git"
 projects[prepopulate][download][branch] = 7.x-2.x-wwm
 
+projects[] = profile2
+projects[] = profile2_regpath
 projects[] = profiler
 projects[] = projekktor
 
