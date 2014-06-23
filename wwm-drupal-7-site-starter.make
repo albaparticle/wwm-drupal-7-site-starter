@@ -31,7 +31,7 @@ api = 2
 ; See https://omega8.cc/how-to-add-custom-platform-properly-140 for latest download URL
 projects[drupal][type] = "core"
 projects[drupal][download][type] = "get"
-projects[drupal][download][url] = "http://files.aegir.cc/core/drupal-7.27.2.tar.gz"
+projects[drupal][download][url] = "http://files.aegir.cc/core/drupal-7.28.1.tar.gz"
   
 ; Reviewed on 2014-04-22
 ; Add Modules that are automatically included by BOA hosting system
