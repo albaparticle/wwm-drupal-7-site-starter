@@ -662,7 +662,7 @@ libraries[spellchecker][download][type] = "file"
 libraries[spellchecker][download][url] = "http://download.moxiecode.com/spellcheckers/tinymce_spellchecker_php_4.0.zip"
 libraries[spellchecker][directory_name] = "spellchecker"
 libraries[spellchecker][destination] = "libraries/tinymce/jscripts/tiny_mce/plugins"\
-;”I Did It!!!”
+
 
 
 
