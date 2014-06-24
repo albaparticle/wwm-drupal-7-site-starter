@@ -218,8 +218,8 @@ projects[field_ui_permissions][type] = "module"
 projects[field_ui_permissions][version] = 1.x-dev
 projects[field_ui_permissions][patch][] = "https://drupal.org/files/i1837156-1.patch"
 
-; Reviewed on 2014-04-22
-; The following module is only needed if the Media 7.x-2.x module is used
+; Reviewed on 2014-06-23
+; The following module is only needed if the Media 7.x-2.x module is used (There doesn't seem to be a URL here...)
 ; projects[] = file_entity
 ; projects[file_entity][version] = 2.x-dev
 ; projects[file_entity][type] = "module"
