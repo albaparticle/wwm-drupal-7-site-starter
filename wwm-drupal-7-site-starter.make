@@ -249,8 +249,8 @@ projects[] = google_analytics_reports
 projects[] = googleanalytics_perpage
 projects[] = html5_base
 
-; Reviewed on 2014-04-30
-; This sandbox project has been integrated into the 7.x-1.0 version of the imagecache_actions project.
+; Reviewed on 2014-06-23
+; This sandbox project has been integrated into the 7.x-1.0 version of the imagecache_actions project. (URL leads to a 404 error.)
 ; projects[image_effects_text][type] = "module"
 ; projects[image_effects_text][download][type] = "git"
 ; projects[image_effects_text][download][url] = "http://git.drupal.org/sandbox/fietserwin/1435964.git"
