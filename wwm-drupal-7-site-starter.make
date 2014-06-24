@@ -33,7 +33,7 @@ projects[drupal][type] = "core"
 projects[drupal][download][type] = "get"
 projects[drupal][download][url] = "http://files.aegir.cc/core/drupal-7.28.1.tar.gz"
   
-; Reviewed on 2014-04-22
+; Reviewed on 2014-06-23
 ; Add Modules that are automatically included by BOA hosting system
 ; to override them with the latest versions
 ; See https://omega8.cc/supported-enabled-disabled-a-complete-list-150
@@ -167,7 +167,7 @@ projects[entity][download][branch] = 7.x-1.1-dev-wwm
 
 projects[] = entity_autocomplete
 
-; Reviewed on 2014-04-22
+; Reviewed on 2014-06-23
 ; The following module needs to be patched to allow skipping entity access check when rendering field
 ; as described in https://drupal.org/node/1967180
 ; projects[] = entityreference
