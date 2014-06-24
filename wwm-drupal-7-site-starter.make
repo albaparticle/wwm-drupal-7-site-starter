@@ -191,8 +191,8 @@ projects[extlink][patch][] = "https://drupal.org/files/issues/extlink-always-on-
 
 projects[] = features
 
-; Reviewed on 2014-05-11
-; The following module needs to have Patch applied to support import of encrypted passwords from 
+; Reviewed on 2014-06-23
+; The following module needs to have Patch applied to support import of encrypted passwords from (Dosn't look like anythign has changed)
 ; https://drupal.org/files/1611554-3-support-for-encrypted-passwords.patch
 ; If this feature is not nessary than the stable version can be used.
 projects[] = feeds
