@@ -26,7 +26,7 @@ api = 2
 ; alternative core projects like Pressflow. Note that makefiles included with
 ; install profiles *should not* include a core project.
 
-; Reviewed on 2014-04-22
+; Reviewed on 2014-06-23
 ; Use Omega8.cc enhanced Drupal core instead of Drupal core:
 ; See https://omega8.cc/how-to-add-custom-platform-properly-140 for latest download URL
 projects[drupal][type] = "core"
@@ -43,6 +43,7 @@ projects[] = ais
 projects[] = backup_migrate
 projects[] = ckeditor
 ; projects[] = fbconnect
+projects[] = imagecache
 projects[] = imagecache_external
 projects[] = responsive_images
 projects[] = tinybrowser
@@ -93,13 +94,9 @@ projects[robotstxt][type] = "module"
 ; Commented out modules never used anyway
 ; projects[] = background_process
 ; projects[] = coder
-; projects[] = css_gzip
 projects[] = devel
-; projects[] = javascript_aggregator
 ; projects[] = l10n_update
 ; projects[] = performance
-; projects[] = poormanscron
-; projects[] = supercron
 ; projects[] = ultimate_cron
 
 ; Contrib [NA]:	
