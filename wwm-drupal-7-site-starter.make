@@ -236,9 +236,9 @@ projects[] = ga_tokenizer
 projects[] = gdoc_field
 projects[] = getid3
 
-; Reviewed on 2014-04-22
+; Reviewed on 2014-06-23
 ; The following module needs to use the dev version 
-; because nothing else exists
+; because nothing else exists (No URL?)
 projects[] = getresponse
 ; projects[getresponse][type] = "module"
 ; projects[getresponse][download][branch] = "7.x-1.x"
