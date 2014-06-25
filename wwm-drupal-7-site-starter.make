@@ -355,10 +355,10 @@ projects[media_gallery][version] = 1.0-beta8
 projects[] = media_node
 projects[] = media_update
 
-; Reviewed on 2014-04-30
+; Reviewed on 2014-06-24
 ; The following module needs to use the sandbox version
 ; from https://drupal.org/sandbox/DevinCarlson/1823634
-; because nothing else exists yet but it may soon be added to media module
+; because nothing else exists yet but it may soon be added to media module (No chnage)
 ; according to https://drupal.org/node/2062659 and https://drupal.org/node/1792738
 projects[media_wysiwyg_view_mode][type] = "module"
 projects[media_wysiwyg_view_mode][download][type] = "git"
