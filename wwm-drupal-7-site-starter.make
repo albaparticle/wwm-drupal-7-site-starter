@@ -383,7 +383,7 @@ projects[] = node_limit
 projects[] = node_recur
 projects[] = nodereference_url
 
-; Reviewed on 2014-04-30
+; Reviewed on 2014-06-24
 ; The following line pulled the 7.x-2.0-beta1 version of the nodequeue module 
 ; and this caused a fatal error because it conflicts with latest version of MariaDB 
 ; presumably because the latest stable release is 7.x-2.0-beta1 version on 2011-Sep-20
