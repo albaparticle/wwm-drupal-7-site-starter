@@ -575,8 +575,8 @@ projects[wysiwyg][download][branch] = 7.x-2.x-wwm
 projects[] = xmlsitemap
 
 
-; WWM Custom Modules and Features to pull from a GitHub
-; Reviewed on 2014-04-30
+; WWM Custom Modules and Features to pull from a GitHub (No change, custom)
+; Reviewed on 2014-06-24
 ; projects[] = date_navigation
 projects[date_navigation][type] = "module"
 projects[date_navigation][download][type] = "git"
