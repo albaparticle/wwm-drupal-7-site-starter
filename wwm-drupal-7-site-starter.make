@@ -345,7 +345,7 @@ projects[] = media_feeds
 
 projects[] = media_flickr
 
-; Reviewed on 2014-04-30
+; Reviewed on 2014-06-14
 ; The following module uses the beta8 release because
 ; that is the most stable version (No change)
 ; 7.x-1.x - requires explicitly stating which version to pull
