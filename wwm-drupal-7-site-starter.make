@@ -450,7 +450,7 @@ projects[quicktabs][version] = 3.x-dev
 
 projects[] = queue_ui
 
-; Reviewed on 2014-04-30
+; Reviewed on 2014-06-24 (No change)
 ; The following item needs to have patch applied from
 ; from https://drupal.org/node/1239478#comment-6439934 
 ; to allow Views to show actual Username instead of Real Name.
