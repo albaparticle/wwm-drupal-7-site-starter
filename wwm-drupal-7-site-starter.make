@@ -338,7 +338,7 @@ projects[media_browser_plus][download][url] = "http://ftp.drupal.org/files/proje
 
 projects[] = media_feeds
 
-; Reviewed on 2014-04-30
+; Reviewed on 2014-06-24
 ; The following module is commented out because
 ; it depends on the media_derivatives module
 ; projects[] = media_ffmpeg_simple
