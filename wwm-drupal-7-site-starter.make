@@ -295,11 +295,11 @@ projects[] = mailchimp
 
 projects[] = mailsystem
 
-; Reviewed on 2014-04-30
+; Reviewed on 2014-06-24
 ; The following module needs to use the 1.x-dev version 
 ; because version 2 is not ready for production and 
 ; only bug fixes are being applied to 1.x-dev
-; Also need to apply patch from 
+; Also need to apply patch from (Looks like the most recent URL/the one at the bottom of module is the most recent. So no change?)
 : https://drupal.org/node/1995030 to add support for media in WYSIWYG summary 
 ; projects[] = media
 projects[media][type] = "module"
