@@ -419,9 +419,9 @@ projects[phone][version] = 1.0-beta1
 projects[] = plupload
 projects[] = popup
 
-; Reviewed on 2014-04-30
+; Reviewed on 2014-06-24
 ; The following item requires a custom WWM patch to be applied
-; in order to allow prepopulation from links created with Views.
+; in order to allow prepopulation from links created with Views. (No change)
 ; projects[] = prepopulate
 projects[prepopulate][download][type] = "git"
 projects[prepopulate][download][url] = "https://github.com/wickwood/prepopulate.git"
