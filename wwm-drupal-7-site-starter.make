@@ -508,7 +508,7 @@ projects[] = transliteration
 projects[] = unique_field
 projects[] = upload_default_avatar
 
-; Reviewed on 2014-04-30
+; Reviewed on 2014-06-24 (No change)
 ; The following item needs to have a patch applied
 ; from https://drupal.org/node/1249684#comment-6355236 to prevent exposed filter on Roles to stop dissappearing when  
 ; "Only has 'authenticated user' role" or "Has roles in addition to 'authenticated user' ".
