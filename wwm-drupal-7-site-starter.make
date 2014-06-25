@@ -394,10 +394,10 @@ projects[nodequeue][type] = "module"
 projects[] = nodesquirrel
 projects[] = noggin
 
-; Reviewed on 2014-04-30
+; Reviewed on 2014-06-24
 ; Notifications was orginially commented out because it requires PHP 5.3 which was not supported by BOA
 ; BOA now does support PHP 5.3, but there is not a stable release of the module yet and we do not have
-; a clear need for it at this time to make it worth adding and testing
+; a clear need for it at this time to make it worth adding and testing (No change)
 ; projects[] = notifications	
 
 projects[] = oauth
