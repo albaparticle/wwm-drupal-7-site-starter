@@ -583,7 +583,7 @@ projects[date_navigation][download][type] = "git"
 projects[date_navigation][download][url] = "https://github.com/wickwood/date_navigation.git"
 projects[date_navigation][download][branch] = 7.x-1.x-wwm
 
-; Reviewed on 2014-04-30
+; Reviewed on 2014-06-24
 ; Current state of custom account tabs requires that this module be installed 
 ; and used at the site module level not the platform level
 ; This is module is currently customized only for the ICCA website.
