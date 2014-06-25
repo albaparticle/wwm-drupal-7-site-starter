@@ -480,7 +480,7 @@ projects[] = rules_linkevent
 projects[] = scheduler
 projects[] = search_config
 
-; Reviewed on 2014-04-30
+; Reviewed on 2014-06-24 (No change)
 ; The following item needs to have a patch applied
 ; from http://drupal.org/node/1928156#comment-7145266 to allow Image style select in simpleads block configuration. 
 ; and a cutom WWM patch applied to provide an added extra text field for image ads.
