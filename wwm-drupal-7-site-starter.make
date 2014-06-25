@@ -430,7 +430,7 @@ projects[prepopulate][download][branch] = 7.x-2.x-wwm
 projects[] = profiler
 projects[] = projekktor
 
-; Reviewed on 2014-04-30 
+; Reviewed on 2014-06-24
 ; The publication_date module must be pulled from the WWM GitHub Repo
 ; to apply custimizations to work with custom Date Navigation module (No change)
 projects[publication_date][download][type] = "git"
