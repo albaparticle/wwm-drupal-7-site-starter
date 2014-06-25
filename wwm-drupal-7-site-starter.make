@@ -441,10 +441,10 @@ projects[] = publish_button
 projects[] = publishcontent
 projects[] = purl
 
-; Reviewed on 2014-05-10
+; Reviewed on 2014-06-24
 ; Must still pull the dev version of the module to fix the issues reported 
-; in https://drupal.org/node/2104643 and https://drupal.org/node/2108935
-; however, we do not need to patch
+; in https://drupal.org/node/2104643 and https://drupal.org/node/2108935 (URL says this issue is "Closed (fixed)" 
+; however, we do not need to patch 
 ; projects[] = quicktabs
 projects[quicktabs][version] = 3.x-dev
 
