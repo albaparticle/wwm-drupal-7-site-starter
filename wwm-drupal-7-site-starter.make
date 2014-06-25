@@ -283,10 +283,10 @@ projects[] = link
 projects[] = location
 projects[] = location_feeds
 
-; Reviewed on 2014-04-30
+; Reviewed on 2014-06-24
 ; The mailchimp_lists submodule of mailchimp needs to have WWM Patch applied
 ; only if you need to filter out users with invalid emails designated with nomail.invalid
-; during the sync with Mailchimp
+; during the sync with Mailchimp (No change)
 projects[] = mailchimp
 ; projects[mailchimp][type] = "module"
 ; projects[mailchimp][download][type] = "git"
