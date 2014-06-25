@@ -260,9 +260,9 @@ projects[] = imagecache_actions
 projects[] = imagecache_profiles
 projects[] = imagecache_proportions
 
-; Reviewed on 2014-04-30
+; Reviewed on 2014-06-24
 ; The following module needs to use the dev version 
-; because "stable" release candidate is very old 
+; because "stable" release candidate is very old (No change)
 ; As of this commit the latest dev release was 2013-Dec-23
 ; projects[] = imagecrop
 projects[imagecrop][type] = "module"
