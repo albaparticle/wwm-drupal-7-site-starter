@@ -466,7 +466,7 @@ projects[realname][patch][] = "https://drupal.org/files/issues/realname-views-us
 
 projects[] = recaptcha
 
-; Reviewed on 2014-04-30
+; Reviewed on 2014-06-24 (No change)
 ; The following item needs to have patch applied from
 ; from https://drupal.org/comment/8506117#comment-8506117 to prevent redirect loops.
 ; projects[] = redirect
