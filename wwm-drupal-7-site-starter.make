@@ -347,7 +347,7 @@ projects[] = media_flickr
 
 ; Reviewed on 2014-04-30
 ; The following module uses the beta8 release because
-; that is the most stable version
+; that is the most stable version (No change)
 ; 7.x-1.x - requires explicitly stating which version to pull
 ; projects[] = media_gallery
 projects[media_gallery][version] = 1.0-beta8
