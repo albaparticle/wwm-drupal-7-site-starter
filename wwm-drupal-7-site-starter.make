@@ -536,7 +536,7 @@ projects[] = views_export_xls
 projects[] = views_megarow
 projects[] = views_php
 
-; Reviewed on 2014-04-30
+; Reviewed on 2014-06-24 (No change)
 ; Must dev version of this views_slideshow to remove the dependency on views >=3.0
 ; projects[] = views_slideshow
 projects[views_slideshow][version] = 3.x-dev
