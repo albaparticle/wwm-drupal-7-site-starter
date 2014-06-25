@@ -331,8 +331,8 @@ projects[media_browser_plus][download][type] = "get"
 projects[media_browser_plus][download][url] = "http://ftp.drupal.org/files/projects/media_browser_plus-7.x-1.x-dev.tar.gz"
 
 
-; Reviewed on 2014-04-30
-; The media_derivatives modules are not ready for production environments
+; Reviewed on 2014-06-24
+; The media_derivatives modules are not ready for production environments (Doesn't seem to have URL. http://ftp.drupal.org/files/projects/media_derivatives leasds to 404 error.)
 ; projects[] = media_derivatives
 ; projects[] = media_derivatives_html5
 
