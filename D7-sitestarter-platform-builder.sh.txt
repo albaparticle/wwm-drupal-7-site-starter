@@ -6,12 +6,7 @@ platform_dir=$1
 
 # Call the Drush Make to create the platform
 drush make wwm-drupal-7-site-starter.make /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir
- 
-# Set permissions on sites directory
-#chmod g+w /data/disk/wwmhosting-admin/static/$platform_dir/sites
 
-# Set permissions on DOMPDF font cache directory
-# chmod go+w /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/dompdf/lib/fonts
 
 # Remove getid3 libraries demo directory for security
 rm -r /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/getid3/demos
@@ -24,10 +19,6 @@ mv /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-t
 mv /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/fullcalendar-org/fullcalendar /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/fullcalendar
 rm -r /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/fullcalendar-org
 
-# Copy jquery.ui to jquery_ui module because for some reason it is not being recognized in the 
-# sites/all/libraries directory
-# cp -r /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/jquery.ui /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/modules/jquery_ui
-
 # Setup wkhtmltopdf Library
 cd /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/wkhtmltopdf
 tar xjf wkhtmltopdf-0.11.0_rc1-static-amd64.tar.bz2
@@ -38,6 +29,14 @@ rm -r wkhtmltopdf
 
 # Change name of SimplePie Library
 mv /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/simplepie/simplepie_*.*.*.mini.php /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/simplepie/simplepie.compiled.php
+chown -R steve /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/simplepie/simplepie.compiled.php
+
+# Unzip Aspell Spell Checker
+mv /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell/aspell.7z /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell.7z
+cd /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/ckeditor/plugins/
+7z x aspell.7z
+rm /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell.7z
+chown -R steve /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell
 
 # Change ownership of the platform
 chown -R steve /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir
