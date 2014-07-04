@@ -43,9 +43,8 @@ projects[] = ais
 projects[] = backup_migrate
 projects[] = ckeditor
 ; projects[] = fbconnect
-projects[] = imagecache
 projects[] = imagecache_external
-projects[] = responsive_images
+; projects[] = responsive_images
 projects[] = tinybrowser
 projects[] = wysiwyg_spellcheck
 	
@@ -172,7 +171,7 @@ projects[] = entity_autocomplete
 ; as described in https://drupal.org/node/1967180
 ; projects[] = entityreference
 projects[entityreference][version] = 1.x-dev
-projects[entityreference][patch][] = "https://drupal.org/files/1967180-7.patch"
+projects[entityreference][patch][] = "https://www.drupal.org/files/issues/entityreference-skip-acces-check-1967180-9.patch"
 
 projects[] = entityreference_prepopulate
 projects[] = entityreference_view_widget
@@ -180,9 +179,9 @@ projects[] = entity_view_mode
 projects[] = easy_breadcrumb
 projects[] = exclude_node_title
 
-; Reviewed on 2014-06-24
+; Reviewed on 2014-06-24 (No change)
 ; extlink Module needs to be patched to fix 
-; Images linking to an external link ALWAYS have the "external link" icon displayed (No change)
+; Images linking to an external link ALWAYS have the "external link" icon displayed 
 ; see issue: https://drupal.org/node/2257023
 ;projects[] = extlink
 projects[extlink][type] = "module"
@@ -191,8 +190,8 @@ projects[extlink][patch][] = "https://drupal.org/files/issues/extlink-always-on-
 
 projects[] = features
 
-; Reviewed on 2014-06-23
-; The following module needs to have Patch applied to support import of encrypted passwords from (Dosen't look like anything has changed)
+; Reviewed on 2014-06-23 (Dosen't look like anything has changed)
+; The following module needs to have Patch applied to support import of encrypted passwords from 
 ; https://drupal.org/files/1611554-3-support-for-encrypted-passwords.patch
 ; If this feature is not nessary than the stable version can be used.
 projects[] = feeds
@@ -208,10 +207,14 @@ projects[] = field_permissions
 projects[] = field_slideshow
 projects[] = field_tools
 
-; Reviewed on 2014-06-23
+; Reviewed on 2014-06-23 (No change)
 ; The following item needs to have a patch applied to
-; hide "manage display" tab when permissions are revoked (No change)
-; from https://drupal.org/comment/6766880#comment-6766880
+; hide "manage display" tab when permissions are revoked 
+; from https://drupal.org/comment/6766880#comment-6766880.
+; Comment #7 on https://www.drupal.org/node/1837156#comment-8892613
+; refers to https://www.drupal.org/node/1847762
+; where comment #8 suggests the better way to do this is by config_perms module and
+; adding the path: user/*/display
 ; projects[] = field_ui_permissions
 projects[field_ui_permissions][type] = "module"
 ; projects[field_ui_permissions][version] = 1.0-beta1
@@ -219,7 +222,12 @@ projects[field_ui_permissions][version] = 1.x-dev
 projects[field_ui_permissions][patch][] = "https://drupal.org/files/i1837156-1.patch"
 
 ; Reviewed on 2014-06-23
-; The following module is only needed if the Media 7.x-2.x module is used (There doesn't seem to be a URL here...)
+; The following module is only needed if the Media 7.x-2.x module is used
+; (Taylor's Comment - There doesn't seem to be a URL here...)
+; (Steve's Reply - That's correct, this only here because this module most be used with sites using the)
+; (7.x-2.x version of the Media module.)
+; (However you can always go to http://www.drupal.org/project/[module_name] and see if there is newer version to use.)
+; (in this case it would be http://www.drupal.org/project/file_entity )
 ; projects[] = file_entity
 ; projects[file_entity][version] = 2.x-dev
 ; projects[file_entity][type] = "module"
@@ -238,7 +246,10 @@ projects[] = getid3
 
 ; Reviewed on 2014-06-23
 ; The following module needs to use the dev version 
-; because nothing else exists (No URL?)
+; because nothing else exists
+; (Taylor's Comment - No URL?)
+; (Steve's Reply - just go to http://www.drupal.org/project/[module_name] )
+; (in this case it would be http://www.drupal.org/project/getresponse )
 projects[] = getresponse
 ; projects[getresponse][type] = "module"
 ; projects[getresponse][download][branch] = "7.x-1.x"
@@ -248,21 +259,14 @@ projects[] = google_analytics
 projects[] = google_analytics_reports
 projects[] = googleanalytics_perpage
 projects[] = html5_base
-
-; Reviewed on 2014-06-23
-; This sandbox project has been integrated into the 7.x-1.0 version of the imagecache_actions project. (URL leads to a 404 error.)
-; projects[image_effects_text][type] = "module"
-; projects[image_effects_text][download][type] = "git"
-; projects[image_effects_text][download][url] = "http://git.drupal.org/sandbox/fietserwin/1435964.git"
-
 projects[] = image_resize_filter
 projects[] = imagecache_actions
 projects[] = imagecache_profiles
 projects[] = imagecache_proportions
 
-; Reviewed on 2014-06-24
+; Reviewed on 2014-06-24 (No change)
 ; The following module needs to use the dev version 
-; because "stable" release candidate is very old (No change)
+; because "stable" release candidate is very old 
 ; As of this commit the latest dev release was 2013-Dec-23
 ; projects[] = imagecrop
 projects[imagecrop][type] = "module"
@@ -283,10 +287,10 @@ projects[] = link
 projects[] = location
 projects[] = location_feeds
 
-; Reviewed on 2014-06-24
+; Reviewed on 2014-06-24 (No change)
 ; The mailchimp_lists submodule of mailchimp needs to have WWM Patch applied
 ; only if you need to filter out users with invalid emails designated with nomail.invalid
-; during the sync with Mailchimp (No change)
+; during the sync with Mailchimp
 projects[] = mailchimp
 ; projects[mailchimp][type] = "module"
 ; projects[mailchimp][download][type] = "git"
@@ -295,12 +299,16 @@ projects[] = mailchimp
 
 projects[] = mailsystem
 
-; Reviewed on 2014-06-24
+; Reviewed on 2014-06-24 (No change)
 ; The following module needs to use the 1.x-dev version 
 ; because version 2 is not ready for production and 
 ; only bug fixes are being applied to 1.x-dev
-; Also need to apply patch from (Looks like the most recent URL/the one at the bottom of module is the most recent. So no change?)
-: https://drupal.org/node/1995030 to add support for media in WYSIWYG summary 
+; Also need to apply patch from 
+: https://drupal.org/node/1995030 to add support for media in WYSIWYG summary
+; (Taylor's Comment - Looks like the most recent URL/the one at the bottom of module is the most recent. So no change?)
+; (Steve's Reply - This one is a bit complicated because code below allows for either the 7.x-1.x version or the 7.x-2.x version)
+; (of the media module depending on which version is to be used. But according to the issue page at https://drupal.org/node/1995030,
+; (you are correct, nothing has changed for either version of the module.)
 ; projects[] = media
 projects[media][type] = "module"
 projects[media][version] = 1.4
@@ -320,10 +328,13 @@ projects[media][patch][] = "https://drupal.org/files/wysiwyg_summary-1995030-3.p
 projects[] = media_archive
 projects[] = media_bliptv
 
-; Reviewed on 2014-06-24 (I'm not sure if there's a change here)
+; Reviewed on 2014-06-24 (No change) 
 ; Use the following guidelines depending on which version of Media module is being used:
 ; MBP 7.x-1.x is for Media 7.x-1.x - requires explicitly stating which version to pull
 ; MBP 7.x-3.x is for Media 7.x-2.x
+; (Taylor's Comment - I'm not sure if there's a change here)
+; (Steve's reply - Need to go to https://www.drupal.org/project/media_browser_plus to see.)
+; (Also depends on which version of module is to be used, but you are correct, there was nothing to change here.)
 ; projects[] = media_browser_plus
 ; projects[media_browser_plus][type] = "module"
 ; projects[media_browser_plus][version] = 1.x-dev
@@ -331,23 +342,26 @@ projects[media_browser_plus][download][type] = "get"
 projects[media_browser_plus][download][url] = "http://ftp.drupal.org/files/projects/media_browser_plus-7.x-1.x-dev.tar.gz"
 
 
-; Reviewed on 2014-06-24
-; The media_derivatives modules are not ready for production environments (Doesn't seem to have URL. http://ftp.drupal.org/files/projects/media_derivatives leasds to 404 error.)
+; Reviewed on 2014-06-24 (No change) 
+; The media_derivatives modules are not ready for production environments
+; (Taylor's Comment - Doesn't seem to have URL. http://ftp.drupal.org/files/projects/media_derivatives leasds to 404 error.)
+; (Steve's Reply - Need to go to https://www.drupal.org/project/media_derivatives)
+; (Upon going that page you will see this module is still not ready for production.)
 ; projects[] = media_derivatives
 ; projects[] = media_derivatives_html5
 
 projects[] = media_feeds
 
-; Reviewed on 2014-06-24
+; Reviewed on 2014-06-24 (No change)
 ; The following module is commented out because
 ; it depends on the media_derivatives module
 ; projects[] = media_ffmpeg_simple
 
 projects[] = media_flickr
 
-; Reviewed on 2014-06-14
+; Reviewed on 2014-06-24 (No change)
 ; The following module uses the beta8 release because
-; that is the most stable version (No change)
+; that is the most stable version 
 ; 7.x-1.x - requires explicitly stating which version to pull
 ; projects[] = media_gallery
 projects[media_gallery][version] = 1.0-beta8
@@ -355,10 +369,10 @@ projects[media_gallery][version] = 1.0-beta8
 projects[] = media_node
 projects[] = media_update
 
-; Reviewed on 2014-06-24
+; Reviewed on 2014-06-24 (No change)
 ; The following module needs to use the sandbox version
 ; from https://drupal.org/sandbox/DevinCarlson/1823634
-; because nothing else exists yet but it may soon be added to media module (No chnage)
+; because nothing else exists yet but it may soon be added to media module 
 ; according to https://drupal.org/node/2062659 and https://drupal.org/node/1792738
 projects[media_wysiwyg_view_mode][type] = "module"
 projects[media_wysiwyg_view_mode][download][type] = "git"
@@ -383,21 +397,27 @@ projects[] = node_limit
 projects[] = node_recur
 projects[] = nodereference_url
 
-; Reviewed on 2014-06-24
+; Reviewed on 2014-06-24 (No change)
 ; The following line pulled the 7.x-2.0-beta1 version of the nodequeue module 
 ; and this caused a fatal error because it conflicts with latest version of MariaDB 
 ; presumably because the latest stable release is 7.x-2.0-beta1 version on 2011-Sep-20
+; (Steve's Comment - I don't know if you missed this one or just didn't understand it,)
+; (but there is not change.  I like your addition of adding "No Change" to the comments.)
 ; projects[] = nodequeue
 projects[nodequeue][version] = 2.x-dev
 projects[nodequeue][type] = "module"
 
-projects[] = nodesquirrel
+; Reviewed in 2014-06-28
+; The nodesquirrel module is no longer needed if backup_migrate module version 2.7 or greater is used.
+; Commenting out for future removal.
+; projects[] = nodesquirrel
+
 projects[] = noggin
 
-; Reviewed on 2014-06-24
+; Reviewed on 2014-06-24 (No change)
 ; Notifications was orginially commented out because it requires PHP 5.3 which was not supported by BOA
 ; BOA now does support PHP 5.3, but there is not a stable release of the module yet and we do not have
-; a clear need for it at this time to make it worth adding and testing (No change)
+; a clear need for it at this time to make it worth adding and testing 
 ; projects[] = notifications	
 
 projects[] = oauth
@@ -410,8 +430,8 @@ projects[] = password-reset
 projects[] = pathauto
 projects[] = pathologic
 
-; Reviewed on 2014-06-24
-; Phone 1.0-beta1 released 2014-Jan-14 (No change)
+; Reviewed on 2014-06-24 (No change)
+; Phone 1.0-beta1 released 2014-Jan-14
 projects[phone][type] = "module"
 projects[phone][version] = 1.0-beta1
 
@@ -419,9 +439,9 @@ projects[phone][version] = 1.0-beta1
 projects[] = plupload
 projects[] = popup
 
-; Reviewed on 2014-06-24
+; Reviewed on 2014-06-24 (No change)
 ; The following item requires a custom WWM patch to be applied
-; in order to allow prepopulation from links created with Views. (No change)
+; in order to allow prepopulation from links created with Views.
 ; projects[] = prepopulate
 projects[prepopulate][download][type] = "git"
 projects[prepopulate][download][url] = "https://github.com/wickwood/prepopulate.git"
@@ -430,9 +450,9 @@ projects[prepopulate][download][branch] = 7.x-2.x-wwm
 projects[] = profiler
 projects[] = projekktor
 
-; Reviewed on 2014-06-24
+; Reviewed on 2014-06-24 (No change)
 ; The publication_date module must be pulled from the WWM GitHub Repo
-; to apply custimizations to work with custom Date Navigation module (No change)
+; to apply custimizations to work with custom Date Navigation module
 projects[publication_date][download][type] = "git"
 projects[publication_date][download][url] = "https://github.com/wickwood/publication_date.git"
 projects[publication_date][download][branch] = 7.x-1.x-wwm
@@ -443,8 +463,12 @@ projects[] = purl
 
 ; Reviewed on 2014-06-24
 ; Must still pull the dev version of the module to fix the issues reported 
-; in https://drupal.org/node/2104643 and https://drupal.org/node/2108935 (URL says this issue is "Closed (fixed)" 
-; however, we do not need to patch 
+; in https://drupal.org/node/2104643 and https://drupal.org/node/2108935
+; however, we do not need to patch
+; (Taylor's Comment - URL says this issue is "Closed (fixed)")
+; (Steve's Reply - Correct, however if you pull the Git Repo for this module,)
+; (you will see the committed fix is not yet included in a stable release.)
+; (We can review again how to check for this.)
 ; projects[] = quicktabs
 projects[quicktabs][version] = 3.x-dev
 
@@ -577,6 +601,7 @@ projects[] = xmlsitemap
 
 ; WWM Custom Modules and Features to pull from a GitHub (No change, custom)
 ; Reviewed on 2014-06-24
+; (Steve's Comment - Not sure what you meant by "custom" here, Taylor.  I think I do, but we can discuss.)
 ; projects[] = date_navigation
 projects[date_navigation][type] = "module"
 projects[date_navigation][download][type] = "git"
@@ -658,15 +683,4 @@ libraries[aspell][destination] = "libraries/ckeditor/plugins"
 libraries[spellchecker][download][type] = "file"
 libraries[spellchecker][download][url] = "http://download.moxiecode.com/spellcheckers/tinymce_spellchecker_php_4.0.zip"
 libraries[spellchecker][directory_name] = "spellchecker"
-libraries[spellchecker][destination] = "libraries/tinymce/jscripts/tiny_mce/plugins"\
-
-
-
-
-
-
-
-
-
-
-
+libraries[spellchecker][destination] = "libraries/tinymce/jscripts/tiny_mce/plugins"
