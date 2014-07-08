@@ -166,6 +166,8 @@ projects[entity][download][branch] = 7.x-1.1-dev-wwm
 
 projects[] = entity_autocomplete
 
+; Test Break
+
 ; Reviewed on 2014-06-23
 ; The following module needs to be patched to allow skipping entity access check when rendering field
 ; as described in https://drupal.org/node/1967180
@@ -174,7 +176,7 @@ projects[entityreference][version] = 1.x-dev
 projects[entityreference][patch][] = "https://www.drupal.org/files/issues/entityreference-skip-acces-check-1967180-9.patch"
 
 projects[] = entityreference_prepopulate
-
+; Test Break
 ; Reviewed on 2014-05-21
 ; Pulling verions 7.x-2.0-alpha3 of entityreference_view_widget to test
 ; if this is the cause of the problem of field in Ride Reports 
@@ -190,18 +192,18 @@ projects[entityreference_view_widget][download][branch] = 7.x-2.x-21776175-wwm
 projects[] = entity_view_mode
 projects[] = easy_breadcrumb
 projects[] = exclude_node_title
-
+; Test Break
 ; Reviewed on 2014-06-24 (No change)
 ; extlink Module needs to be patched to fix 
 ; Images linking to an external link ALWAYS have the "external link" icon displayed 
 ; see issue: https://drupal.org/node/2257023
-;projects[] = extlink
+; projects[] = extlink
 projects[extlink][type] = "module"
 projects[extlink][version] = 1.x-dev
 projects[extlink][patch][] = "https://drupal.org/files/issues/extlink-always-on-images-2257023-8.patch"
-
+; Test Break
 projects[] = features
-
+; Test Break
 ; Reviewed on 2014-06-23 (Dosen't look like anything has changed)
 ; The following module needs to have Patch applied to support import of encrypted passwords from 
 ; https://drupal.org/files/1611554-3-support-for-encrypted-passwords.patch
@@ -218,7 +220,7 @@ projects[] = field_group
 projects[] = field_permissions
 projects[] = field_slideshow
 projects[] = field_tools
-
+; Test Break
 ; Reviewed on 2014-06-23 (No change)
 ; The following item needs to have a patch applied to
 ; hide "manage display" tab when permissions are revoked 
@@ -232,7 +234,7 @@ projects[field_ui_permissions][type] = "module"
 ; projects[field_ui_permissions][version] = 1.0-beta1
 projects[field_ui_permissions][version] = 1.x-dev
 projects[field_ui_permissions][patch][] = "https://drupal.org/files/i1837156-1.patch"
-
+; Test Break
 ; Reviewed on 2014-06-23
 ; The following module is only needed if the Media 7.x-2.x module is used
 ; (Taylor's Comment - There doesn't seem to be a URL here...)
@@ -243,7 +245,7 @@ projects[field_ui_permissions][patch][] = "https://drupal.org/files/i1837156-1.p
 ; projects[] = file_entity
 ; projects[file_entity][version] = 2.x-dev
 ; projects[file_entity][type] = "module"
-
+; Test Break
 projects[] = floating_block
 projects[] = exposed_filter_data
 projects[] = filefield_paths
@@ -255,7 +257,7 @@ projects[] = fullcalendar_templates
 projects[] = ga_tokenizer
 projects[] = gdoc_field
 projects[] = getid3
-
+; Test Break
 ; Reviewed on 2014-06-23
 ; The following module needs to use the dev version 
 ; because nothing else exists
@@ -298,7 +300,7 @@ projects[] = lightbox2
 projects[] = link
 projects[] = location
 projects[] = location_feeds
-
+; Test Break
 ; Reviewed on 2014-06-24 (No change)
 ; The mailchimp_lists submodule of mailchimp needs to have WWM Patch applied
 ; only if you need to filter out users with invalid emails designated with nomail.invalid
@@ -339,7 +341,7 @@ projects[media][patch][] = "https://drupal.org/files/wysiwyg_summary-1995030-3.p
 
 projects[] = media_archive
 projects[] = media_bliptv
-
+; Test Break
 ; Reviewed on 2014-06-24 (No change) 
 ; Use the following guidelines depending on which version of Media module is being used:
 ; MBP 7.x-1.x is for Media 7.x-1.x - requires explicitly stating which version to pull
@@ -442,7 +444,7 @@ projects[] = pathologic
 projects[phone][type] = "module"
 projects[phone][version] = 1.0-beta1
 
-
+; Test Break
 projects[] = plupload
 projects[] = popup
 
@@ -492,9 +494,9 @@ projects[realname][type] = "module"
 projects[realname][version] = 1.x-dev
 projects[realname][patch][] = "https://drupal.org/files/issues/realname-views-username-field-1239478-79.patch"
 ; The following can be removed if the issues stated above have are fixed by the above patch.
-;projects[realname][download][type] = "git"
-;projects[realname][download][url] = "https://github.com/wickwood/realname.git"
-;projects[realname][download][branch] = 7.x-1.x-wwm
+; projects[realname][download][type] = "git"
+; projects[realname][download][url] = "https://github.com/wickwood/realname.git"
+; projects[realname][download][branch] = 7.x-1.x-wwm
 
 projects[] = recaptcha
 
@@ -517,9 +519,9 @@ projects[] = search_config
 ; from http://drupal.org/node/1928156#comment-7145266 to allow Image style select in simpleads block configuration. 
 ; and a cutom WWM patch applied to provide an added extra text field for image ads.
 ; projects[] = simpleads
-projects[simpleads][download][type] = "git"
-projects[simpleads][download][url] = "https://github.com/wickwood/simpleads.git"
-projects[simpleads][download][branch] = 7.x-1.x-wwm
+; projects[simpleads][download][type] = "git"
+; projects[simpleads][download][url] = "https://github.com/wickwood/simpleads.git"
+; projects[simpleads][download][branch] = 7.x-1.x-wwm
 
 projects[] = simplehtmldom
 projects[] = site_disclaimer
