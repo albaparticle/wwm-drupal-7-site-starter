@@ -4,31 +4,38 @@
 # Define the Platform Name from input variable
 platform_dir=$1
 
+# Call the Drush Make to create the platform
+drush make wwm-drupal-7-site-starter.make /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir
+
 # Remove getid3 libraries demo directory for security
-rm -r /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/getid3/demos
+rm -r /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/getid3/demos
 
 # Remove plupload libraries examples directory for security
-rm -r /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/plupload/examples
+rm -r /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/plupload/examples
 
 # Setup fullcalendar Library
-mv /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar-org
-mv /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar-org/fullcalendar /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar
-rm -r /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar-org
-chown -R wwmhosting-admin:users /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar
+mv /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/fullcalendar /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/fullcalendar-org
+mv /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/fullcalendar-org/fullcalendar /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/fullcalendar
+rm -r /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/fullcalendar-org
+
+# Setup wkhtmltopdf Library
+cd /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/wkhtmltopdf
+tar xjf wkhtmltopdf-0.11.0_rc1-static-amd64.tar.bz2
+cp -r wkhtmltopdf-amd64 /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/modules/print/lib/wkhtmltopdf
+chmod 775 /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/modules/print/lib/wkhtmltopdf*
+cd /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries
+rm -r wkhtmltopdf
 
 # Change name of SimplePie Library
-mv /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/simplepie/simplepie_*.*.*.mini.php /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/simplepie/simplepie.compiled.php
-chown -R wwmhosting-admin:users /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/simplepie/simplepie.compiled.php
-
-# Move TinyMCE Spell Checker
-# rm -rf /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/tinymce/jscripts/tiny_mce/plugins/spellchecker
-# mv  /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/tinymce/jscripts/tiny_mce/plugins/spellchecker-new  /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/tinymce/jscripts/tiny_mce/plugins/spellchecker
-# chown wwmhosting-admin:users /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/tinymce/jscripts/tiny_mce/plugins/spellchecker
+mv /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/simplepie/simplepie_*.*.*.mini.php /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/simplepie/simplepie.compiled.php
+chown -R steve /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/simplepie/simplepie.compiled.php
 
 # Unzip Aspell Spell Checker
-mv /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell/aspell.7z /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell.7z
-cd /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/ckeditor/plugins/
+mv /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell/aspell.7z /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell.7z
+cd /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/ckeditor/plugins/
 7z x aspell.7z
-rm /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell.7z
-chown -R wwmhosting-admin:users /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell
+rm /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell.7z
+chown -R steve /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell
 
+# Change ownership of the platform
+chown -R steve /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir
