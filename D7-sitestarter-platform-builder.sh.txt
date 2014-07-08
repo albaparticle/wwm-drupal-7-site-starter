@@ -5,7 +5,7 @@
 platform_dir=$1
 
 # Call the Drush Make to create the platform
-drush make wwm-drupal-7-site-starter.make /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir
+# drush make wwm-drupal-7-site-starter.make /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir
 
 # Remove getid3 libraries demo directory for security
 rm -r /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/getid3/demos
