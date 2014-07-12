@@ -38,4 +38,4 @@ rm /var/aegir/platforms/$platform_dir/sites/all/libraries/ckeditor/plugins/aspel
 chown -R steve /var/aegir/platforms/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell
 
 # Change ownership of the platform
-chown -R steve /var/aegir/platforms/$platform_dir
+chown -R aegir /var/aegir/platforms/$platform_dir
