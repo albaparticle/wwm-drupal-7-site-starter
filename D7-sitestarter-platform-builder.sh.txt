@@ -19,12 +19,12 @@ mv /var/aegir/platforms/$platform_dir/sites/all/libraries/fullcalendar-org/fullc
 rm -r /var/aegir/platforms/$platform_dir/sites/all/libraries/fullcalendar-org
 
 # Setup wkhtmltopdf Library
-cd /var/aegir/platforms/$platform_dir/sites/all/libraries/wkhtmltopdf
-tar xjf wkhtmltopdf-0.11.0_rc1-static-amd64.tar.bz2
-cp -r wkhtmltopdf-amd64 /var/aegir/platforms/$platform_dir/sites/all/modules/print/lib/wkhtmltopdf
-chmod 775 /var/aegir/platforms/$platform_dir/sites/all/modules/print/lib/wkhtmltopdf*
-cd /var/aegir/platforms/$platform_dir/sites/all/libraries
-rm -r wkhtmltopdf
+# cd /var/aegir/platforms/$platform_dir/sites/all/libraries/wkhtmltopdf
+# tar xjf wkhtmltopdf-0.11.0_rc1-static-amd64.tar.bz2
+# cp -r wkhtmltopdf-amd64 /var/aegir/platforms/$platform_dir/sites/all/modules/print/lib/wkhtmltopdf
+# chmod 775 /var/aegir/platforms/$platform_dir/sites/all/modules/print/lib/wkhtmltopdf*
+# cd /var/aegir/platforms/$platform_dir/sites/all/libraries
+# rm -r wkhtmltopdf
 
 # Change name of SimplePie Library
 mv /var/aegir/platforms/$platform_dir/sites/all/libraries/simplepie/simplepie_*.*.*.mini.php /var/aegir/platforms/$platform_dir/sites/all/libraries/simplepie/simplepie.compiled.php
@@ -38,4 +38,4 @@ rm /var/aegir/platforms/$platform_dir/sites/all/libraries/ckeditor/plugins/aspel
 chown -R steve /var/aegir/platforms/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell
 
 # Change ownership of the platform
-chown -R aegir /var/aegir/platforms/$platform_dir
+chown -R steve /var/aegir/platforms/$platform_dir
