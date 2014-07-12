@@ -183,7 +183,7 @@ projects[] = exclude_node_title
 ; extlink Module needs to be patched to fix 
 ; Images linking to an external link ALWAYS have the "external link" icon displayed 
 ; see issue: https://drupal.org/node/2257023
-;projects[] = extlink
+; projects[] = extlink
 projects[extlink][type] = "module"
 projects[extlink][version] = 1.x-dev
 projects[extlink][patch][] = "https://drupal.org/files/issues/extlink-always-on-images-2257023-8.patch"
@@ -407,11 +407,6 @@ projects[] = nodereference_url
 projects[nodequeue][version] = 2.x-dev
 projects[nodequeue][type] = "module"
 
-; Reviewed in 2014-06-28
-; The nodesquirrel module is no longer needed if backup_migrate module version 2.7 or greater is used.
-; Commenting out for future removal.
-; projects[] = nodesquirrel
-
 projects[] = noggin
 
 ; Reviewed on 2014-06-24 (No change)
@@ -471,6 +466,7 @@ projects[] = purl
 ; (We can review again how to check for this.)
 ; projects[] = quicktabs
 projects[quicktabs][version] = 3.x-dev
+projects[quicktabs][patch][] = "https://drupal.org/files/2104643-revert-qt-487518-5.patch"
 
 projects[] = queue_ui
 
@@ -484,9 +480,9 @@ projects[realname][type] = "module"
 projects[realname][version] = 1.x-dev
 projects[realname][patch][] = "https://drupal.org/files/issues/realname-views-username-field-1239478-79.patch"
 ; The following can be removed if the issues stated above have are fixed by the above patch.
-;projects[realname][download][type] = "git"
-;projects[realname][download][url] = "https://github.com/wickwood/realname.git"
-;projects[realname][download][branch] = 7.x-1.x-wwm
+; projects[realname][download][type] = "git"
+; projects[realname][download][url] = "https://github.com/wickwood/realname.git"
+; projects[realname][download][branch] = 7.x-1.x-wwm
 
 projects[] = recaptcha
 

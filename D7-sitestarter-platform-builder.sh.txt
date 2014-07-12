@@ -5,38 +5,37 @@
 platform_dir=$1
 
 # Call the Drush Make to create the platform
-drush make wwm-drupal-7-site-starter.make /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir
-
+drush make wwm-drupal-7-site-starter.make /var/aegir/platforms/$platform_dir
 
 # Remove getid3 libraries demo directory for security
-rm -r /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/getid3/demos
+rm -r /var/aegir/platforms/$platform_dir/sites/all/libraries/getid3/demos
 
 # Remove plupload libraries examples directory for security
-rm -r /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/plupload/examples
+rm -r /var/aegir/platforms/$platform_dir/sites/all/libraries/plupload/examples
 
 # Setup fullcalendar Library
-mv /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/fullcalendar /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/fullcalendar-org
-mv /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/fullcalendar-org/fullcalendar /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/fullcalendar
-rm -r /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/fullcalendar-org
+mv /var/aegir/platforms/$platform_dir/sites/all/libraries/fullcalendar /var/aegir/platforms/$platform_dir/sites/all/libraries/fullcalendar-org
+mv /var/aegir/platforms/$platform_dir/sites/all/libraries/fullcalendar-org/fullcalendar /var/aegir/platforms/$platform_dir/sites/all/libraries/fullcalendar
+rm -r /var/aegir/platforms/$platform_dir/sites/all/libraries/fullcalendar-org
 
 # Setup wkhtmltopdf Library
-cd /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/wkhtmltopdf
-tar xjf wkhtmltopdf-0.11.0_rc1-static-amd64.tar.bz2
-cp -r wkhtmltopdf-amd64 /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/modules/print/lib/wkhtmltopdf
-chmod 775 /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/modules/print/lib/wkhtmltopdf*
-cd /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries
-rm -r wkhtmltopdf
+# cd /var/aegir/platforms/$platform_dir/sites/all/libraries/wkhtmltopdf
+# tar xjf wkhtmltopdf-0.11.0_rc1-static-amd64.tar.bz2
+# cp -r wkhtmltopdf-amd64 /var/aegir/platforms/$platform_dir/sites/all/modules/print/lib/wkhtmltopdf
+# chmod 775 /var/aegir/platforms/$platform_dir/sites/all/modules/print/lib/wkhtmltopdf*
+# cd /var/aegir/platforms/$platform_dir/sites/all/libraries
+# rm -r wkhtmltopdf
 
 # Change name of SimplePie Library
-mv /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/simplepie/simplepie_*.*.*.mini.php /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/simplepie/simplepie.compiled.php
-chown -R steve /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/simplepie/simplepie.compiled.php
+mv /var/aegir/platforms/$platform_dir/sites/all/libraries/simplepie/simplepie_*.*.*.mini.php /var/aegir/platforms/$platform_dir/sites/all/libraries/simplepie/simplepie.compiled.php
+chown -R steve /var/aegir/platforms/$platform_dir/sites/all/libraries/simplepie/simplepie.compiled.php
 
 # Unzip Aspell Spell Checker
-mv /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell/aspell.7z /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell.7z
-cd /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/ckeditor/plugins/
-7z x aspell.7z
-rm /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell.7z
-chown -R steve /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell
+# mv /var/aegir/platforms/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell/aspell.7z /var/aegir/platforms/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell.7z
+# cd /var/aegir/platforms/$platform_dir/sites/all/libraries/ckeditor/plugins/
+# 7z x aspell.7z
+# rm /var/aegir/platforms/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell.7z
+# chown -R steve /var/aegir/platforms/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell
 
 # Change ownership of the platform
-chown -R steve /Users/Shared/Wickwood-LLC/Wickwood-Marketing/Drupal/Distributions/BOA-make-test/$platform_dir
+chown -R steve /var/aegir/platforms/$platform_dir
