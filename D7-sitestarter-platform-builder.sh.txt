@@ -31,11 +31,11 @@ mv /var/aegir/platforms/$platform_dir/sites/all/libraries/simplepie/simplepie_*.
 chown -R steve /var/aegir/platforms/$platform_dir/sites/all/libraries/simplepie/simplepie.compiled.php
 
 # Unzip Aspell Spell Checker
-mv /var/aegir/platforms/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell/aspell.7z /var/aegir/platforms/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell.7z
-cd /var/aegir/platforms/$platform_dir/sites/all/libraries/ckeditor/plugins/
-7z x aspell.7z
-rm /var/aegir/platforms/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell.7z
-chown -R steve /var/aegir/platforms/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell
+# mv /var/aegir/platforms/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell/aspell.7z /var/aegir/platforms/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell.7z
+# cd /var/aegir/platforms/$platform_dir/sites/all/libraries/ckeditor/plugins/
+# 7z x aspell.7z
+# rm /var/aegir/platforms/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell.7z
+# chown -R steve /var/aegir/platforms/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell
 
 # Change ownership of the platform
 chown -R steve /var/aegir/platforms/$platform_dir
