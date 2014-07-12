@@ -26,7 +26,7 @@ api = 2
 ; alternative core projects like Pressflow. Note that makefiles included with
 ; install profiles *should not* include a core project.
 
-projects[drupal][version] = 7
+projects[drupal][version] = 7.28
   
 ; Reviewed on 2014-06-23
 ; Add Modules that are automatically included by BOA hosting system
