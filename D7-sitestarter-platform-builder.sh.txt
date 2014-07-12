@@ -5,7 +5,7 @@
 platform_dir=$1
 
 # Call the Drush Make to create the platform
-# drush make wwm-drupal-7-site-starter.make /var/aegir/platforms/$platform_dir
+drush make wwm-drupal-7-site-starter.make /var/aegir/platforms/$platform_dir
 
 # Remove getid3 libraries demo directory for security
 rm -r /var/aegir/platforms/$platform_dir/sites/all/libraries/getid3/demos
