@@ -519,9 +519,9 @@ projects[] = search_config
 ; from http://drupal.org/node/1928156#comment-7145266 to allow Image style select in simpleads block configuration. 
 ; and a cutom WWM patch applied to provide an added extra text field for image ads.
 ; projects[] = simpleads
-; projects[simpleads][download][type] = "git"
-; projects[simpleads][download][url] = "https://github.com/wickwood/simpleads.git"
-; projects[simpleads][download][branch] = 7.x-1.x-wwm
+projects[simpleads][download][type] = "git"
+projects[simpleads][download][url] = "https://github.com/wickwood/simpleads.git"
+projects[simpleads][download][branch] = 7.x-1.x-wwm
 
 projects[] = simplehtmldom
 projects[] = site_disclaimer
