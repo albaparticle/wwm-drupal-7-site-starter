@@ -466,7 +466,6 @@ projects[] = purl
 ; (We can review again how to check for this.)
 ; projects[] = quicktabs
 projects[quicktabs][version] = 3.x-dev
-projects[quicktabs][patch][] = "https://drupal.org/files/2104643-revert-qt-487518-5.patch"
 
 projects[] = queue_ui
 
