@@ -179,7 +179,7 @@ projects[] = entity_view_mode
 projects[] = easy_breadcrumb
 projects[] = exclude_node_title
 
-; Reviewed on 2014-06-24 (No change)
+; Reviewed on 2014-08-06 (No change)
 ; extlink Module needs to be patched to fix 
 ; Images linking to an external link ALWAYS have the "external link" icon displayed 
 ; see issue: https://drupal.org/node/2257023
