@@ -207,7 +207,7 @@ projects[] = field_permissions
 projects[] = field_slideshow
 projects[] = field_tools
 
-; Reviewed on 2014-06-23 (No change)
+; Reviewed on 2014-08-06 (No change, based on the comment would this be a case where I would apply the patch? -Taylor)
 ; The following item needs to have a patch applied to
 ; hide "manage display" tab when permissions are revoked 
 ; from https://drupal.org/comment/6766880#comment-6766880.
