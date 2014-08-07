@@ -328,7 +328,7 @@ projects[media][patch][] = "https://drupal.org/files/wysiwyg_summary-1995030-3.p
 projects[] = media_archive
 projects[] = media_bliptv
 
-; Reviewed on 2014-06-24 (No change) 
+; Reviewed on 2014-08-06 (Default version has changed to 7.x-3.x so possible upgrade?) 
 ; Use the following guidelines depending on which version of Media module is being used:
 ; MBP 7.x-1.x is for Media 7.x-1.x - requires explicitly stating which version to pull
 ; MBP 7.x-3.x is for Media 7.x-2.x
