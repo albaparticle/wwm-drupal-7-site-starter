@@ -369,7 +369,7 @@ projects[media_gallery][version] = 1.0-beta8
 projects[] = media_node
 projects[] = media_update
 
-; Reviewed on 2014-06-24 (No change)
+; Reviewed on 2014-08-06 (No change)
 ; The following module needs to use the sandbox version
 ; from https://drupal.org/sandbox/DevinCarlson/1823634
 ; because nothing else exists yet but it may soon be added to media module 
