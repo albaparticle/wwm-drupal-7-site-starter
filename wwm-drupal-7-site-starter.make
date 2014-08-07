@@ -299,7 +299,7 @@ projects[] = mailchimp
 
 projects[] = mailsystem
 
-; Reviewed on 2014-06-24 (No change, I think? This one is strange as you said so I'm not totally sure but I believe it is fine as is)
+; Reviewed on 2014-08-06 (No change, I think? This one is strange as you said so I'm not totally sure but I believe it is fine as is)
 ; The following module needs to use the 1.x-dev version 
 ; because version 2 is not ready for production and 
 ; only bug fixes are being applied to 1.x-dev
