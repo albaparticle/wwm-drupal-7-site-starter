@@ -166,7 +166,7 @@ projects[entity][download][branch] = 7.x-1.1-dev-wwm
 
 projects[] = entity_autocomplete
 
-; Reviewed on 2014-06-23
+; Reviewed on 2014-08-06 (No change)
 ; The following module needs to be patched to allow skipping entity access check when rendering field
 ; as described in https://drupal.org/node/1967180
 ; projects[] = entityreference
