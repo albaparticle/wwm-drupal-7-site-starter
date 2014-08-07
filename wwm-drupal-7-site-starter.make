@@ -573,7 +573,7 @@ projects[] = workbench
 projects[] = workbench_access
 projects[] = workbench_media
 
-; Reviewed on 2014-06-24 (No change)
+; Reviewed on 2014-08-06 (No change, various 7.x-2.x version in dropdown but they don't seem to be stable releases)
 ; The following item requires a custom WWM patch that is created from patching this module with a patch from
 ; https://drupal.org/node/1447886#comment-7570151 to limit viewing of unpubished nodes by content type.
 ; and the patch from https://drupal.org/node/1361210#comment-6052334 to fix issue with 
