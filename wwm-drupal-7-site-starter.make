@@ -26,7 +26,7 @@ api = 2
 ; alternative core projects like Pressflow. Note that makefiles included with
 ; install profiles *should not* include a core project.
 
-; Reviewed on 2014-08-06 (No change, should I have reviewed this? -Taylor)
+; Reviewed on 2014-08-06 (No change, should I have reviewed this? -Taylor) Test
 ; Use Omega8.cc enhanced Drupal core instead of Drupal core:
 ; See https://omega8.cc/how-to-add-custom-platform-properly-140 for latest download URL
 projects[drupal][type] = "core"
