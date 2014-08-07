@@ -545,7 +545,7 @@ projects[views][download][type] = "git"
 projects[views][download][url] = "https://github.com/wickwood/views.git"
 projects[views][download][branch] = 7.x-3.x-wwm
 
-; Reviewed on 2014-06-24 (No change)
+; Reviewed on 2014-08-06 (No change, default version is master)
 ; The following item needs to have the patch applied from
 ; https://drupal.org/node/1967702#comment-7289190 
 ; to allow view arguments be passed as parameters to rule set.
