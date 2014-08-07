@@ -264,7 +264,7 @@ projects[] = imagecache_actions
 projects[] = imagecache_profiles
 projects[] = imagecache_proportions
 
-; Reviewed on 2014-06-24 (Default version "master" is the default so would we still use 7.x-1.x?)
+; Reviewed on 2014-08-06 (Default version "master" is the default so would we still use 7.x-1.x?)
 ; The following module needs to use the dev version 
 ; because "stable" release candidate is very old 
 ; As of this commit the latest dev release was 2013-Dec-23
