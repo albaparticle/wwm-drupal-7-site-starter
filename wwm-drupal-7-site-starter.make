@@ -600,7 +600,7 @@ projects[] = xmlsitemap
 
 
 ; WWM Custom Modules and Features to pull from a GitHub (No change, custom)
-; Reviewed on 2014-06-24
+; Reviewed on 2014-08-06 (No change, https://www.drupal.org/project/date_navigation leads to "page not found")
 ; (Steve's Comment - Not sure what you meant by "custom" here, Taylor.  I think I do, but we can discuss.)
 ; projects[] = date_navigation
 projects[date_navigation][type] = "module"
