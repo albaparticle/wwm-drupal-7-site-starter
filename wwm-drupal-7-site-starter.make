@@ -359,7 +359,7 @@ projects[] = media_feeds
 
 projects[] = media_flickr
 
-; Reviewed on 2014-06-24 (No change)
+; Reviewed on 2014-08-06 (Version 7.x-2.x released, possible upgrade?)
 ; The following module uses the beta8 release because
 ; that is the most stable version 
 ; 7.x-1.x - requires explicitly stating which version to pull
