@@ -461,7 +461,7 @@ projects[] = publish_button
 projects[] = publishcontent
 projects[] = purl
 
-; Reviewed on 2014-06-24
+; Reviewed on 2014-08-06 (No change)
 ; Must still pull the dev version of the module to fix the issues reported 
 ; in https://drupal.org/node/2104643 and https://drupal.org/node/2108935
 ; however, we do not need to patch
