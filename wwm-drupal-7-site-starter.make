@@ -33,7 +33,7 @@ projects[drupal][type] = "core"
 projects[drupal][download][type] = "get"
 projects[drupal][download][url] = "http://files.aegir.cc/core/drupal-7.28.1.tar.gz"
   
-; Reviewed on 2014-08-06
+; Reviewed on 2014-08-06 (No change)
 ; Add Modules that are automatically included by BOA hosting system
 ; to override them with the latest versions
 ; See https://omega8.cc/supported-enabled-disabled-a-complete-list-150
@@ -154,7 +154,7 @@ projects[] = elements
 projects[] = email
 projects[] = enabled_modules
 
-; Reviewed on 2014-05-26
+; Reviewed on 2014-08-06 (No change)
 ; Must pull patched module from WWM GitHub repo to
 ; allow for tokens to be created for date fields that have both starting and end dates.
 ; https://drupal.org/node/1621084
