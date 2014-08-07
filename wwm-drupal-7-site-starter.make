@@ -626,7 +626,7 @@ projects[date_navigation][download][branch] = 7.x-1.x-wwm
 projects[] = adaptivetheme
 projects[] = corolla
 
-; Reviewed on 2014-06-24
+; Reviewed on 2014-08-06 (No change, 8.x-1.x in dropdown)
 ; projects[] = ember
 projects[ember][version] = 2.x-dev
 projects[ember][type] = "theme"
