@@ -430,7 +430,7 @@ projects[] = password-reset
 projects[] = pathauto
 projects[] = pathologic
 
-; Reviewed on 2014-06-24 (No change)
+; Reviewed on 2014-08-06 (7.x-2.x version in dropdown, possible upgrade?)
 ; Phone 1.0-beta1 released 2014-Jan-14
 projects[phone][type] = "module"
 projects[phone][version] = 1.0-beta1
