@@ -585,7 +585,7 @@ projects[workbench_moderation][download][type] = "git"
 projects[workbench_moderation][download][url] = "https://github.com/wickwood/workbench_moderation.git"
 projects[workbench_moderation][download][branch] = 7.x-1.x-wwm
 
-; Reviewed on 2014-06-24 (No change)
+; Reviewed on 2014-08-06 (No change)
 ; The following item needs to a patch applied from
 ; https://drupal.org/comment/7404872#comment-7404872 to WYSIWYG editors to exposed summary fields.
 ; Note this version of the patch also requires patching Media module
