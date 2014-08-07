@@ -622,7 +622,7 @@ projects[date_navigation][download][branch] = 7.x-1.x-wwm
 ; Themes
 ; --------
 ; Themes Added for Wickwood Marketing Drupal 7 Site Starter
-; Reviewed on 2014-06-24
+; Reviewed on 2014-08-06 (Default version for adaptivetheme is 7.x-3.x, 8.x-1.x in dropdown. Default version for corolla is master, 7.x-3.x in dropdown)
 projects[] = adaptivetheme
 projects[] = corolla
 
