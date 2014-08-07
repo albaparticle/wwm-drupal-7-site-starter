@@ -439,7 +439,7 @@ projects[phone][version] = 1.0-beta1
 projects[] = plupload
 projects[] = popup
 
-; Reviewed on 2014-06-24 (No change)
+; Reviewed on 2014-08-06 (No change)
 ; The following item requires a custom WWM patch to be applied
 ; in order to allow prepopulation from links created with Views.
 ; projects[] = prepopulate
