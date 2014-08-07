@@ -407,7 +407,7 @@ projects[] = nodereference_url
 projects[nodequeue][version] = 2.x-dev
 projects[nodequeue][type] = "module"
 
-; Reviewed in 2014-06-28
+; Reviewed in 2014-08-06 (Not sure if this is still needed judging by the comments, version 7.x-1.x is released)
 ; The nodesquirrel module is no longer needed if backup_migrate module version 2.7 or greater is used.
 ; Commenting out for future removal.
 ; projects[] = nodesquirrel
