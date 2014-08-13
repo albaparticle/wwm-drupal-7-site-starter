@@ -629,7 +629,7 @@ projects[] = xmlsitemap
 ; (Steve's Comment - Not sure what you meant by "custom" here, Taylor.  I think I do, but we can discuss.)
 ; (08/06/14 Taylor - No change, https://www.drupal.org/project/date_navigation leads to "page not found")
 ; (08/08/14 Steve - This is one of my custom modules and is not on D.O)
-projects[] = date_navigation
+; projects[] = date_navigation
 ; projects[date_navigation][type] = "module"
 ; projects[date_navigation][download][type] = "git"
 ; projects[date_navigation][download][url] = "https://github.com/wickwood/date_navigation.git"
