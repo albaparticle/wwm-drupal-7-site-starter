@@ -548,6 +548,7 @@ projects[] = token_filter
 projects[] = transliteration
 projects[] = unique_field
 projects[] = upload_default_avatar
+projects[] = video_filter
 
 ; Reviewed on 2014-08-06 (No change)
 ; The following item needs to have a patch applied
