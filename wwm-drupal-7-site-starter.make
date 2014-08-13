@@ -687,7 +687,10 @@ projects[zen][type] = "theme"
 libraries[ckeditor][download][type] = "file"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.2/ckeditor_3.6.2.tar.gz"
 libraries[colorbox][download][type] = "file"
-libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/master.zip"
+; Following line has URL from GitHub
+; libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/master.zip"
+; Following line has URL from Colorbox Module
+libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/1.x.zip"
 libraries[fullcalendar][download][type] = "file"
 libraries[fullcalendar][download][url] = "https://github.com/arshaw/fullcalendar/releases/download/v1.6.4/fullcalendar-1.6.4.zip"
 libraries[getid3][download][type] = "file"
