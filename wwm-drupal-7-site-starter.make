@@ -86,10 +86,12 @@ projects[] = views404
 	
 ; Contrib [F]orce[E]nabled	
 projects[] = entitycache
-; The following module needs to use the dev version because stable release is too old
-; projects[] = robotstxt
-projects[robotstxt][version] = 1.x-dev
-projects[robotstxt][type] = "module"
+
+; Reviewed 2014-08-12
+; A new stable version was released 2014-Jun-14
+projects[] = robotstxt
+; projects[robotstxt][version] = 1.x-dev
+; projects[robotstxt][type] = "module"
 	
 ; Contrib [F]orce[D]isabled	
 ; Commented out modules never used anyway
