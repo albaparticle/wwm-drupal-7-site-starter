@@ -134,6 +134,7 @@ projects[] = cck
 projects[] = ckeditor_swf
 projects[] = clean_module_list
 projects[] = chart 
+projects[] = checklistapi
 projects[] = colorbox
 projects[] = colorbox_node
 projects[] = colors
@@ -429,6 +430,7 @@ projects[] = overlay_paths
 projects[] = override_node_options			
 projects[] = page_title
 projects[] = panels
+projects[] = pasc
 projects[] = password-reset
 projects[] = pathauto
 projects[] = pathologic
@@ -469,6 +471,7 @@ projects[publication_date][download][branch] = 7.x-1.x-wwm
 projects[] = publish_button
 projects[] = publishcontent
 projects[] = purl
+projects[] = qa_checklist
 
 ; Reviewed on 2014-08-06 (No change)
 ; Must still pull the dev version of the module to fix the issues reported 
@@ -514,6 +517,7 @@ projects[] = rules_link
 projects[] = rules_linkevent
 projects[] = scheduler
 projects[] = search_config
+projects[] = seo_checklist
 
 ; Reviewed on 2014-08-08 (No change)
 ; The following item needs to have a patch applied
