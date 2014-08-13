@@ -184,14 +184,14 @@ projects[] = entity_view_mode
 projects[] = easy_breadcrumb
 projects[] = exclude_node_title
 
-; Reviewed on 2014-08-06 (No change)
+; Reviewed on 2014-08-13 (Stable Released 2014-Jul-25)
 ; extlink Module needs to be patched to fix 
 ; Images linking to an external link ALWAYS have the "external link" icon displayed 
 ; see issue: https://drupal.org/node/2257023
-;projects[] = extlink
-projects[extlink][type] = "module"
-projects[extlink][version] = 1.x-dev
-projects[extlink][patch][] = "https://drupal.org/files/issues/extlink-always-on-images-2257023-8.patch"
+projects[] = extlink
+; projects[extlink][type] = "module"
+; projects[extlink][version] = 1.x-dev
+; projects[extlink][patch][] = "https://drupal.org/files/issues/extlink-always-on-images-2257023-8.patch"
 
 projects[] = features
 
@@ -251,7 +251,13 @@ projects[] = fullcalendar_templates
 projects[] = ga_tokenizer
 projects[] = gdoc_field
 projects[] = getid3
-projects[] = getresponse
+
+; Reviewed 2014-08-12
+; Stable version will not download with the following line, so adding explicit version
+; projects[] = getresponse
+projects[getresponse][type] = "module"
+projects[getresponse][version] = 1.0
+
 projects[] = globalredirect
 projects[] = google_analytics
 projects[] = google_analytics_reports
