@@ -253,10 +253,10 @@ projects[] = gdoc_field
 projects[] = getid3
 
 ; Reviewed 2014-08-12
-; Stable version will not download with the following line, so adding explicit version
+; Commenting out getresponse module complete because for some reason it will not download even with explicit version
 ; projects[] = getresponse
-projects[getresponse][type] = "module"
-projects[getresponse][version] = 1.0
+; projects[getresponse][type] = "module"
+; projects[getresponse][version] = 1.0
 
 projects[] = globalredirect
 projects[] = google_analytics
