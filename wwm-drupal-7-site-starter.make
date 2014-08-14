@@ -163,11 +163,11 @@ projects[] = enabled_modules
 ; Must pull patched module from WWM GitHub repo to
 ; allow for tokens to be created for date fields that have both starting and end dates.
 ; https://drupal.org/node/1621084
-projects[] = entity
-; projects[entity][type] = "module"
-; projects[entity][download][type] = "git"
-; projects[entity][download][url] = "https://github.com/wickwood/entity.git"
-; projects[entity][download][branch] = 7.x-1.1-dev-wwm
+; projects[] = entity
+projects[entity][type] = "module"
+projects[entity][download][type] = "git"
+projects[entity][download][url] = "https://github.com/wickwood/entity.git"
+projects[entity][download][branch] = 7.x-1.1-dev-wwm
 
 projects[] = entity_autocomplete
 
@@ -456,10 +456,10 @@ projects[] = popup
 ; Reviewed on 2014-08-06 (No change)
 ; The following item requires a custom WWM patch to be applied
 ; in order to allow prepopulation from links created with Views.
-projects[] = prepopulate
-; projects[prepopulate][download][type] = "git"
-; projects[prepopulate][download][url] = "https://github.com/wickwood/prepopulate.git"
-; projects[prepopulate][download][branch] = 7.x-2.x-wwm
+; projects[] = prepopulate
+projects[prepopulate][download][type] = "git"
+projects[prepopulate][download][url] = "https://github.com/wickwood/prepopulate.git"
+projects[prepopulate][download][branch] = 7.x-2.x-wwm
 
 projects[] = profiler
 projects[] = projekktor
@@ -470,9 +470,9 @@ projects[] = projekktor
 ; (08/06/14 Taylor - Version 7.x-2.x is default. Upgrade?)
 ; (08/08/14 Steve - Not yet, but thanks for finding that there is new version.)
 ; (Steve cont'd - I will have to update my forked version that is being used here.)
-; projects[publication_date][download][type] = "git"
-; projects[publication_date][download][url] = "https://github.com/wickwood/publication_date.git"
-; projects[publication_date][download][branch] = 7.x-1.x-wwm
+projects[publication_date][download][type] = "git"
+projects[publication_date][download][url] = "https://github.com/wickwood/publication_date.git"
+projects[publication_date][download][branch] = 7.x-1.x-wwm
 
 projects[] = publish_button
 projects[] = publishcontent
@@ -532,9 +532,9 @@ projects[] = seo_checklist
 ; (08/06/14 Taylor - Default version is master, 7.x-2.x version in dropdown)
 ; (08/08/14 Steve - Again I'm pulling a forked version from Github, and will need to upgrade that to 7.x-2.x version)
 ; projects[] = simpleads
-; projects[simpleads][download][type] = "git"
-; projects[simpleads][download][url] = "https://github.com/wickwood/simpleads.git"
-; projects[simpleads][download][branch] = 7.x-1.x-wwm
+projects[simpleads][download][type] = "git"
+projects[simpleads][download][url] = "https://github.com/wickwood/simpleads.git"
+projects[simpleads][download][branch] = 7.x-1.x-wwm
 
 projects[] = simplehtmldom
 projects[] = site_disclaimer
@@ -561,14 +561,14 @@ projects[] = video_filter
 ; The following item needs to have a patch applied
 ; from https://drupal.org/node/1249684#comment-6355236 to prevent exposed filter on Roles to stop dissappearing when  
 ; "Only has 'authenticated user' role" or "Has roles in addition to 'authenticated user' ".
-projects[] = views
+; projects[] = views
 ; projects[views][version] = 3.x-dev
 ; projects[views][patch][] = "https://drupal.org/files/views-1249684-dependency-exposed-filter.patch"
 ; Patch did not apply so pulling from WWM Github Repo
-; projects[views][type] = "module"
-; projects[views][download][type] = "git"
-; projects[views][download][url] = "https://github.com/wickwood/views.git"
-; projects[views][download][branch] = 7.x-3.x-wwm
+projects[views][type] = "module"
+projects[views][download][type] = "git"
+projects[views][download][url] = "https://github.com/wickwood/views.git"
+projects[views][download][branch] = 7.x-3.x-wwm
 
 ; Reviewed on 2014-08-08 (No change) 
 ; The following item needs to have the patch applied from
@@ -576,11 +576,11 @@ projects[] = views
 ; to allow view arguments be passed as parameters to rule set.
 ; (08/06/14 Taylor - default version is master)
 ; (08/08/14 Steve - Again I'm pulling a forked version from Github, no change here yet.)
-projects[] = views_bulk_operations
-; projects[views_bulk_operations][type] = "module"
-; projects[views_bulk_operations][download][type] = "git"
-; projects[views_bulk_operations][download][url] = "https://github.com/wickwood/views_bulk_operations.git"
-; projects[views_bulk_operations][download][branch] = 7.x-3.x-wwm
+; projects[] = views_bulk_operations
+projects[views_bulk_operations][type] = "module"
+projects[views_bulk_operations][download][type] = "git"
+projects[views_bulk_operations][download][url] = "https://github.com/wickwood/views_bulk_operations.git"
+projects[views_bulk_operations][download][branch] = 7.x-3.x-wwm
 
 projects[] = views_data_export
 projects[] = views_export_xls
@@ -610,22 +610,22 @@ projects[] = workbench_media
 ; when a draft or needs review revision exists after a published revision.
 ; (08/06/14 Taylor - No change, various 7.x-2.x version in dropdown but they don't seem to be stable releases)
 ; (08/08/14 Steve - Again I'm pulling a forked version from Github, no change here yet.)
-projects[] = workbench_moderation
-; projects[workbench_moderation][type] = "module"
-; projects[workbench_moderation][download][type] = "git"
-; projects[workbench_moderation][download][url] = "https://github.com/wickwood/workbench_moderation.git"
-; projects[workbench_moderation][download][branch] = 7.x-1.x-wwm
+; projects[] = workbench_moderation
+projects[workbench_moderation][type] = "module"
+projects[workbench_moderation][download][type] = "git"
+projects[workbench_moderation][download][url] = "https://github.com/wickwood/workbench_moderation.git"
+projects[workbench_moderation][download][branch] = 7.x-1.x-wwm
 
 ; Reviewed on 2014-08-06 (No change)
 ; The following item needs to a patch applied from
 ; https://drupal.org/comment/7404872#comment-7404872 to WYSIWYG editors to exposed summary fields.
 ; Note this version of the patch also requires patching Media module
 ; from https://drupal.org/comment/7421208#comment-7421208
-projects[] = wysiwyg
-; projects[wysiwyg][type] = "module"
-; projects[wysiwyg][download][type] = "git"
-; projects[wysiwyg][download][url] = "https://github.com/wickwood/wysiwyg.git"
-; projects[wysiwyg][download][branch] = 7.x-2.x-wwm
+; projects[] = wysiwyg
+projects[wysiwyg][type] = "module"
+projects[wysiwyg][download][type] = "git"
+projects[wysiwyg][download][url] = "https://github.com/wickwood/wysiwyg.git"
+projects[wysiwyg][download][branch] = 7.x-2.x-wwm
 
 projects[] = xmlsitemap
 
@@ -636,10 +636,10 @@ projects[] = xmlsitemap
 ; (08/06/14 Taylor - No change, https://www.drupal.org/project/date_navigation leads to "page not found")
 ; (08/08/14 Steve - This is one of my custom modules and is not on D.O)
 ; projects[] = date_navigation
-; projects[date_navigation][type] = "module"
-; projects[date_navigation][download][type] = "git"
-; projects[date_navigation][download][url] = "https://github.com/wickwood/date_navigation.git"
-; projects[date_navigation][download][branch] = 7.x-1.x-wwm
+projects[date_navigation][type] = "module"
+projects[date_navigation][download][type] = "git"
+projects[date_navigation][download][url] = "https://github.com/wickwood/date_navigation.git"
+projects[date_navigation][download][branch] = 7.x-1.x-wwm
 
 ; Reviewed on 2014-08-08 (no change)
 ; Current state of custom account tabs requires that this module be installed 
@@ -686,14 +686,17 @@ projects[zen][type] = "theme"
 ; ---------
 libraries[ckeditor][download][type] = "file"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.2/ckeditor_3.6.2.tar.gz"
-; libraries[colorbox][download][type] = "file"
+libraries[colorbox][download][type] = "file"
+; Following line has URL from GitHub
 ; libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/master.zip"
-; libraries[fullcalendar][download][type] = "file"
-; libraries[fullcalendar][download][url] = "https://github.com/arshaw/fullcalendar/releases/download/v1.6.4/fullcalendar-1.6.4.zip"
+; Following line has URL from Colorbox Module
+libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/1.x.zip"
+libraries[fullcalendar][download][type] = "file"
+libraries[fullcalendar][download][url] = "https://github.com/arshaw/fullcalendar/releases/download/v1.6.4/fullcalendar-1.6.4.zip"
 libraries[getid3][download][type] = "file"
 libraries[getid3][download][url] = "http://downloads.sourceforge.net/project/getid3/getID3%28%29%201.x/1.9.3/getid3-1.9.3-20111213.zip"
-; libraries[html5bp][download][type] = "file"
-; libraries[html5bp][download][url] = "http://github.com/paulirish/html5-boilerplate/zipball/v1.0stripped"
+libraries[html5bp][download][type] = "file"
+libraries[html5bp][download][url] = "http://github.com/paulirish/html5-boilerplate/zipball/v1.0stripped"
 libraries[jcarousel][download][type] = "file"
 libraries[jcarousel][download][url] = "http://sorgalla.com/projects/download.php?jcarousel"
 libraries[jquery][download][type] = "file"
@@ -704,10 +707,10 @@ libraries[iCalcreator][download][type] = "file"
 libraries[iCalcreator][download][url] = "http://kigkonsult.se/downloads/dl.php?f=iCalcreatorusing-2.18"
 libraries[mailchimp][download][type] = "get"
 libraries[mailchimp][download][url] = "https://bitbucket.org/mailchimp/mailchimp-api-php/get/2.0.4.zip"
-; libraries[simplepie][download][type] = "file"
-; libraries[simplepie][download][url] = "https://github.com/simplepie/simplepie/archive/master.zip"
-; libraries[plupload][download][type] = "file"
-; libraries[plupload][download][url] = "https://github.com/downloads/moxiecode/plupload/plupload_1_5_1_1.zip"
+libraries[simplepie][download][type] = "file"
+libraries[simplepie][download][url] = "https://github.com/simplepie/simplepie/archive/master.zip"
+libraries[plupload][download][type] = "file"
+libraries[plupload][download][url] = "https://github.com/downloads/moxiecode/plupload/plupload_1_5_1_1.zip"
 libraries[simplepie][download][type] = "file"
 libraries[simplepie][download][url] = "http://simplepie.org/downloads/simplepie_1.3.1.mini.php"
 libraries[superfish][download][type] = "file"
