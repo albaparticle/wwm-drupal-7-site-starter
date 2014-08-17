@@ -14,11 +14,11 @@ rm -r /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/plupl
 mv /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar-org
 mv /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar-org/fullcalendar /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar
 rm -r /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar-org
-chown -R wwmhosting-admin:users /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar
+# chown -R wwmhosting-admin:users /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar
 
 # Change name of SimplePie Library
 mv /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/simplepie/simplepie_*.*.*.mini.php /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/simplepie/simplepie.compiled.php
-chown -R wwmhosting-admin:users /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/simplepie/simplepie.compiled.php
+# chown -R wwmhosting-admin:users /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/simplepie/simplepie.compiled.php
 
 # Move TinyMCE Spell Checker
 # rm -rf /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/tinymce/jscripts/tiny_mce/plugins/spellchecker
@@ -30,5 +30,5 @@ mv /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/ckeditor
 cd /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/ckeditor/plugins/
 7z x aspell.7z
 rm /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell.7z
-chown -R wwmhosting-admin:users /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell
+# chown -R wwmhosting-admin:users /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell
 
