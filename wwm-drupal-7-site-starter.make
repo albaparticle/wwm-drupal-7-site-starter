@@ -179,7 +179,7 @@ projects[entityreference][version] = 1.x-dev
 projects[entityreference][patch][] = "https://www.drupal.org/files/issues/entityreference-skip-acces-check-1967180-9.patch"
 
 projects[] = entityreference_prepopulate
-projects[] = entityreference_view_widget
+; projects[] = entityreference_view_widget
 projects[] = entity_view_mode
 projects[] = easy_breadcrumb
 projects[] = exclude_node_title
@@ -489,6 +489,7 @@ projects[] = qa_checklist
 ; (We can review again how to check for this.)
 ; projects[] = quicktabs
 projects[quicktabs][version] = 3.x-dev
+; projects[quicktabs][patch][] = "https://drupal.org/files/2104643-revert-qt-487518-5.patch"
 
 projects[] = queue_ui
 
@@ -687,9 +688,6 @@ projects[zen][type] = "theme"
 libraries[ckeditor][download][type] = "file"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.2/ckeditor_3.6.2.tar.gz"
 libraries[colorbox][download][type] = "file"
-; Following line has URL from GitHub
-; libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/master.zip"
-; Following line has URL from Colorbox Module
 libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/1.x.zip"
 libraries[fullcalendar][download][type] = "file"
 libraries[fullcalendar][download][url] = "https://github.com/arshaw/fullcalendar/releases/download/v1.6.4/fullcalendar-1.6.4.zip"
@@ -698,7 +696,7 @@ libraries[getid3][download][url] = "http://downloads.sourceforge.net/project/get
 libraries[html5bp][download][type] = "file"
 libraries[html5bp][download][url] = "http://github.com/paulirish/html5-boilerplate/zipball/v1.0stripped"
 libraries[jcarousel][download][type] = "file"
-libraries[jcarousel][download][url] = "http://sorgalla.com/projects/download.php?jcarousel"
+libraries[jcarousel][download][url] = "https://github.com/jsor/jcarousel/archive/0.2.zip"
 libraries[jquery][download][type] = "file"
 libraries[jquery][download][url] = "https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"
 libraries[jquery.cycle][download][type] = "file"
