@@ -32,3 +32,6 @@ cd /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/ckeditor
 rm /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell.7z
 # chown -R wwmhosting-admin:users /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell
 
+# Fix permissions on views_plugin_display temp directory
+chmod 0777 /data/disk/wwmhosting-admin/static/$platform_dir/sites/dev.2.mohawkhudsoncyclingclub.org/private/temp/views_plugin_display
+
