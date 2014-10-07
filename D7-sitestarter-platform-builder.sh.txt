@@ -5,33 +5,33 @@
 platform_dir=$1
 
 # Remove getid3 libraries demo directory for security
-rm -r /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/getid3/demos
+rm -r /data/disk/o5372971148/static/$platform_dir/sites/all/libraries/getid3/demos
 
 # Remove plupload libraries examples directory for security
-rm -r /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/plupload/examples
+rm -r /data/disk/o5372971148/static/$platform_dir/sites/all/libraries/plupload/examples
 
 # Setup fullcalendar Library
-mv /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar-org
-mv /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar-org/fullcalendar /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar
-rm -r /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar-org
-# chown -R wwmhosting-admin:users /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/fullcalendar
+mv /data/disk/o5372971148/static/$platform_dir/sites/all/libraries/fullcalendar /data/disk/o5372971148/static/$platform_dir/sites/all/libraries/fullcalendar-org
+mv /data/disk/o5372971148/static/$platform_dir/sites/all/libraries/fullcalendar-org/fullcalendar /data/disk/o5372971148/static/$platform_dir/sites/all/libraries/fullcalendar
+rm -r /data/disk/o5372971148/static/$platform_dir/sites/all/libraries/fullcalendar-org
+# chown -R o5372971148:users /data/disk/o5372971148/static/$platform_dir/sites/all/libraries/fullcalendar
 
 # Change name of SimplePie Library
-mv /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/simplepie/simplepie_*.*.*.mini.php /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/simplepie/simplepie.compiled.php
-# chown -R wwmhosting-admin:users /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/simplepie/simplepie.compiled.php
+mv /data/disk/o5372971148/static/$platform_dir/sites/all/libraries/simplepie/simplepie_*.*.*.mini.php /data/disk/o5372971148/static/$platform_dir/sites/all/libraries/simplepie/simplepie.compiled.php
+# chown -R o5372971148:users /data/disk/o5372971148/static/$platform_dir/sites/all/libraries/simplepie/simplepie.compiled.php
 
 # Move TinyMCE Spell Checker
-# rm -rf /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/tinymce/jscripts/tiny_mce/plugins/spellchecker
-# mv  /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/tinymce/jscripts/tiny_mce/plugins/spellchecker-new  /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/tinymce/jscripts/tiny_mce/plugins/spellchecker
-# chown wwmhosting-admin:users /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/tinymce/jscripts/tiny_mce/plugins/spellchecker
+# rm -rf /data/disk/o5372971148/static/$platform_dir/sites/all/libraries/tinymce/jscripts/tiny_mce/plugins/spellchecker
+# mv  /data/disk/o5372971148/static/$platform_dir/sites/all/libraries/tinymce/jscripts/tiny_mce/plugins/spellchecker-new  /data/disk/o5372971148/static/$platform_dir/sites/all/libraries/tinymce/jscripts/tiny_mce/plugins/spellchecker
+# chown o5372971148:users /data/disk/o5372971148/static/$platform_dir/sites/all/libraries/tinymce/jscripts/tiny_mce/plugins/spellchecker
 
 # Unzip Aspell Spell Checker
-mv /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell/aspell.7z /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell.7z
-cd /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/ckeditor/plugins/
+mv /data/disk/o5372971148/static/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell/aspell.7z /data/disk/o5372971148/static/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell.7z
+cd /data/disk/o5372971148/static/$platform_dir/sites/all/libraries/ckeditor/plugins/
 7z x aspell.7z
-rm /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell.7z
-# chown -R wwmhosting-admin:users /data/disk/wwmhosting-admin/static/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell
+rm /data/disk/o5372971148/static/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell.7z
+# chown -R o5372971148:users /data/disk/o5372971148/static/$platform_dir/sites/all/libraries/ckeditor/plugins/aspell
 
 # Fix permissions on views_plugin_display temp directory
-chmod 0777 /data/disk/wwmhosting-admin/static/$platform_dir/sites/dev.2.mohawkhudsoncyclingclub.org/private/temp/views_plugin_display
+chmod 0777 /data/disk/o5372971148/static/$platform_dir/sites/dev.2.mohawkhudsoncyclingclub.org/private/temp/views_plugin_display
 
