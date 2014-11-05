@@ -677,7 +677,7 @@ projects[] = domain_robotstxt
 projects[] = domain_rules
 ; There is no official release for domain_tac
 ; projects[] = domain_tac
-projects[] = domain_tax
+; projects[] = domain_tax
 projects[] = domain_taxonomy
 projects[] = domain_types
 projects[] = domain_url
