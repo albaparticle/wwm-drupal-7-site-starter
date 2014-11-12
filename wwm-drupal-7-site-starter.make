@@ -307,6 +307,7 @@ projects[] = mailchimp
 ; projects[mailchimp][download][branch] = 7.x-2.x-skip-noemail-on-sync
 
 projects[] = mailsystem
+projects[] = mass_pwreset
 
 ; Reviewed on 2014-08-06 (No change)
 ; The following module needs to use the 1.x-dev version 
